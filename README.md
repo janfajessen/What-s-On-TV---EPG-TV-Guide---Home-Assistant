@@ -1,4 +1,4 @@
-# What's On TV — Home Assistant Integration
+# What's On TV — EPG TV Guide <br> Home Assistant Integration
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
 [![HA Version](https://img.shields.io/badge/Home%20Assistant-2024.1%2B-blue)](https://www.home-assistant.io/)
