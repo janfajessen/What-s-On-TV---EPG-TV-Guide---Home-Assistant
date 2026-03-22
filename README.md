@@ -148,7 +148,6 @@ action:
 | `custom` | Custom URL | Any XMLTV `.xml` or `.xml.gz` |
 
 
-Lista de Países en su Idioma Oficial
 🇪🇸 España, 🇦🇩 Andorra, 🇦🇱 Shqipëria, 🇦🇷 Argentina, 🇦🇲 Հայաստան, 🇦🇺 Australia, 🇦🇹 Österreich, 🇧🇾 Беларусь, 🇧🇪 België / Belgique, 🇧🇴 Bolivia, 🇧🇦 Bosna i Hercegovina, 🇧🇷 Brasil, 🇧🇬 България, 🇨🇦 Canada, 🇨🇱 Chile, 🇨🇴 Colombia, 🇨🇷 Costa Rica, 🇭🇷 Hrvatska, 🇨🇿 Česká republika, 🇩🇰 Danmark, 🇩🇴 República Dominicana, 🇪🇨 Ecuador, 🇪🇬 مصر, 🇸🇻 El Salvador, 🇫🇮 Suomi, 🇫🇷 France, 🇬🇪 საქართველო, 🇩🇪 Deutschland, 🇬🇭 Ghana, 🇬🇷 Ελλάδα,🇬🇹 Guatemala, 🇭🇳 Honduras, 🇭🇰 Hong Kong 香港, 🇭🇺 Magyarország, 🇮🇸 Ísland, 🇮🇳 Bharat भारत, 🇮🇩 Bahasa Indonesia, 🇮🇱 יִשְׂרָאֵל,🇮🇹 Italia, 🇯🇵 日本, 🇱🇻 Latvija, 🇱🇧 لبنان,🇱🇹 Lietuva, 🇱🇺 Lëtzebuerg, 🇲🇰 Северна Македонија, 🇲🇾 Bahasa Melayu, 🇲🇹 Malta, 🇲🇽 México, 🇲🇪 Crna Gora, 🇲🇦 المغرب, 🇳🇱 Nederland, 🇳🇿 New Zealand, 🇳🇮 Nicaragua, 🇳🇬 Nigeria, 🇳🇴 Norge, 🇵🇦 Panamá, 🇵🇾 Paraguay, 🇵🇪 Perú, 🇵🇭 Pilipinas, 🇵🇱 Polska, 🇵🇹 Portugal, 🇵🇷 Puerto Rico, 🇷🇴 România, 🇷🇺 Россия, 🇷🇸 Српски, 🇸🇬 Singapore, 🇸🇰 Slovensko, 🇸🇮 Slovenija, 🇿🇦 South Africa, 🇰🇷 대한민국, 🇸🇪 Sverige, 🇨🇭 Schweiz / Suisse / Svizzera, 🇹🇼 Taiwan, 🇹🇭 Prathet Thai, 🇹🇷 Türkiye, 🇺🇦 Ukrayina, 🇦🇪 Al-Imarat, 🇬🇧 United Kingdom, 🇺🇸 United States, 🇺🇾 Uruguay, 🇻🇪 Venezuela, 🇻🇳 Việt Nam
 
 🌐 Custom URL (XMLTV .xml / .xml.gz)
