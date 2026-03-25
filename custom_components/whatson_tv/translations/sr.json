@@ -1,0 +1,62 @@
+{
+  "title": "Шта је на ТВ-у — EPG извор",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Шта је на ТВ-у — EPG извор",
+        "description": "Изаберите земљу/регион и интервал ажурирања.",
+        "data": {
+          "epg_source": "EPG извор",
+          "scan_interval": "Ажурирај сваких (сати)"
+        }
+      },
+      "custom_url": {
+        "title": "Шта је на ТВ-у — прилагођени URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Шта је на ТВ-у — Изабери канале",
+        "description": "Пронађено {total} канала. Изаберите оне које желите да пратите.",
+        "data": { "channels": "Канали" }
+      },
+      "reconfigure": {
+        "title": "Шта је на ТВ-у — Реконфигурација",
+        "data": {
+          "epg_source": "EPG извор",
+          "scan_interval": "Ажурирај сваких (сати)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Шта је на ТВ-у — Ажурирај канале",
+        "description": "Доступни канали: {total}.",
+        "data": { "channels": "Канали" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG није могао бити преузет. Проверите URL и везу.",
+      "no_channels": "EPG датотека не садржи канале.",
+      "no_channels_selected": "Изаберите бар један канал.",
+      "unknown": "Неочекивана грешка при обради EPG-а."
+    },
+    "abort": {
+      "already_configured": "Овај EPG извор је већ конфигурисан.",
+      "reconfigure_successful": "Реконфигурација завршена."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Шта је на ТВ-у — Управљање каналима",
+        "description": "Доступни канали: {total}.",
+        "data": {
+          "channels": "Активни канали",
+          "scan_interval": "Ажурирај сваких (сати)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Није могуће контактирати EPG извор.",
+      "no_channels_selected": "Изаберите бар један канал."
+    }
+  }
+}
