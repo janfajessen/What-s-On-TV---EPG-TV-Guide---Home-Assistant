@@ -1,0 +1,62 @@
+{
+  "title": "Hvað er í sjónvarpinu — EPG-uppspretta",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Hvað er í sjónvarpinu — EPG-uppspretta",
+        "description": "Veldu land/svæði og uppfærslu millibil.",
+        "data": {
+          "epg_source": "EPG-uppspretta",
+          "scan_interval": "Uppfæra á (klukkustundum) fresti"
+        }
+      },
+      "custom_url": {
+        "title": "Hvað er í sjónvarpinu — sérsniðin URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Hvað er í sjónvarpinu — Veldu rásir",
+        "description": "{total} rásir fundnar. Veldu þær sem þú vilt fylgjast með.",
+        "data": { "channels": "Rásir" }
+      },
+      "reconfigure": {
+        "title": "Hvað er í sjónvarpinu — Endurstill stillingar",
+        "data": {
+          "epg_source": "EPG-uppspretta",
+          "scan_interval": "Uppfæra á (klukkustundum) fresti"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Hvað er í sjónvarpinu — Uppfæra rásir",
+        "description": "Tiltækar rásir: {total}.",
+        "data": { "channels": "Rásir" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Ekki tókst að sækja EPG. Athugaðu URL og tengingu.",
+      "no_channels": "EPG-skráin inniheldur engar rásir.",
+      "no_channels_selected": "Veldu að minnsta kosti eina rás.",
+      "unknown": "Óvænt villa við vinnslu EPG."
+    },
+    "abort": {
+      "already_configured": "Þessi EPG-uppspretta er þegar stillt.",
+      "reconfigure_successful": "Endurstilling lokið."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Hvað er í sjónvarpinu — Stjórna rásum",
+        "description": "Tiltækar rásir: {total}.",
+        "data": {
+          "channels": "Virkar rásir",
+          "scan_interval": "Uppfæra á (klukkustundum) fresti"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Ekki tókst að ná sambandi við EPG-uppsprettu.",
+      "no_channels_selected": "Veldu að minnsta kosti eina rás."
+    }
+  }
+}
