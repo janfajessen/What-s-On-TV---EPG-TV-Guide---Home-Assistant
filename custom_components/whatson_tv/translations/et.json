@@ -1,0 +1,62 @@
+{
+  "title": "Mis on TV-s — EPG allikas",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mis on TV-s — EPG allikas",
+        "description": "Valige oma riik/piirkond ja värskenduste intervall.",
+        "data": {
+          "epg_source": "EPG allikas",
+          "scan_interval": "Värskenda iga (tunni) järel"
+        }
+      },
+      "custom_url": {
+        "title": "Mis on TV-s — kohandatud URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Mis on TV-s — Vali kanalid",
+        "description": "Leitud {total} kanalit. Vali need, mida soovid jälgida.",
+        "data": { "channels": "Kanalid" }
+      },
+      "reconfigure": {
+        "title": "Mis on TV-s — Rekonfigureeri",
+        "data": {
+          "epg_source": "EPG allikas",
+          "scan_interval": "Värskenda iga (tunni) järel"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Mis on TV-s — Värskenda kanalid",
+        "description": "Saadaval kanalid: {total}.",
+        "data": { "channels": "Kanalid" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG-d ei õnnestunud alla laadida. Kontrolli URL-i ja ühendust.",
+      "no_channels": "EPG-fail ei sisalda kanaleid.",
+      "no_channels_selected": "Vali vähemalt üks kanal.",
+      "unknown": "Ootamatu viga EPG töötlemisel."
+    },
+    "abort": {
+      "already_configured": "See EPG allikas on juba seadistatud.",
+      "reconfigure_successful": "Rekonfigureerimine lõpetatud."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Mis on TV-s — Halda kanaleid",
+        "description": "Saadaval kanalid: {total}.",
+        "data": {
+          "channels": "Aktiivsed kanalid",
+          "scan_interval": "Värskenda iga (tunni) järel"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Ei õnnestunud ühenduda EPG allikaga.",
+      "no_channels_selected": "Vali vähemalt üks kanal."
+    }
+  }
+}
