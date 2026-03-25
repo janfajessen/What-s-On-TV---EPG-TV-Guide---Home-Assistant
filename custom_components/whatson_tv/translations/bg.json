@@ -1,0 +1,62 @@
+{
+  "title": "Какво има по телевизията — EPG източник",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Какво има по телевизията — EPG източник",
+        "description": "Изберете държава/регион и интервал на обновяване.",
+        "data": {
+          "epg_source": "EPG източник",
+          "scan_interval": "Обновяване на всеки (часа)"
+        }
+      },
+      "custom_url": {
+        "title": "Какво има по телевизията — персонализиран URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Какво има по телевизията — Изберете канали",
+        "description": "Намерени {total} канала. Изберете тези, които искате да следите.",
+        "data": { "channels": "Канали" }
+      },
+      "reconfigure": {
+        "title": "Какво има по телевизията — Пренасочване",
+        "data": {
+          "epg_source": "EPG източник",
+          "scan_interval": "Обновяване на всеки (часа)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Какво има по телевизията — Обнови канали",
+        "description": "Налични канали: {total}.",
+        "data": { "channels": "Канали" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не можа да се изтегли EPG. Проверете URL и връзката.",
+      "no_channels": "EPG файлът не съдържа канали.",
+      "no_channels_selected": "Изберете поне един канал.",
+      "unknown": "Неочаквана грешка при обработка на EPG."
+    },
+    "abort": {
+      "already_configured": "Този EPG източник вече е конфигуриран.",
+      "reconfigure_successful": "Пренасочването завърши."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Какво има по телевизията — Управление на канали",
+        "description": "Налични канали: {total}.",
+        "data": {
+          "channels": "Активни канали",
+          "scan_interval": "Обновяване на всеки (часа)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не можа да се свърже с EPG източника.",
+      "no_channels_selected": "Изберете поне един канал."
+    }
+  }
+}
