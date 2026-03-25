@@ -1,0 +1,62 @@
+{
+  "title": "Was läuft im Fernsehen — EPG-Quelle",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Was läuft im Fernsehen — EPG-Quelle",
+        "description": "Wählen Sie Ihr Land/Region und das Aktualisierungsintervall.",
+        "data": {
+          "epg_source": "EPG-Quelle",
+          "scan_interval": "Aktualisieren alle (Stunden)"
+        }
+      },
+      "custom_url": {
+        "title": "Was läuft im Fernsehen — Benutzerdefinierte URL",
+        "data": { "epg_url": "EPG-URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Was läuft im Fernsehen — Kanäle auswählen",
+        "description": "{total} Kanäle gefunden. Wählen Sie die aus, die Sie verfolgen möchten.",
+        "data": { "channels": "Kanäle" }
+      },
+      "reconfigure": {
+        "title": "Was läuft im Fernsehen — Neu konfigurieren",
+        "data": {
+          "epg_source": "EPG-Quelle",
+          "scan_interval": "Aktualisieren alle (Stunden)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Was läuft im Fernsehen — Kanäle aktualisieren",
+        "description": "Verfügbare Kanäle: {total}.",
+        "data": { "channels": "Kanäle" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Die EPG konnte nicht heruntergeladen werden. Überprüfen Sie die URL und Ihre Verbindung.",
+      "no_channels": "Die EPG-Datei enthält keine Kanäle.",
+      "no_channels_selected": "Wählen Sie mindestens einen Kanal aus.",
+      "unknown": "Unerwarteter Fehler bei der Verarbeitung des EPG."
+    },
+    "abort": {
+      "already_configured": "Diese EPG-Quelle ist bereits konfiguriert.",
+      "reconfigure_successful": "Neukonfiguration abgeschlossen."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Was läuft im Fernsehen — Kanäle verwalten",
+        "description": "Verfügbare Kanäle: {total}.",
+        "data": {
+          "channels": "Aktive Kanäle",
+          "scan_interval": "Aktualisieren alle (Stunden)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Die EPG-Quelle konnte nicht erreicht werden.",
+      "no_channels_selected": "Wählen Sie mindestens einen Kanal aus."
+    }
+  }
+}
