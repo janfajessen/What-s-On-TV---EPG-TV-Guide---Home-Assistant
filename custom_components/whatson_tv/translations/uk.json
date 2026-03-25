@@ -1,0 +1,62 @@
+{
+  "title": "Що по телевізору — Джерело EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Що по телевізору — Джерело EPG",
+        "description": "Оберіть країну/регіон та інтервал оновлення.",
+        "data": {
+          "epg_source": "Джерело EPG",
+          "scan_interval": "Оновлювати кожні (годин)"
+        }
+      },
+      "custom_url": {
+        "title": "Що по телевізору — власний URL",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Що по телевізору — Обрати канали",
+        "description": "Знайдено {total} каналів. Оберіть ті, за якими хочете стежити.",
+        "data": { "channels": "Канали" }
+      },
+      "reconfigure": {
+        "title": "Що по телевізору — Переналаштувати",
+        "data": {
+          "epg_source": "Джерело EPG",
+          "scan_interval": "Оновлювати кожні (годин)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Що по телевізору — Оновити канали",
+        "description": "Доступні канали: {total}.",
+        "data": { "channels": "Канали" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не вдалося завантажити EPG. Перевірте URL та з’єднання.",
+      "no_channels": "Файл EPG не містить каналів.",
+      "no_channels_selected": "Оберіть хоча б один канал.",
+      "unknown": "Неочікувана помилка під час обробки EPG."
+    },
+    "abort": {
+      "already_configured": "Це джерело EPG вже налаштовано.",
+      "reconfigure_successful": "Переналаштування завершено."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Що по телевізору — Керування каналами",
+        "description": "Доступні канали: {total}.",
+        "data": {
+          "channels": "Активні канали",
+          "scan_interval": "Оновлювати кожні (годин)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не вдалося зв’язатися з джерелом EPG.",
+      "no_channels_selected": "Оберіть хоча б один канал."
+    }
+  }
+}
