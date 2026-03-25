@@ -1,0 +1,62 @@
+{
+  "title": "Apa yang Sedang Ditayangkan di TV — Sumber EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Apa yang Sedang Ditayangkan di TV — Sumber EPG",
+        "description": "Pilih negara/wilayah dan selang masa kemas kini.",
+        "data": {
+          "epg_source": "Sumber EPG",
+          "scan_interval": "Kemas kini setiap (jam)"
+        }
+      },
+      "custom_url": {
+        "title": "Apa yang Sedang Ditayangkan di TV — URL tersuai",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Apa yang Sedang Ditayangkan di TV — Pilih saluran",
+        "description": "{total} saluran ditemui. Pilih yang anda mahu ikuti.",
+        "data": { "channels": "Saluran" }
+      },
+      "reconfigure": {
+        "title": "Apa yang Sedang Ditayangkan di TV — Konfigurasi semula",
+        "data": {
+          "epg_source": "Sumber EPG",
+          "scan_interval": "Kemas kini setiap (jam)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Apa yang Sedang Ditayangkan di TV — Kemas kini Saluran",
+        "description": "Saluran tersedia: {total}.",
+        "data": { "channels": "Saluran" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Tidak dapat memuat turun EPG. Semak URL dan sambungan anda.",
+      "no_channels": "Fail EPG tidak mengandungi saluran.",
+      "no_channels_selected": "Pilih sekurang-kurangnya satu saluran.",
+      "unknown": "Ralat tidak dijangka semasa memproses EPG."
+    },
+    "abort": {
+      "already_configured": "Sumber EPG ini sudah dikonfigurasikan.",
+      "reconfigure_successful": "Konfigurasi semula selesai."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Apa yang Sedang Ditayangkan di TV — Urus Saluran",
+        "description": "Saluran tersedia: {total}.",
+        "data": {
+          "channels": "Saluran Aktif",
+          "scan_interval": "Kemas kini setiap (jam)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Tidak dapat menghubungi sumber EPG.",
+      "no_channels_selected": "Pilih sekurang-kurangnya satu saluran."
+    }
+  }
+}
