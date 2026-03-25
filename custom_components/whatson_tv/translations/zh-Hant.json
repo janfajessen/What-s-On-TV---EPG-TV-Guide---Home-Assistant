@@ -1,0 +1,62 @@
+{
+  "title": "電視節目 — EPG 來源",
+  "config": {
+    "step": {
+      "user": {
+        "title": "電視節目 — EPG 來源",
+        "description": "選擇您的國家/地區和更新間隔。",
+        "data": {
+          "epg_source": "EPG 來源",
+          "scan_interval": "每 (小時) 更新一次"
+        }
+      },
+      "custom_url": {
+        "title": "電視節目 — 自訂 URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "電視節目 — 選擇頻道",
+        "description": "找到 {total} 個頻道。選擇您想關注的頻道。",
+        "data": { "channels": "頻道" }
+      },
+      "reconfigure": {
+        "title": "電視節目 — 重新設定",
+        "data": {
+          "epg_source": "EPG 來源",
+          "scan_interval": "每 (小時) 更新一次"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "電視節目 — 更新頻道",
+        "description": "可用頻道：{total}。",
+        "data": { "channels": "頻道" }
+      }
+    },
+    "error": {
+      "cannot_connect": "無法下載 EPG。請檢查 URL 和您的連線。",
+      "no_channels": "EPG 檔案不包含頻道。",
+      "no_channels_selected": "請選擇至少一個頻道。",
+      "unknown": "處理 EPG 時發生意外錯誤。"
+    },
+    "abort": {
+      "already_configured": "此 EPG 來源已設定。",
+      "reconfigure_successful": "重新設定完成。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "電視節目 — 管理頻道",
+        "description": "可用頻道：{total}。",
+        "data": {
+          "channels": "活動頻道",
+          "scan_interval": "每 (小時) 更新一次"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "無法聯繫 EPG 來源。",
+      "no_channels_selected": "請選擇至少一個頻道。"
+    }
+  }
+}
