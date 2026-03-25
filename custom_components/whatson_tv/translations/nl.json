@@ -1,0 +1,62 @@
+{
+  "title": "Wat is er op TV — EPG-bron",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Wat is er op TV — EPG-bron",
+        "description": "Selecteer je land/regio en update-interval.",
+        "data": {
+          "epg_source": "EPG-bron",
+          "scan_interval": "Bijwerken elke (uren)"
+        }
+      },
+      "custom_url": {
+        "title": "Wat is er op TV — aangepaste URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Wat is er op TV — Selecteer kanalen",
+        "description": "{total} kanalen gevonden. Selecteer de kanalen die je wilt volgen.",
+        "data": { "channels": "Kanalen" }
+      },
+      "reconfigure": {
+        "title": "Wat is er op TV — Herconfigureren",
+        "data": {
+          "epg_source": "EPG-bron",
+          "scan_interval": "Bijwerken elke (uren)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Wat is er op TV — Kanalen bijwerken",
+        "description": "Beschikbare kanalen: {total}.",
+        "data": { "channels": "Kanalen" }
+      }
+    },
+    "error": {
+      "cannot_connect": "De EPG kon niet worden gedownload. Controleer de URL en je verbinding.",
+      "no_channels": "Het EPG-bestand bevat geen kanalen.",
+      "no_channels_selected": "Selecteer ten minste één kanaal.",
+      "unknown": "Onverwachte fout bij het verwerken van de EPG."
+    },
+    "abort": {
+      "already_configured": "Deze EPG-bron is al geconfigureerd.",
+      "reconfigure_successful": "Herconfiguratie voltooid."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Wat is er op TV — Beheer kanalen",
+        "description": "Beschikbare kanalen: {total}.",
+        "data": {
+          "channels": "Actieve kanalen",
+          "scan_interval": "Bijwerken elke (uren)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kon de EPG-bron niet bereiken.",
+      "no_channels_selected": "Selecteer ten minste één kanaal."
+    }
+  }
+}
