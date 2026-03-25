@@ -1,0 +1,62 @@
+{
+  "title": "TV'de Ne Var — EPG Kaynağı",
+  "config": {
+    "step": {
+      "user": {
+        "title": "TV'de Ne Var — EPG Kaynağı",
+        "description": "Ülkenizi/bölgenizi ve güncelleme aralığını seçin.",
+        "data": {
+          "epg_source": "EPG Kaynağı",
+          "scan_interval": "Her (saatte) bir güncelle"
+        }
+      },
+      "custom_url": {
+        "title": "TV'de Ne Var — Özel URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "TV'de Ne Var — Kanalları seç",
+        "description": "{total} kanal bulundu. Takip etmek istediklerinizi seçin.",
+        "data": { "channels": "Kanallar" }
+      },
+      "reconfigure": {
+        "title": "TV'de Ne Var — Yeniden yapılandır",
+        "data": {
+          "epg_source": "EPG Kaynağı",
+          "scan_interval": "Her (saatte) bir güncelle"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "TV'de Ne Var — Kanalları güncelle",
+        "description": "Mevcut kanallar: {total}.",
+        "data": { "channels": "Kanallar" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG indirilemedi. URL'yi ve bağlantınızı kontrol edin.",
+      "no_channels": "EPG dosyası kanal içermiyor.",
+      "no_channels_selected": "En az bir kanal seçin.",
+      "unknown": "EPG işlenirken beklenmeyen hata."
+    },
+    "abort": {
+      "already_configured": "Bu EPG kaynağı zaten yapılandırılmış.",
+      "reconfigure_successful": "Yeniden yapılandırma tamamlandı."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "TV'de Ne Var — Kanalları yönet",
+        "description": "Mevcut kanallar: {total}.",
+        "data": {
+          "channels": "Aktif kanallar",
+          "scan_interval": "Her (saatte) bir güncelle"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG kaynağına bağlanılamadı.",
+      "no_channels_selected": "En az bir kanal seçin."
+    }
+  }
+}
