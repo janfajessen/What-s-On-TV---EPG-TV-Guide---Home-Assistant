@@ -1,0 +1,62 @@
+{
+  "title": "TVలో ఏముంది — EPG మూలం",
+  "config": {
+    "step": {
+      "user": {
+        "title": "TVలో ఏముంది — EPG మూలం",
+        "description": "మీ దేశం/ప్రాంతం మరియు నవీకరణ వ్యవధిని ఎంచుకోండి.",
+        "data": {
+          "epg_source": "EPG మూలం",
+          "scan_interval": "ప్రతి (గంటల)కి నవీకరించండి"
+        }
+      },
+      "custom_url": {
+        "title": "TVలో ఏముంది — అనుకూల URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "TVలో ఏముంది — చానెళ్లు ఎంచుకోండి",
+        "description": "{total} చానెళ్లు దొరికాయి. మీరు ఫాలో చేయాలనుకుంటున్నవి ఎంచుకోండి.",
+        "data": { "channels": "చానెళ్లు" }
+      },
+      "reconfigure": {
+        "title": "TVలో ఏముంది — మళ్లీ కాన్ఫిగర్ చేయండి",
+        "data": {
+          "epg_source": "EPG మూలం",
+          "scan_interval": "ప్రతి (గంటల)కి నవీకరించండి"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "TVలో ఏముంది — చానెళ్లను నవీకరించండి",
+        "description": "అందుబాటులో ఉన్న చానెళ్లు: {total}.",
+        "data": { "channels": "చానెళ్లు" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG డౌన్‌లోడ్ చేయడం సాధ్యం కాలేదు. URL మరియు కనెక్షన్‌ను తనిఖీ చేయండి.",
+      "no_channels": "EPG ఫైల్‌లో చానెళ్లు లేవు.",
+      "no_channels_selected": "కనీసం ఒక చానెల్ ఎంచుకోండి.",
+      "unknown": "EPG ప్రాసెస్ చేసేటప్పుడు అనుకోని లోపం."
+    },
+    "abort": {
+      "already_configured": "ఈ EPG మూలం ఇప్పటికే కాన్ఫిగర్ చేయబడింది.",
+      "reconfigure_successful": "మళ్లీ కాన్ఫిగరేషన్ పూర్తయింది."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "TVలో ఏముంది — చానెళ్లను నిర్వహించండి",
+        "description": "అందుబాటులో ఉన్న చానెళ్లు: {total}.",
+        "data": {
+          "channels": "చురుకైన చానెళ్లు",
+          "scan_interval": "ప్రతి (గంటల)కి నవీకరించండి"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG మూలంతో సంప్రదించడం సాధ్యం కాలేదు.",
+      "no_channels_selected": "కనీసం ఒక చానెల్ ఎంచుకోండి."
+    }
+  }
+}
