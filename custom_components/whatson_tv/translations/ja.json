@@ -1,0 +1,62 @@
+{
+  "title": "テレビ番組 — EPG ソース",
+  "config": {
+    "step": {
+      "user": {
+        "title": "テレビ番組 — EPG ソース",
+        "description": "国/地域と更新間隔を選択してください。",
+        "data": {
+          "epg_source": "EPG ソース",
+          "scan_interval": "毎 (時間) 更新"
+        }
+      },
+      "custom_url": {
+        "title": "テレビ番組 — カスタム URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "テレビ番組 — チャンネルを選択",
+        "description": "{total} 個のチャンネルが見つかりました。フォローしたいものを選択してください。",
+        "data": { "channels": "チャンネル" }
+      },
+      "reconfigure": {
+        "title": "テレビ番組 — 再設定",
+        "data": {
+          "epg_source": "EPG ソース",
+          "scan_interval": "毎 (時間) 更新"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "テレビ番組 — チャンネルを更新",
+        "description": "利用可能なチャンネル: {total}。",
+        "data": { "channels": "チャンネル" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG をダウンロードできませんでした。URL と接続を確認してください。",
+      "no_channels": "EPG ファイルにチャンネルが含まれていません。",
+      "no_channels_selected": "少なくとも 1 つのチャンネルを選択してください。",
+      "unknown": "EPG 処理中に予期しないエラーが発生しました。"
+    },
+    "abort": {
+      "already_configured": "この EPG ソースは既に設定されています。",
+      "reconfigure_successful": "再設定が完了しました。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "テレビ番組 — チャンネルを管理",
+        "description": "利用可能なチャンネル: {total}。",
+        "data": {
+          "channels": "アクティブなチャンネル",
+          "scan_interval": "毎 (時間) 更新"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG ソースに接続できませんでした。",
+      "no_channels_selected": "少なくとも 1 つのチャンネルを選択してください。"
+    }
+  }
+}
