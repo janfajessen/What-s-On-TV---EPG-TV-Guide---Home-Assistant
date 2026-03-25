@@ -1,0 +1,62 @@
+{
+  "title": "Kio estas en la TV — EPG-fonto",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kio estas en la TV — EPG-fonto",
+        "description": "Elektu vian landon/regionon kaj ĝisdatigan intervalon.",
+        "data": {
+          "epg_source": "EPG-fonto",
+          "scan_interval": "Ĝisdatigi ĉiun (horojn)"
+        }
+      },
+      "custom_url": {
+        "title": "Kio estas en la TV — propra URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Kio estas en la TV — Elektu kanalojn",
+        "description": "{total} kanaloj trovitaj. Elektu tiujn, kiujn vi volas sekvi.",
+        "data": { "channels": "Kanaloj" }
+      },
+      "reconfigure": {
+        "title": "Kio estas en la TV — Rekonfiguri",
+        "data": {
+          "epg_source": "EPG-fonto",
+          "scan_interval": "Ĝisdatigi ĉiun (horojn)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Kio estas en la TV — Ĝisdatigi kanalojn",
+        "description": "Disponeblaj kanaloj: {total}.",
+        "data": { "channels": "Kanaloj" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Ne eblis elŝuti la EPG. Kontrolu la URL kaj vian konekton.",
+      "no_channels": "La EPG-dosiero ne enhavas kanalojn.",
+      "no_channels_selected": "Elektu almenaŭ unu kanalon.",
+      "unknown": "Neatendita eraro dum prilaborado de la EPG."
+    },
+    "abort": {
+      "already_configured": "Ĉi tiu EPG-fonto jam estas agordita.",
+      "reconfigure_successful": "Rekonfigurado finita."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Kio estas en la TV — Administri kanalojn",
+        "description": "Disponeblaj kanaloj: {total}.",
+        "data": {
+          "channels": "Aktivaj kanaloj",
+          "scan_interval": "Ĝisdatigi ĉiun (horojn)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Ne eblis kontakti la EPG-fonton.",
+      "no_channels_selected": "Elektu almenaŭ unu kanalon."
+    }
+  }
+}
