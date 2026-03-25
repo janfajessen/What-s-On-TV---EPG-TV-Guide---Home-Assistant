@@ -1,0 +1,62 @@
+{
+  "title": "Kas rodoma per TV — EPG šaltinis",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kas rodoma per TV — EPG šaltinis",
+        "description": "Pasirinkite savo šalį/regioną ir atnaujinimo intervalą.",
+        "data": {
+          "epg_source": "EPG šaltinis",
+          "scan_interval": "Atnaujinti kas (valandas)"
+        }
+      },
+      "custom_url": {
+        "title": "Kas rodoma per TV — tinkintas URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Kas rodoma per TV — Pasirinkite kanalus",
+        "description": "Rasta {total} kanalų. Pasirinkite tuos, kuriuos norite sekti.",
+        "data": { "channels": "Kanalai" }
+      },
+      "reconfigure": {
+        "title": "Kas rodoma per TV — Perkonfigūruoti",
+        "data": {
+          "epg_source": "EPG šaltinis",
+          "scan_interval": "Atnaujinti kas (valandas)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Kas rodoma per TV — Atnaujinti kanalus",
+        "description": "Galimi kanalai: {total}.",
+        "data": { "channels": "Kanalai" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nepavyko atsisiųsti EPG. Patikrinkite URL ir ryšį.",
+      "no_channels": "EPG faile nėra kanalų.",
+      "no_channels_selected": "Pasirinkite bent vieną kanalą.",
+      "unknown": "Netikėta klaida apdorojant EPG."
+    },
+    "abort": {
+      "already_configured": "Šis EPG šaltinis jau sukonfigūruotas.",
+      "reconfigure_successful": "Perkonfigūravimas baigtas."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Kas rodoma per TV — Valdyti kanalus",
+        "description": "Galimi kanalai: {total}.",
+        "data": {
+          "channels": "Aktyvūs kanalai",
+          "scan_interval": "Atnaujinti kas (valandas)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nepavyko susisiekti su EPG šaltiniu.",
+      "no_channels_selected": "Pasirinkite bent vieną kanalą."
+    }
+  }
+}
