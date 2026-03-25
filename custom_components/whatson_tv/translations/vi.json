@@ -1,0 +1,62 @@
+{
+  "title": "Có gì trên TV — Nguồn EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Có gì trên TV — Nguồn EPG",
+        "description": "Chọn quốc gia/vùng và khoảng thời gian cập nhật.",
+        "data": {
+          "epg_source": "Nguồn EPG",
+          "scan_interval": "Cập nhật mỗi (giờ)"
+        }
+      },
+      "custom_url": {
+        "title": "Có gì trên TV — URL tùy chỉnh",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Có gì trên TV — Chọn kênh",
+        "description": "Tìm thấy {total} kênh. Chọn những kênh bạn muốn theo dõi.",
+        "data": { "channels": "Kênh" }
+      },
+      "reconfigure": {
+        "title": "Có gì trên TV — Cấu hình lại",
+        "data": {
+          "epg_source": "Nguồn EPG",
+          "scan_interval": "Cập nhật mỗi (giờ)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Có gì trên TV — Cập nhật kênh",
+        "description": "Kênh có sẵn: {total}.",
+        "data": { "channels": "Kênh" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Không thể tải xuống EPG. Kiểm tra URL và kết nối.",
+      "no_channels": "Tệp EPG không chứa kênh nào.",
+      "no_channels_selected": "Chọn ít nhất một kênh.",
+      "unknown": "Lỗi không mong muốn khi xử lý EPG."
+    },
+    "abort": {
+      "already_configured": "Nguồn EPG này đã được cấu hình.",
+      "reconfigure_successful": "Cấu hình lại hoàn tất."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Có gì trên TV — Quản lý kênh",
+        "description": "Kênh có sẵn: {total}.",
+        "data": {
+          "channels": "Kênh hoạt động",
+          "scan_interval": "Cập nhật mỗi (giờ)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Không thể liên hệ với nguồn EPG.",
+      "no_channels_selected": "Chọn ít nhất một kênh."
+    }
+  }
+}
