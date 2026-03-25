@@ -1,0 +1,62 @@
+{
+  "title": "มีอะไรในทีวี — แหล่ง EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "มีอะไรในทีวี — แหล่ง EPG",
+        "description": "เลือกประเทศ/ภูมิภาคและช่วงเวลาอัปเดต",
+        "data": {
+          "epg_source": "แหล่ง EPG",
+          "scan_interval": "อัปเดตทุก (ชั่วโมง)"
+        }
+      },
+      "custom_url": {
+        "title": "มีอะไรในทีวี — URL แบบกำหนดเอง",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "มีอะไรในทีวี — เลือกช่อง",
+        "description": "พบ {total} ช่อง เลือกช่องที่คุณต้องการติดตาม",
+        "data": { "channels": "ช่อง" }
+      },
+      "reconfigure": {
+        "title": "มีอะไรในทีวี — กำหนดค่าใหม่",
+        "data": {
+          "epg_source": "แหล่ง EPG",
+          "scan_interval": "อัปเดตทุก (ชั่วโมง)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "มีอะไรในทีวี — อัปเดตช่อง",
+        "description": "ช่องที่พร้อมใช้งาน: {total}。",
+        "data": { "channels": "ช่อง" }
+      }
+    },
+    "error": {
+      "cannot_connect": "ไม่สามารถดาวน์โหลด EPG ได้ ตรวจสอบ URL และการเชื่อมต่อ",
+      "no_channels": "ไฟล์ EPG ไม่มีช่องใดๆ",
+      "no_channels_selected": "เลือกอย่างน้อยหนึ่งช่อง",
+      "unknown": "เกิดข้อผิดพลาดที่ไม่คาดคิดขณะประมวลผล EPG"
+    },
+    "abort": {
+      "already_configured": "แหล่ง EPG นี้ถูกกำหนดค่าแล้ว",
+      "reconfigure_successful": "การกำหนดค่าใหม่เสร็จสมบูรณ์"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "มีอะไรในทีวี — จัดการช่อง",
+        "description": "ช่องที่พร้อมใช้งาน: {total}。",
+        "data": {
+          "channels": "ช่องที่ใช้งานอยู่",
+          "scan_interval": "อัปเดตทุก (ชั่วโมง)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "ไม่สามารถติดต่อแหล่ง EPG ได้",
+      "no_channels_selected": "เลือกอย่างน้อยหนึ่งช่อง"
+    }
+  }
+}
