@@ -1,0 +1,62 @@
+{
+  "title": "Wat is der op TV — EPG-boarne",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Wat is der op TV — EPG-boarne",
+        "description": "Kies jo lân/region en fernijingsinterval.",
+        "data": {
+          "epg_source": "EPG-boarne",
+          "scan_interval": "Fernije elke (oeren)"
+        }
+      },
+      "custom_url": {
+        "title": "Wat is der op TV — oanpaste URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Wat is der op TV — Kies kanalen",
+        "description": "{total} kanalen fûn. Kies dy't jo folgje wolle.",
+        "data": { "channels": "Kanalen" }
+      },
+      "reconfigure": {
+        "title": "Wat is der op TV — Opnij konfigurearje",
+        "data": {
+          "epg_source": "EPG-boarne",
+          "scan_interval": "Fernije elke (oeren)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Wat is der op TV — Fernije kanalen",
+        "description": "Beskikbere kanalen: {total}.",
+        "data": { "channels": "Kanalen" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG koe net downloade wurde. Kontrolearje de URL en jo ferbining.",
+      "no_channels": "De EPG-triem befettet gjin kanalen.",
+      "no_channels_selected": "Kies teminsten ien kanaal.",
+      "unknown": "Unferwachte flater by it ferwurkjen fan de EPG."
+    },
+    "abort": {
+      "already_configured": "Dizze EPG-boarne is al konfigurearre.",
+      "reconfigure_successful": "Opnij konfigurearjen foltôge."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Wat is der op TV — Behear kanalen",
+        "description": "Beskikbere kanalen: {total}.",
+        "data": {
+          "channels": "Aktive kanalen",
+          "scan_interval": "Fernije elke (oeren)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Koe de EPG-boarne net berikke.",
+      "no_channels_selected": "Kies teminsten ien kanaal."
+    }
+  }
+}
