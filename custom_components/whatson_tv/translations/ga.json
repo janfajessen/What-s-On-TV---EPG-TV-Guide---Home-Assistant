@@ -1,0 +1,62 @@
+{
+  "title": "Cad atá ar an Teilifís — Foinse EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Cad atá ar an Teilifís — Foinse EPG",
+        "description": "Roghnaigh do thír/réigiún agus eatramh nuashonraithe.",
+        "data": {
+          "epg_source": "Foinse EPG",
+          "scan_interval": "Nuashonraigh gach (uair)"
+        }
+      },
+      "custom_url": {
+        "title": "Cad atá ar an Teilifís — URL saincheaptha",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Cad atá ar an Teilifís — Roghnaigh cainéil",
+        "description": "Aimsíodh {total} cainéal. Roghnaigh na cinn is mian leat a leanúint.",
+        "data": { "channels": "Cainéil" }
+      },
+      "reconfigure": {
+        "title": "Cad atá ar an Teilifís — Athchumraigh",
+        "data": {
+          "epg_source": "Foinse EPG",
+          "scan_interval": "Nuashonraigh gach (uair)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Cad atá ar an Teilifís — Nuashonraigh Cainéil",
+        "description": "Cainéil atá ar fáil: {total}.",
+        "data": { "channels": "Cainéil" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Níorbh fhéidir an EPG a íoslódáil. Seiceáil an URL agus do nasc.",
+      "no_channels": "Níl aon chainéil sa chomhad EPG.",
+      "no_channels_selected": "Roghnaigh cainéal amháin ar a laghad.",
+      "unknown": "Earráid gan choinne agus an EPG á phróiseáil."
+    },
+    "abort": {
+      "already_configured": "Tá an foinse EPG seo cumraithe cheana féin.",
+      "reconfigure_successful": "Athchumrú críochnaithe."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Cad atá ar an Teilifís — Bainistigh Cainéil",
+        "description": "Cainéil atá ar fáil: {total}.",
+        "data": {
+          "channels": "Cainéil gníomhacha",
+          "scan_interval": "Nuashonraigh gach (uair)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Níorbh fhéidir teagmháil a dhéanamh leis an bhfoinse EPG.",
+      "no_channels_selected": "Roghnaigh cainéal amháin ar a laghad."
+    }
+  }
+}
