@@ -1,0 +1,62 @@
+{
+  "title": "टीवी पर क्या है — EPG स्रोत",
+  "config": {
+    "step": {
+      "user": {
+        "title": "टीवी पर क्या है — EPG स्रोत",
+        "description": "अपना देश/क्षेत्र और अपडेट अंतराल चुनें।",
+        "data": {
+          "epg_source": "EPG स्रोत",
+          "scan_interval": "हर (घंटे) में अपडेट करें"
+        }
+      },
+      "custom_url": {
+        "title": "टीवी पर क्या है — कस्टम URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "टीवी पर क्या है — चैनल चुनें",
+        "description": "{total} चैनल मिले। उन चैनलों को चुनें जिन्हें आप फॉलो करना चाहते हैं।",
+        "data": { "channels": "चैनल" }
+      },
+      "reconfigure": {
+        "title": "टीवी पर क्या है — पुन: कॉन्फ़िगर करें",
+        "data": {
+          "epg_source": "EPG स्रोत",
+          "scan_interval": "हर (घंटे) में अपडेट करें"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "टीवी पर क्या है — चैनल अपडेट करें",
+        "description": "उपलब्ध चैनल: {total}।",
+        "data": { "channels": "चैनल" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG डाउनलोड नहीं किया जा सका। URL और कनेक्शन जांचें।",
+      "no_channels": "EPG फ़ाइल में कोई चैनल नहीं है।",
+      "no_channels_selected": "कम से कम एक चैनल चुनें।",
+      "unknown": "EPG प्रोसेसिंग के दौरान अप्रत्याशित त्रुटि।"
+    },
+    "abort": {
+      "already_configured": "यह EPG स्रोत पहले से कॉन्फ़िगर किया गया है।",
+      "reconfigure_successful": "पुन: कॉन्फ़िगरेशन पूरा हुआ।"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "टीवी पर क्या है — चैनल प्रबंधित करें",
+        "description": "उपलब्ध चैनल: {total}।",
+        "data": {
+          "channels": "सक्रिय चैनल",
+          "scan_interval": "हर (घंटे) में अपडेट करें"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG स्रोत से संपर्क नहीं हो सका।",
+      "no_channels_selected": "कम से कम एक चैनल चुनें।"
+    }
+  }
+}
