@@ -1,0 +1,62 @@
+{
+  "title": "Что по телевизору — Источник EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Что по телевизору — Источник EPG",
+        "description": "Выберите страну/регион и интервал обновления.",
+        "data": {
+          "epg_source": "Источник EPG",
+          "scan_interval": "Обновлять каждые (часов)"
+        }
+      },
+      "custom_url": {
+        "title": "Что по телевизору — Пользовательский URL",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Что по телевизору — Выбрать каналы",
+        "description": "Найдено {total} каналов. Выберите те, которые хотите отслеживать.",
+        "data": { "channels": "Каналы" }
+      },
+      "reconfigure": {
+        "title": "Что по телевизору — Перенастроить",
+        "data": {
+          "epg_source": "Источник EPG",
+          "scan_interval": "Обновлять каждые (часов)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Что по телевизору — Обновить каналы",
+        "description": "Доступные каналы: {total}.",
+        "data": { "channels": "Каналы" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось скачать EPG. Проверьте URL и подключение.",
+      "no_channels": "Файл EPG не содержит каналов.",
+      "no_channels_selected": "Выберите хотя бы один канал.",
+      "unknown": "Неожиданная ошибка при обработке EPG."
+    },
+    "abort": {
+      "already_configured": "Этот источник EPG уже настроен.",
+      "reconfigure_successful": "Перенастройка завершена."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Что по телевизору — Управление каналами",
+        "description": "Доступные каналы: {total}.",
+        "data": {
+          "channels": "Активные каналы",
+          "scan_interval": "Обновлять каждые (часов)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось связаться с источником EPG.",
+      "no_channels_selected": "Выберите хотя бы один канал."
+    }
+  }
+}
