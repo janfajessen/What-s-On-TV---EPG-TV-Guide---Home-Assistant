@@ -1,0 +1,62 @@
+{
+  "title": "O que está na TV — Fonte EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "O que está na TV — Fonte EPG",
+        "description": "Selecione o seu país/região e intervalo de atualização.",
+        "data": {
+          "epg_source": "Fonte EPG",
+          "scan_interval": "Atualizar a cada (horas)"
+        }
+      },
+      "custom_url": {
+        "title": "O que está na TV — URL personalizada",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "O que está na TV — Selecionar canais",
+        "description": "{total} canais encontrados. Selecione os que deseja seguir.",
+        "data": { "channels": "Canais" }
+      },
+      "reconfigure": {
+        "title": "O que está na TV — Reconfigurar",
+        "data": {
+          "epg_source": "Fonte EPG",
+          "scan_interval": "Atualizar a cada (horas)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "O que está na TV — Atualizar canais",
+        "description": "Canais disponíveis: {total}.",
+        "data": { "channels": "Canais" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Não foi possível descarregar o EPG. Verifique o URL e a sua ligação.",
+      "no_channels": "O ficheiro EPG não contém canais.",
+      "no_channels_selected": "Selecione pelo menos um canal.",
+      "unknown": "Erro inesperado ao processar o EPG."
+    },
+    "abort": {
+      "already_configured": "Esta fonte EPG já está configurada.",
+      "reconfigure_successful": "Reconfiguração concluída."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "O que está na TV — Gerir canais",
+        "description": "Canais disponíveis: {total}.",
+        "data": {
+          "channels": "Canais ativos",
+          "scan_interval": "Atualizar a cada (horas)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Não foi possível contactar a fonte EPG.",
+      "no_channels_selected": "Selecione pelo menos um canal."
+    }
+  }
+}
