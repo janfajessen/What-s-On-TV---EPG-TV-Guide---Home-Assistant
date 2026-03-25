@@ -1,0 +1,62 @@
+{
+  "title": "ٹی وی پر کیا ہے — EPG ذریعہ",
+  "config": {
+    "step": {
+      "user": {
+        "title": "ٹی وی پر کیا ہے — EPG ذریعہ",
+        "description": "اپنا ملک/علاقہ اور اپ ڈیٹ کا وقفہ منتخب کریں۔",
+        "data": {
+          "epg_source": "EPG ذریعہ",
+          "scan_interval": "ہر (گھنٹے) میں اپ ڈیٹ کریں"
+        }
+      },
+      "custom_url": {
+        "title": "ٹی وی پر کیا ہے — حسب ضرورت URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "ٹی وی پر کیا ہے — چینلز منتخب کریں",
+        "description": "{total} چینلز ملے۔ انہیں منتخب کریں جن کی آپ پیروی کرنا چاہتے ہیں۔",
+        "data": { "channels": "چینلز" }
+      },
+      "reconfigure": {
+        "title": "ٹی وی پر کیا ہے — دوبارہ ترتیب دیں",
+        "data": {
+          "epg_source": "EPG ذریعہ",
+          "scan_interval": "ہر (گھنٹے) میں اپ ڈیٹ کریں"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "ٹی وی پر کیا ہے — چینلز اپ ڈیٹ کریں",
+        "description": "دستیاب چینلز: {total}۔",
+        "data": { "channels": "چینلز" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG ڈاؤن لوڈ نہیں ہو سکا۔ URL اور کنکشن چیک کریں۔",
+      "no_channels": "EPG فائل میں کوئی چینل نہیں ہے۔",
+      "no_channels_selected": "کم از کم ایک چینل منتخب کریں۔",
+      "unknown": "EPG پروسیس کرتے وقت غیر متوقع خرابی۔"
+    },
+    "abort": {
+      "already_configured": "یہ EPG ذریعہ پہلے ہی ترتیب دیا جا چکا ہے۔",
+      "reconfigure_successful": "دوبارہ ترتیب دینا مکمل ہو گیا۔"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "ٹی وی پر کیا ہے — چینلز کا انتظام کریں",
+        "description": "دستیاب چینلز: {total}۔",
+        "data": {
+          "channels": "فعال چینلز",
+          "scan_interval": "ہر (گھنٹے) میں اپ ڈیٹ کریں"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG ذریعہ سے رابطہ نہیں ہو سکا۔",
+      "no_channels_selected": "کم از کم ایک چینل منتخب کریں۔"
+    }
+  }
+}
