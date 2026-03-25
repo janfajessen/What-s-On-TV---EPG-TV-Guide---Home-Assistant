@@ -1,0 +1,62 @@
+{
+  "title": "Vad som är på TV — EPG-källa",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Vad som är på TV — EPG-källa",
+        "description": "Välj land/region och uppdateringsintervall.",
+        "data": {
+          "epg_source": "EPG-källa",
+          "scan_interval": "Uppdatera var (timme)"
+        }
+      },
+      "custom_url": {
+        "title": "Vad som är på TV — anpassad URL",
+        "data": { "epg_url": "EPG-URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Vad som är på TV — Välj kanaler",
+        "description": "{total} kanaler hittades. Välj de du vill följa.",
+        "data": { "channels": "Kanaler" }
+      },
+      "reconfigure": {
+        "title": "Vad som är på TV — Omkonfigurera",
+        "data": {
+          "epg_source": "EPG-källa",
+          "scan_interval": "Uppdatera var (timme)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Vad som är på TV — Uppdatera kanaler",
+        "description": "Tillgängliga kanaler: {total}.",
+        "data": { "channels": "Kanaler" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kunde inte ladda ner EPG. Kontrollera URL och anslutning.",
+      "no_channels": "EPG-filen innehåller inga kanaler.",
+      "no_channels_selected": "Välj minst en kanal.",
+      "unknown": "Oväntat fel vid bearbetning av EPG."
+    },
+    "abort": {
+      "already_configured": "Denna EPG-källa är redan konfigurerad.",
+      "reconfigure_successful": "Omkonfigurering slutförd."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Vad som är på TV — Hantera kanaler",
+        "description": "Tillgängliga kanaler: {total}.",
+        "data": {
+          "channels": "Aktiva kanaler",
+          "scan_interval": "Uppdatera var (timme)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kunde inte kontakta EPG-källan.",
+      "no_channels_selected": "Välj minst en kanal."
+    }
+  }
+}
