@@ -1,0 +1,62 @@
+{
+  "title": "Co je v TV — Zdroj EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Co je v TV — Zdroj EPG",
+        "description": "Vyberte zemi/region a interval aktualizace.",
+        "data": {
+          "epg_source": "Zdroj EPG",
+          "scan_interval": "Aktualizovat každých (hodin)"
+        }
+      },
+      "custom_url": {
+        "title": "Co je v TV — vlastní URL",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Co je v TV — Vybrat kanály",
+        "description": "Nalezeno {total} kanálů. Vyberte ty, které chcete sledovat.",
+        "data": { "channels": "Kanály" }
+      },
+      "reconfigure": {
+        "title": "Co je v TV — Rekonfigurovat",
+        "data": {
+          "epg_source": "Zdroj EPG",
+          "scan_interval": "Aktualizovat každých (hodin)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Co je v TV — Aktualizovat kanály",
+        "description": "Dostupné kanály: {total}.",
+        "data": { "channels": "Kanály" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nepodařilo se stáhnout EPG. Zkontrolujte URL a připojení.",
+      "no_channels": "Soubor EPG neobsahuje žádné kanály.",
+      "no_channels_selected": "Vyberte alespoň jeden kanál.",
+      "unknown": "Neočekávaná chyba při zpracování EPG."
+    },
+    "abort": {
+      "already_configured": "Tento zdroj EPG je již nakonfigurován.",
+      "reconfigure_successful": "Rekonfigurace dokončena."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Co je v TV — Spravovat kanály",
+        "description": "Dostupné kanály: {total}.",
+        "data": {
+          "channels": "Aktivní kanály",
+          "scan_interval": "Aktualizovat každých (hodin)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nepodařilo se kontaktovat zdroj EPG.",
+      "no_channels_selected": "Vyberte alespoň jeden kanál."
+    }
+  }
+}
