@@ -1,0 +1,62 @@
+{
+  "title": "টিভিতে কী আছে — EPG সোর্স",
+  "config": {
+    "step": {
+      "user": {
+        "title": "টিভিতে কী আছে — EPG সোর্স",
+        "description": "আপনার দেশ/অঞ্চল এবং আপডেট ব্যবধান নির্বাচন করুন।",
+        "data": {
+          "epg_source": "EPG সোর্স",
+          "scan_interval": "প্রতি (ঘণ্টা) আপডেট করুন"
+        }
+      },
+      "custom_url": {
+        "title": "টিভিতে কী আছে — কাস্টম URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "টিভিতে কী আছে — চ্যানেল নির্বাচন করুন",
+        "description": "{total}টি চ্যানেল পাওয়া গেছে। যেগুলো অনুসরণ করতে চান তা নির্বাচন করুন।",
+        "data": { "channels": "চ্যানেল" }
+      },
+      "reconfigure": {
+        "title": "টিভিতে কী আছে — পুনরায় কনফিগার",
+        "data": {
+          "epg_source": "EPG সোর্স",
+          "scan_interval": "প্রতি (ঘণ্টা) আপডেট করুন"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "টিভিতে কী আছে — চ্যানেল আপডেট করুন",
+        "description": "উপলব্ধ চ্যানেল: {total}।",
+        "data": { "channels": "চ্যানেল" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG ডাউনলোড করা যায়নি। URL এবং সংযোগ পরীক্ষা করুন।",
+      "no_channels": "EPG ফাইলে কোনো চ্যানেল নেই।",
+      "no_channels_selected": "কমপক্ষে একটি চ্যানেল নির্বাচন করুন।",
+      "unknown": "EPG প্রক্রিয়াকরণে অপ্রত্যাশিত ত্রুটি।"
+    },
+    "abort": {
+      "already_configured": "এই EPG সোর্স ইতিমধ্যে কনফিগার করা হয়েছে।",
+      "reconfigure_successful": "পুনরায় কনফিগারেশন সম্পন্ন।"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "টিভিতে কী আছে — চ্যানেল পরিচালনা",
+        "description": "উপলব্ধ চ্যানেল: {total}।",
+        "data": {
+          "channels": "সক্রিয় চ্যানেল",
+          "scan_interval": "প্রতি (ঘণ্টা) আপডেট করুন"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG সোর্সের সাথে যোগাযোগ করা যায়নি।",
+      "no_channels_selected": "কমপক্ষে একটি চ্যানেল নির্বাচন করুন।"
+    }
+  }
+}
