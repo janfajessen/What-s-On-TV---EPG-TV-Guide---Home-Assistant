@@ -1,0 +1,62 @@
+{
+  "title": "Apa yang Sedang Tayang di TV — Sumber EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Apa yang Sedang Tayang di TV — Sumber EPG",
+        "description": "Pilih negara/wilayah dan interval pembaruan.",
+        "data": {
+          "epg_source": "Sumber EPG",
+          "scan_interval": "Perbarui setiap (jam)"
+        }
+      },
+      "custom_url": {
+        "title": "Apa yang Sedang Tayang di TV — URL khusus",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Apa yang Sedang Tayang di TV — Pilih saluran",
+        "description": "Ditemukan {total} saluran. Pilih yang ingin Anda ikuti.",
+        "data": { "channels": "Saluran" }
+      },
+      "reconfigure": {
+        "title": "Apa yang Sedang Tayang di TV — Rekonfigurasi",
+        "data": {
+          "epg_source": "Sumber EPG",
+          "scan_interval": "Perbarui setiap (jam)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Apa yang Sedang Tayang di TV — Perbarui Saluran",
+        "description": "Saluran yang tersedia: {total}.",
+        "data": { "channels": "Saluran" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Tidak dapat mengunduh EPG. Periksa URL dan koneksi Anda.",
+      "no_channels": "File EPG tidak berisi saluran.",
+      "no_channels_selected": "Pilih setidaknya satu saluran.",
+      "unknown": "Kesalahan tak terduga saat memproses EPG."
+    },
+    "abort": {
+      "already_configured": "Sumber EPG ini sudah dikonfigurasi.",
+      "reconfigure_successful": "Rekonfigurasi selesai."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Apa yang Sedang Tayang di TV — Kelola Saluran",
+        "description": "Saluran yang tersedia: {total}.",
+        "data": {
+          "channels": "Saluran Aktif",
+          "scan_interval": "Perbarui setiap (jam)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Tidak dapat menghubungi sumber EPG.",
+      "no_channels_selected": "Pilih setidaknya satu saluran."
+    }
+  }
+}
