@@ -1,0 +1,62 @@
+{
+  "title": "چه چیزی در تلویزیون است — منبع EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "چه چیزی در تلویزیون است — منبع EPG",
+        "description": "کشور/منطقه و فاصله زمانی به‌روزرسانی را انتخاب کنید.",
+        "data": {
+          "epg_source": "منبع EPG",
+          "scan_interval": "به‌روزرسانی هر (ساعت)"
+        }
+      },
+      "custom_url": {
+        "title": "چه چیزی در تلویزیون است — URL سفارشی",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "چه چیزی در تلویزیون است — انتخاب کانال‌ها",
+        "description": "{total} کانال پیدا شد. کانال‌هایی که می‌خواهید دنبال کنید را انتخاب کنید.",
+        "data": { "channels": "کانال‌ها" }
+      },
+      "reconfigure": {
+        "title": "چه چیزی در تلویزیون است — پیکربندی مجدد",
+        "data": {
+          "epg_source": "منبع EPG",
+          "scan_interval": "به‌روزرسانی هر (ساعت)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "چه چیزی در تلویزیون است — به‌روزرسانی کانال‌ها",
+        "description": "کانال‌های موجود: {total}.",
+        "data": { "channels": "کانال‌ها" }
+      }
+    },
+    "error": {
+      "cannot_connect": "امکان دانلود EPG وجود نداشت. URL و اتصال را بررسی کنید.",
+      "no_channels": "فایل EPG هیچ کانالی ندارد.",
+      "no_channels_selected": "حداقل یک کانال انتخاب کنید.",
+      "unknown": "خطای غیرمنتظره در پردازش EPG."
+    },
+    "abort": {
+      "already_configured": "این منبع EPG قبلاً پیکربندی شده است.",
+      "reconfigure_successful": "پیکربندی مجدد تکمیل شد."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "چه چیزی در تلویزیون است — مدیریت کانال‌ها",
+        "description": "کانال‌های موجود: {total}.",
+        "data": {
+          "channels": "کانال‌های فعال",
+          "scan_interval": "به‌روزرسانی هر (ساعت)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "امکان ارتباط با منبع EPG وجود نداشت.",
+      "no_channels_selected": "حداقل یک کانال انتخاب کنید."
+    }
+  }
+}
