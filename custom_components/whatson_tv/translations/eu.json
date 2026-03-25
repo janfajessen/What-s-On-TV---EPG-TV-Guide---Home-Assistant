@@ -1,0 +1,62 @@
+{
+  "title": "Zer dago telebistan — EPG iturria",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Zer dago telebistan — EPG iturria",
+        "description": "Hautatu zure herria/eskualdea eta eguneratze tartea.",
+        "data": {
+          "epg_source": "EPG iturria",
+          "scan_interval": "Eguneratu orduro (ordu)"
+        }
+      },
+      "custom_url": {
+        "title": "Zer dago telebistan — URL pertsonalizatua",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Zer dago telebistan — Hautatu kanalak",
+        "description": "{total} kanal aurkitu dira. Hautatu jarraitu nahi dituzunak.",
+        "data": { "channels": "Kanalak" }
+      },
+      "reconfigure": {
+        "title": "Zer dago telebistan — Birkonfiguratu",
+        "data": {
+          "epg_source": "EPG iturria",
+          "scan_interval": "Eguneratu orduro (ordu)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Zer dago telebistan — Eguneratu kanalak",
+        "description": "Eskuragarri dauden kanalak: {total}.",
+        "data": { "channels": "Kanalak" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Ezin izan da EPG deskargatu. Egiaztatu URL-a eta konexioa.",
+      "no_channels": "EPG fitxategiak ez du kanalik.",
+      "no_channels_selected": "Hautatu gutxienez kanal bat.",
+      "unknown": "Ustekabeko errorea EPG prozesatzean."
+    },
+    "abort": {
+      "already_configured": "EPG iturri hau dagoeneko konfiguratu da.",
+      "reconfigure_successful": "Birkonfigurazioa amaitu da."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Zer dago telebistan — Kudeatu kanalak",
+        "description": "Eskuragarri dauden kanalak: {total}.",
+        "data": {
+          "channels": "Kanal aktiboak",
+          "scan_interval": "Eguneratu orduro (ordu)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Ezin izan da EPG iturrira konektatu.",
+      "no_channels_selected": "Hautatu gutxienez kanal bat."
+    }
+  }
+}
