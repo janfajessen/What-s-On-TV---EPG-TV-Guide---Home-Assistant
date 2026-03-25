@@ -1,0 +1,62 @@
+{
+  "title": "Wat ass um TV — EPG-Quell",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Wat ass um TV — EPG-Quell",
+        "description": "Wiel Äert Land/Regioun an Update-Intervall.",
+        "data": {
+          "epg_source": "EPG-Quell",
+          "scan_interval": "Aktualiséieren all (Stonnen)"
+        }
+      },
+      "custom_url": {
+        "title": "Wat ass um TV — personaliséiert URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Wat ass um TV — Wiel Kanäl",
+        "description": "{total} Kanäl fonnt. Wiel déi Dir wëllt verfollegen.",
+        "data": { "channels": "Kanäl" }
+      },
+      "reconfigure": {
+        "title": "Wat ass um TV — Nei konfiguréieren",
+        "data": {
+          "epg_source": "EPG-Quell",
+          "scan_interval": "Aktualiséieren all (Stonnen)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Wat ass um TV — Kanäl aktualiséieren",
+        "description": "Verfügbar Kanäl: {total}.",
+        "data": { "channels": "Kanäl" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Den EPG konnt net erofgeluede ginn. Kontrolléiert d'URL an Är Verbindung.",
+      "no_channels": "D'EPG-Datei enthält keng Kanäl.",
+      "no_channels_selected": "Wiel op mannst ee Kanal.",
+      "unknown": "Onerwaart Feeler beim Verarbechte vum EPG."
+    },
+    "abort": {
+      "already_configured": "Dës EPG-Quell ass schonn konfiguréiert.",
+      "reconfigure_successful": "Nei Konfiguratioun ofgeschloss."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Wat ass um TV — Kanäl verwalten",
+        "description": "Verfügbar Kanäl: {total}.",
+        "data": {
+          "channels": "Aktiv Kanäl",
+          "scan_interval": "Aktualiséieren all (Stonnen)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Konnt d'EPG-Quell net erreechen.",
+      "no_channels_selected": "Wiel op mannst ee Kanal."
+    }
+  }
+}
