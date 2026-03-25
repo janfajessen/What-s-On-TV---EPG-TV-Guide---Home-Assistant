@@ -1,0 +1,62 @@
+{
+  "title": "Τι παίζει στην TV — Πηγή EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Τι παίζει στην TV — Πηγή EPG",
+        "description": "Επιλέξτε χώρα/περιοχή και διάστημα ενημέρωσης.",
+        "data": {
+          "epg_source": "Πηγή EPG",
+          "scan_interval": "Ενημέρωση κάθε (ώρες)"
+        }
+      },
+      "custom_url": {
+        "title": "Τι παίζει στην TV — Προσαρμοσμένο URL",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Τι παίζει στην TV — Επιλογή καναλιών",
+        "description": "Βρέθηκαν {total} κανάλια. Επιλέξτε αυτά που θέλετε να παρακολουθείτε.",
+        "data": { "channels": "Κανάλια" }
+      },
+      "reconfigure": {
+        "title": "Τι παίζει στην TV — Αναδιαμόρφωση",
+        "data": {
+          "epg_source": "Πηγή EPG",
+          "scan_interval": "Ενημέρωση κάθε (ώρες)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Τι παίζει στην TV — Ενημέρωση καναλιών",
+        "description": "Διαθέσιμα κανάλια: {total}.",
+        "data": { "channels": "Κανάλια" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Δεν ήταν δυνατή η λήψη του EPG. Ελέγξτε το URL και τη σύνδεσή σας.",
+      "no_channels": "Το αρχείο EPG δεν περιέχει κανάλια.",
+      "no_channels_selected": "Επιλέξτε τουλάχιστον ένα κανάλι.",
+      "unknown": "Απροσδόκητο σφάλμα κατά την επεξεργασία του EPG."
+    },
+    "abort": {
+      "already_configured": "Αυτή η πηγή EPG είναι ήδη ρυθμισμένη.",
+      "reconfigure_successful": "Η αναδιαμόρφωση ολοκληρώθηκε."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Τι παίζει στην TV — Διαχείριση καναλιών",
+        "description": "Διαθέσιμα κανάλια: {total}.",
+        "data": {
+          "channels": "Ενεργά κανάλια",
+          "scan_interval": "Ενημέρωση κάθε (ώρες)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Δεν ήταν δυνατή η επικοινωνία με την πηγή EPG.",
+      "no_channels_selected": "Επιλέξτε τουλάχιστον ένα κανάλι."
+    }
+  }
+}
