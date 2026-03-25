@@ -1,0 +1,62 @@
+{
+  "title": "Kva er på TV — EPG-kjelde",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kva er på TV — EPG-kjelde",
+        "description": "Vel land/region og oppdateringsintervall.",
+        "data": {
+          "epg_source": "EPG-kjelde",
+          "scan_interval": "Oppdater kvar (time)"
+        }
+      },
+      "custom_url": {
+        "title": "Kva er på TV — tilpassa URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Kva er på TV — Vel kanalar",
+        "description": "{total} kanalar funne. Vel dei du vil følgje.",
+        "data": { "channels": "Kanalar" }
+      },
+      "reconfigure": {
+        "title": "Kva er på TV — Rekonfigurer",
+        "data": {
+          "epg_source": "EPG-kjelde",
+          "scan_interval": "Oppdater kvar (time)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Kva er på TV — Oppdater kanalar",
+        "description": "Tilgjengelege kanalar: {total}.",
+        "data": { "channels": "Kanalar" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kunne ikkje laste ned EPG. Sjekk URL og tilkoplinga di.",
+      "no_channels": "EPG-fila inneheld ingen kanalar.",
+      "no_channels_selected": "Vel minst éin kanal.",
+      "unknown": "Uventa feil ved handsaming av EPG."
+    },
+    "abort": {
+      "already_configured": "Denne EPG-kjelda er allereie konfigurert.",
+      "reconfigure_successful": "Rekonfigurering fullført."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Kva er på TV — Handsam kanalar",
+        "description": "Tilgjengelege kanalar: {total}.",
+        "data": {
+          "channels": "Aktive kanalar",
+          "scan_interval": "Oppdater kvar (time)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kunne ikkje kontakte EPG-kjelda.",
+      "no_channels_selected": "Vel minst éin kanal."
+    }
+  }
+}
