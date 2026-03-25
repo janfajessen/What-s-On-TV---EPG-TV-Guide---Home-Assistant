@@ -1,0 +1,62 @@
+{
+  "title": "Co leci w TV — Źródło EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Co leci w TV — Źródło EPG",
+        "description": "Wybierz kraj/region i interwał aktualizacji.",
+        "data": {
+          "epg_source": "Źródło EPG",
+          "scan_interval": "Aktualizuj co (godzin)"
+        }
+      },
+      "custom_url": {
+        "title": "Co leci w TV — niestandardowy URL",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Co leci w TV — Wybierz kanały",
+        "description": "Znaleziono {total} kanałów. Wybierz te, które chcesz śledzić.",
+        "data": { "channels": "Kanały" }
+      },
+      "reconfigure": {
+        "title": "Co leci w TV — Rekonfiguracja",
+        "data": {
+          "epg_source": "Źródło EPG",
+          "scan_interval": "Aktualizuj co (godzin)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Co leci w TV — Aktualizuj kanały",
+        "description": "Dostępne kanały: {total}.",
+        "data": { "channels": "Kanały" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nie udało się pobrać EPG. Sprawdź URL i połączenie.",
+      "no_channels": "Plik EPG nie zawiera kanałów.",
+      "no_channels_selected": "Wybierz co najmniej jeden kanał.",
+      "unknown": "Nieoczekiwany błąd podczas przetwarzania EPG."
+    },
+    "abort": {
+      "already_configured": "To źródło EPG jest już skonfigurowane.",
+      "reconfigure_successful": "Rekonfiguracja zakończona."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Co leci w TV — Zarządzaj kanałami",
+        "description": "Dostępne kanały: {total}.",
+        "data": {
+          "channels": "Aktywne kanały",
+          "scan_interval": "Aktualizuj co (godzin)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nie udało się połączyć ze źródłem EPG.",
+      "no_channels_selected": "Wybierz co najmniej jeden kanał."
+    }
+  }
+}
