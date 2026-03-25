@@ -1,0 +1,62 @@
+{
+  "title": "Beth sydd ar y Teledu — Ffynhonnell EPG",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Beth sydd ar y Teledu — Ffynhonnell EPG",
+        "description": "Dewiswch eich gwlad/rhanbarth a'r cyfnod diweddaru.",
+        "data": {
+          "epg_source": "Ffynhonnell EPG",
+          "scan_interval": "Diweddaru bob (awr)"
+        }
+      },
+      "custom_url": {
+        "title": "Beth sydd ar y Teledu — URL personol",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "Beth sydd ar y Teledu — Dewis sianeli",
+        "description": "Wedi dod o hyd i {total} sianel. Dewiswch y rhai rydych chi eisiau eu dilyn.",
+        "data": { "channels": "Sianeli" }
+      },
+      "reconfigure": {
+        "title": "Beth sydd ar y Teledu — Ailgyflunio",
+        "data": {
+          "epg_source": "Ffynhonnell EPG",
+          "scan_interval": "Diweddaru bob (awr)"
+        }
+      },
+      "reconfigure_channels": {
+        "title": "Beth sydd ar y Teledu — Diweddaru Sianeli",
+        "description": "Sianeli sydd ar gael: {total}.",
+        "data": { "channels": "Sianeli" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Methu lawrlwytho'r EPG. Gwiriwch y URL a'ch cysylltiad.",
+      "no_channels": "Nid yw'r ffeil EPG yn cynnwys unrhyw sianeli.",
+      "no_channels_selected": "Dewiswch o leiaf un sianel.",
+      "unknown": "Gwall annisgwyl wrth brosesu'r EPG."
+    },
+    "abort": {
+      "already_configured": "Mae'r ffynhonnell EPG hon eisoes wedi'i chyflunio.",
+      "reconfigure_successful": "Ailgyfluniad wedi'i gwblhau."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Beth sydd ar y Teledu — Rheoli Sianeli",
+        "description": "Sianeli sydd ar gael: {total}.",
+        "data": {
+          "channels": "Sianeli gweithredol",
+          "scan_interval": "Diweddaru bob (awr)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Methu cysylltu â ffynhonnell EPG.",
+      "no_channels_selected": "Dewiswch o leiaf un sianel."
+    }
+  }
+}
