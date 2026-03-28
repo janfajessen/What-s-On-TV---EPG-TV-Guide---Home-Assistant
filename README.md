@@ -1,6 +1,6 @@
 # What's On TV — EPG TV Guide <br> Home Assistant Integration
 
-<img src="[https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/24d6adf4347ca21757a2514c559a572179c582e5/Whats_On_TV.png](https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/24d6adf4347ca21757a2514c559a572179c582e5/Whats_On_TV.png)" alt="What's On TV Worldwide" width="500">
+<img src="https://raw.githubusercontent.com/janfajessen/What-s-On-TV---EPG-TV-Guide/24d6adf4347ca21757a2514c559a572179c582e5/Whats_On_TV.png" alt="What's On TV - EPG Guide" width="100">
 
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2026.2%2B-41bdf5.svg?style=for-the-badge)](https://www.home-assistant.io/)
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41bdf5.svg?style=for-the-badge)](https://hacs.xyz/docs/publish/start)
