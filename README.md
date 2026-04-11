@@ -156,37 +156,128 @@ action:
 | `custom` | Custom URL | Any XMLTV `.xml` or `.xml.gz` |
 <sub> Wat is op televisie - ما هو على التلفزيون - Televiziyada nə var - Што па тэлевізары - Какво има по телевизията - Šta je na televiziji - Què hi ha a la televisió - Co je v televizi - Hvad er i fjernsynet - Was läuft im Fernsehen - Τι παίζει στην τηλεόραση - Kio estas en televido - Qué hay en la televisión - Zer dago telebistan - چه چیزی در تلویزیون است - Mitä televisiossa on - Quoi à la télévision - Que hai na televisión - מה יש בטלוויזיה - टेलीविजन पर क्या है - Što je na televiziji - Mi van a televízióban - Apa yang di televisi - Hvað er í sjónvarpinu - Cosa c'è in televisione - テレビでは何が - რა არის ტელევიზორში - Теледидарда не бар - 텔레비전에 무엇이 나오나요 - Ką per televizorių - Kas ir televīzijā - Wat is er op televisie - Hva er på fjernsynet - Qu'i a a la television - Co w telewizji - O que há na televisão - Ce este la televizor - Что по телевизору - Čo je v televízii - Kaj je na televiziji - Çfarë është në televizion - Шта је на телевизији - Vad är på tv - อะไรอยู่ในโทรทัศน์ - Televizyonda ne var - Що по телевізору - Có gì trên truyền hình - 电视上有什么 </sub>
 <sub>
-<sub>
 
-<table border="0" cellspacing="0" cellpadding="4">
+<table border="0" cellspacing="0" cellpadding="6" width="100%">
 <tr>
-<td>🇪🇸 España</td><td>🇦🇩 Andorra</td><td>🇦🇱 Shqipëria</td><td>🇦🇷 Argentina</td><td>🇦🇲 Հայաստան</td><td>🇦🇺 Australia</td><td>🇦🇹 Österreich</td>
-</tr><tr>
-<td>🇧🇾 Беларусь</td><td>🇧🇪 België/Belgique</td><td>🇧🇴 Bolivia</td><td>🇧🇦 Bosna i Hercegovina</td><td>🇧🇷 Brasil</td><td>🇧🇬 България</td><td>🇨🇦 Canada</td>
-</tr><tr>
-<td>🇨🇱 Chile</td><td>🇨🇴 Colombia</td><td>🇨🇷 Costa Rica</td><td>🇭🇷 Hrvatska</td><td>🇨🇿 Česká republika</td><td>🇩🇰 Danmark</td><td>🇩🇴 Rep. Dominicana</td>
-</tr><tr>
-<td>🇪🇨 Ecuador</td><td>🇪🇬 مصر</td><td>🇸🇻 El Salvador</td><td>🇫🇮 Suomi</td><td>🇫🇷 France</td><td>🇬🇪 საქართველო</td><td>🇩🇪 Deutschland</td>
-</tr><tr>
-<td>🇬🇭 Ghana</td><td>🇬🇷 Ελλάδα</td><td>🇬🇹 Guatemala</td><td>🇭🇳 Honduras</td><td>🇭🇰 Hong Kong 香港</td><td>🇭🇺 Magyarország</td><td>🇮🇸 Ísland</td>
-</tr><tr>
-<td>🇮🇳 Bharat भारत</td><td>🇮🇩 Indonesia</td><td>🇮🇱 יִשְׂרָאֵל</td><td>🇮🇹 Italia</td><td>🇯🇵 日本</td><td>🇱🇻 Latvija</td><td>🇱🇧 لبنان</td>
-</tr><tr>
-<td>🇱🇹 Lietuva</td><td>🇱🇺 Lëtzebuerg</td><td>🇲🇰 Северна Македонија</td><td>🇲🇾 Bahasa Melayu</td><td>🇲🇹 Malta</td><td>🇲🇽 México</td><td>🇲🇪 Crna Gora</td>
-</tr><tr>
-<td>🇲🇦 المغرب</td><td>🇳🇱 Nederland</td><td>🇳🇿 New Zealand</td><td>🇳🇮 Nicaragua</td><td>🇳🇬 Nigeria</td><td>🇳🇴 Norge</td><td>🇵🇦 Panamá</td>
-</tr><tr>
-<td>🇵🇾 Paraguay</td><td>🇵🇪 Perú</td><td>🇵🇭 Pilipinas</td><td>🇵🇱 Polska</td><td>🇵🇹 Portugal</td><td>🇵🇷 Puerto Rico</td><td>🇷🇴 România</td>
-</tr><tr>
-<td>🇷🇺 Россия</td><td>🇷🇸 Српски</td><td>🇸🇬 Singapore</td><td>🇸🇰 Slovensko</td><td>🇸🇮 Slovenija</td><td>🇿🇦 South Africa</td><td>🇰🇷 대한민국</td>
-</tr><tr>
-<td>🇸🇪 Sverige</td><td>🇨🇭 Schweiz/Suisse/Svizzera</td><td>🇹🇼 Taiwan</td><td>🇹🇭 ประเทศไทย</td><td>🇹🇷 Türkiye</td><td>🇺🇦 Ukrayina</td><td>🇦🇪 Al-Imarat</td>
-</tr><tr>
-<td>🇬🇧 United Kingdom</td><td>🇺🇸 United States</td><td>🇺🇾 Uruguay</td><td>🇻🇪 Venezuela</td><td>🇻🇳 Việt Nam</td><td></td><td></td>
+<td width="20%" align="left"><sub>🇪🇸 España / Espanya / Espainia</sub></td>
+<td width="20%" align="left"><sub>🇦🇩 Andorra</sub></td>
+<td width="20%" align="left"><sub>🇦🇱 Shqipëria</sub></td>
+<td width="20%" align="left"><sub>🇦🇷 Argentina</sub></td>
+<td width="20%" align="left"><sub>🇦🇲 Հայաստան</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇦🇺 Australia</sub></td>
+<td width="20%" align="left"><sub>🇦🇹 Österreich</sub></td>
+<td width="20%" align="left"><sub>🇧🇾 Беларусь</sub></td>
+<td width="20%" align="left"><sub>🇧🇪 België / Belgique / Belgien</sub></td>
+<td width="20%" align="left"><sub>🇧🇴 Bolivia</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇧🇦 Bosna i Hercegovina / Босна и Херцеговина</sub></td>
+<td width="20%" align="left"><sub>🇧🇷 Brasil</sub></td>
+<td width="20%" align="left"><sub>🇧🇬 България</sub></td>
+<td width="20%" align="left"><sub>🇨🇦 Canada</sub></td>
+<td width="20%" align="left"><sub>🇨🇱 Chile</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇨🇴 Colombia</sub></td>
+<td width="20%" align="left"><sub>🇨🇷 Costa Rica</sub></td>
+<td width="20%" align="left"><sub>🇭🇷 Hrvatska</sub></td>
+<td width="20%" align="left"><sub>🇨🇿 Česká republika</sub></td>
+<td width="20%" align="left"><sub>🇩🇰 Danmark</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇩🇴 Rep. Dominicana</sub></td>
+<td width="20%" align="left"><sub>🇪🇨 Ecuador</sub></td>
+<td width="20%" align="left"><sub>🇪🇬 مصر</sub></td>
+<td width="20%" align="left"><sub>🇸🇻 El Salvador</sub></td>
+<td width="20%" align="left"><sub>🇫🇮 Suomi / Finland</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇫🇷 France</sub></td>
+<td width="20%" align="left"><sub>🇬🇪 საქართველო</sub></td>
+<td width="20%" align="left"><sub>🇩🇪 Deutschland</sub></td>
+<td width="20%" align="left"><sub>🇬🇭 Ghana</sub></td>
+<td width="20%" align="left"><sub>🇬🇷 Ελλάδα</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇬🇹 Guatemala</sub></td>
+<td width="20%" align="left"><sub>🇭🇳 Honduras</sub></td>
+<td width="20%" align="left"><sub>🇭🇰 Hong Kong / 香港</sub></td>
+<td width="20%" align="left"><sub>🇭🇺 Magyarország</sub></td>
+<td width="20%" align="left"><sub>🇮🇸 Ísland</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇮🇳 Bharat भारत</sub></td>
+<td width="20%" align="left"><sub>🇮🇩 Indonesia</sub></td>
+<td width="20%" align="left"><sub>🇮🇱 יִשְׂרָאֵל</sub></td>
+<td width="20%" align="left"><sub>🇮🇹 Italia</sub></td>
+<td width="20%" align="left"><sub>🇯🇵 日本</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇱🇻 Latvija</sub></td>
+<td width="20%" align="left"><sub>🇱🇧 لبنان</sub></td>
+<td width="20%" align="left"><sub>🇱🇹 Lietuva</sub></td>
+<td width="20%" align="left"><sub>🇱🇺 Lëtzebuerg / Luxembourg / Luxemburg</sub></td>
+<td width="20%" align="left"><sub>🇲🇰 Северна Македонија</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇲🇾 Bahasa Melayu</sub></td>
+<td width="20%" align="left"><sub>🇲🇹 Malta</sub></td>
+<td width="20%" align="left"><sub>🇲🇽 México</sub></td>
+<td width="20%" align="left"><sub>🇲🇪 Crna Gora / Црна Гора</sub></td>
+<td width="20%" align="left"><sub>🇲🇦 المغرب</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇳🇱 Nederland</sub></td>
+<td width="20%" align="left"><sub>🇳🇿 New Zealand / Aotearoa</sub></td>
+<td width="20%" align="left"><sub>🇳🇮 Nicaragua</sub></td>
+<td width="20%" align="left"><sub>🇳🇬 Nigeria</sub></td>
+<td width="20%" align="left"><sub>🇳🇴 Norge / Noreg</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇵🇦 Panamá</sub></td>
+<td width="20%" align="left"><sub>🇵🇾 Paraguay</sub></td>
+<td width="20%" align="left"><sub>🇵🇪 Perú</sub></td>
+<td width="20%" align="left"><sub>🇵🇭 Pilipinas</sub></td>
+<td width="20%" align="left"><sub>🇵🇱 Polska</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇵🇹 Portugal</sub></td>
+<td width="20%" align="left"><sub>🇵🇷 Puerto Rico</sub></td>
+<td width="20%" align="left"><sub>🇷🇴 România</sub></td>
+<td width="20%" align="left"><sub>🇷🇺 Россия</sub></td>
+<td width="20%" align="left"><sub>🇷🇸 Србија</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇸🇬 Singapore / 新加坡 / சிங்கப்பூர் / Singapura</sub></td>
+<td width="20%" align="left"><sub>🇸🇰 Slovensko</sub></td>
+<td width="20%" align="left"><sub>🇸🇮 Slovenija</sub></td>
+<td width="20%" align="left"><sub>🇿🇦 South Africa</sub></td>
+<td width="20%" align="left"><sub>🇰🇷 대한민국</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇸🇪 Sverige</sub></td>
+<td width="20%" align="left"><sub>🇨🇭 Schweiz / Suisse / Svizzera / Svizra</sub></td>
+<td width="20%" align="left"><sub>🇹🇼 Taiwan / 臺灣</sub></td>
+<td width="20%" align="left"><sub>🇹🇭 ประเทศไทย</sub></td>
+<td width="20%" align="left"><sub>🇹🇷 Türkiye</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇺🇦 Украïна</sub></td>
+<td width="20%" align="left"><sub>🇦🇪 Al-Imarat</sub></td>
+<td width="20%" align="left"><sub>🇬🇧 United Kingdom / Cymru</sub></td>
+<td width="20%" align="left"><sub>🇺🇸 United States</sub></td>
+<td width="20%" align="left"><sub>🇺🇾 Uruguay</sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇻🇪 Venezuela</sub></td>
+<td width="20%" align="left"><sub>🇻🇳 Việt Nam</sub></td>
+<td width="20%"></td>
+<td width="20%"></td>
+<td width="20%"></td>
 </tr>
 </table>
-
-</sub>
 
 🌐 Custom URL (XMLTV .xml / .xml.gz)
 ---
