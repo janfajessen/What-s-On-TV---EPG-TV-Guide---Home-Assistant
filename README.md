@@ -155,6 +155,17 @@ action:
 
 | `custom` | Custom URL | Any XMLTV `.xml` or `.xml.gz` |
 
+
+
+🌐 Custom URL (XMLTV .xml / .xml.gz)
+---
+
+## Requirements
+
+- Home Assistant 2024.1+
+- Python 3.12+
+
+---
 <br>
 <sub> Wat is op televisie - ما هو على التلفزيون - Televiziyada nə var - Што па тэлевізары - Какво има по телевизията - Šta je na televiziji - Què hi ha a la televisió - Co je v televizi - Hvad er i fjernsynet - Was läuft im Fernsehen - Τι παίζει στην τηλεόραση - Kio estas en televido - Qué hay en la televisión - Zer dago telebistan - چه چیزی در تلویزیون است - Mitä televisiossa on - Quoi à la télévision - Que hai na televisión - מה יש בטלוויזיה - टेलीविजन पर क्या है - Što je na televiziji - Mi van a televízióban - Apa yang di televisi - Hvað er í sjónvarpinu - Cosa c'è in televisione - テレビでは何が - რა არის ტელევიზორში - Теледидарда не бар - 텔레비전에 무엇이 나오나요 - Ką per televizorių - Kas ir televīzijā - Wat is er op televisie - Hva er på fjernsynet - Qu'i a a la television - Co w telewizji - O que há na televisão - Ce este la televizor - Что по телевизору - Čo je v televízii - Kaj je na televiziji - Çfarë është në televizion - Шта је на телевизији - Vad är på tv - อะไรอยู่ในโทรทัศน์ - Televizyonda ne var - Що по телевізору - Có gì trên truyền hình - 电视上有什么 </sub>
 
@@ -296,16 +307,7 @@ action:
 </table>
 <sub>* Channels available via regional EPG sources</sub>
 
-🌐 Custom URL (XMLTV .xml / .xml.gz)
 ---
-
-## Requirements
-
-- Home Assistant 2024.1+
-- Python 3.12+
-
----
-
 ## License
 
 MIT — see [LICENSE](LICENSE)
