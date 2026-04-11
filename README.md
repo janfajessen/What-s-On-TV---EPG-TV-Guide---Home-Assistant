@@ -1,6 +1,6 @@
 # What's On TV — EPG TV Guide <br> Home Assistant Integration
 
-<img src="https://raw.githubusercontent.com/janfajessen/What-s-On-TV---EPG-TV-Guide/24d6adf4347ca21757a2514c559a572179c582e5/Whats_On_TV.png" alt="What's On TV - EPG Guide" width="100">
+<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/82eeef144435d0eea84c5fd1ebdc7cb73f91689b/whatson_tv_icon.png" alt="What's On TV - EPG Guide" width="300">
 
 
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2026.2%2B-41bdf5.svg?style=for-the-badge)](https://www.home-assistant.io/)
@@ -35,7 +35,7 @@ A worldwide EPG (Electronic Programme Guide) integration for Home Assistant. Tur
 ### Via HACS (recommended)
 
 1. Open HACS → **Integrations** → ⋮ → **Custom repositories**
-2. Add `https://github.com/YOUR_GITHUB_USER/whatson_tv` — category **Integration**
+2. Add `https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/` — category **Integration**
 3. Search for **What's On TV** and install
 4. Restart Home Assistant
 
@@ -154,6 +154,8 @@ action:
 | `es`, `mx`, `de`, `fr`, `it`, `pt` … | iptv-epg.org | 82 countries |
 
 | `custom` | Custom URL | Any XMLTV `.xml` or `.xml.gz` |
+
+<br>
 <sub> Wat is op televisie - ما هو على التلفزيون - Televiziyada nə var - Што па тэлевізары - Какво има по телевизията - Šta je na televiziji - Què hi ha a la televisió - Co je v televizi - Hvad er i fjernsynet - Was läuft im Fernsehen - Τι παίζει στην τηλεόραση - Kio estas en televido - Qué hay en la televisión - Zer dago telebistan - چه چیزی در تلویزیون است - Mitä televisiossa on - Quoi à la télévision - Que hai na televisión - מה יש בטלוויזיה - टेलीविजन पर क्या है - Što je na televiziji - Mi van a televízióban - Apa yang di televisi - Hvað er í sjónvarpinu - Cosa c'è in televisione - テレビでは何が - რა არის ტელევიზორში - Теледидарда не бар - 텔레비전에 무엇이 나오나요 - Ką per televizorių - Kas ir televīzijā - Wat is er op televisie - Hva er på fjernsynet - Qu'i a a la television - Co w telewizji - O que há na televisão - Ce este la televizor - Что по телевизору - Čo je v televízii - Kaj je na televiziji - Çfarë është në televizion - Шта је на телевизији - Vad är på tv - อะไรอยู่ในโทรทัศน์ - Televizyonda ne var - Що по телевізору - Có gì trên truyền hình - 电视上有什么 </sub>
 
 
