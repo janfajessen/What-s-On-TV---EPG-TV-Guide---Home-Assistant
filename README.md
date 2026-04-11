@@ -179,8 +179,7 @@ action:
 | `epg_doblem` | EPG dobleM | Spain, updated 4×/day |
 | `tdtchannels` | TDTChannels | Spain |
 | `freeview_uk` | Freeview EPG | United Kingdom |
-| `es`, `mx`, `de`, `fr`, `it`, `pt` … | iptv-epg.org | 82 countries |
-
+| `es`, `mx`, `de`, `fr`, `it`, `pt` … | iptv-epg.org | 79 countries |
 | `custom` | Custom URL | Any XMLTV `.xml` or `.xml.gz` |
 
 
@@ -326,7 +325,7 @@ action:
 <td width="20%" align="left"><sub>🇷🇺 Россия</sub></td>
 </tr>
 <tr>
-<td width="20%" align="left"><sub>🇷🇸 Србија</sub></td>
+<td width="20%" align="left"><sub>🇷🇸 Gora / Црна Гора</sub></td>
 <td width="20%" align="left"><sub>🇸🇲 San Marino *</sub></td>
 <td width="20%" align="left"><sub>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland **</sub></td>
 <td width="20%" align="left"><sub>🇸🇬 Singapore / 新加坡 / சிங்கப்பூர் / Singapura</sub></td>
@@ -362,38 +361,102 @@ action:
 </tr>
 </table>
 
-<sub>* Channels available via regional EPG sources &nbsp;&nbsp; ** Requires manual URL configuration — see EPG Sources section &nbsp;&nbsp; *** Not all sources have been individually verified</sub>
+<sub> * Channels available via regional EPG sources &nbsp;&nbsp; <br>
+** Requires manual URL configuration — see EPG Sources section &nbsp;&nbsp; <br>
+*** Not all sources have been individually verified</sub>
 
 ## 🌐 Manual EPG Sources (`**` countries)
 
 The following countries require a custom URL. Go to **Settings → Devices & Services → What's On TV → Add Entry** and paste the URL in the *Custom URL* field.
 
 > Source: [globetvapp/epg](https://github.com/globetvapp/epg) — updated daily at 03:00 UTC
-<sub>
-| Flag | Country | URL |
-|---|---|---|
-| 🏝️ | Caribbean | `https://raw.githubusercontent.com/globetvapp/epg/main/Caribbean/caribbean1.xml` |
-| 🇨🇳 | 中国 China | `https://raw.githubusercontent.com/globetvapp/epg/main/China/china1.xml` |
-| 🇨🇮 | Côte d'Ivoire | `https://raw.githubusercontent.com/globetvapp/epg/main/Ivorycoast/ivorycoast1.xml` |
-| 🇪🇪 | Eesti Estonia | `https://raw.githubusercontent.com/globetvapp/epg/main/Estonia/estonia1.xml` |
-| 🇮🇪 | Ireland / Éire | `https://raw.githubusercontent.com/globetvapp/epg/main/Ireland/ireland1.xml` |
-| 🇯🇲 | Jamaica | `https://raw.githubusercontent.com/globetvapp/epg/main/Jamaica/jamaica1.xml` |
-| 🇰🇪 | Kenya | `https://raw.githubusercontent.com/globetvapp/epg/main/Kenya/kenya1.xml` |
-| 🇱🇾 | Libya / ليبيا | `https://epg.pw/xmltv.html?lang=ar` |
-| 🇲🇴 | Macao / 澳門 | `https://raw.githubusercontent.com/globetvapp/epg/main/Macau/macau1.xml` |
-| 🇲🇬 | Madagasikara | `https://raw.githubusercontent.com/globetvapp/epg/main/Madagascar/madagascar1.xml` |
-| 🇲🇼 | Malawi | `https://raw.githubusercontent.com/globetvapp/epg/main/Malawi/malawi1.xml` |
-| 🇲🇺 | Mauritius | `https://raw.githubusercontent.com/globetvapp/epg/main/Mauritius/mauritius1.xml` |
-| 🇲🇳 | Монгол Mongolia | `https://raw.githubusercontent.com/globetvapp/epg/main/Mongolia/mongolia1.xml` |
-| 🇲🇿 | Moçambique | `https://raw.githubusercontent.com/globetvapp/epg/main/Mozambique/mozambique1.xml` |
-| 🇳🇦 | Namibia | `https://raw.githubusercontent.com/globetvapp/epg/main/Namibia/namibia1.xml` |
-| 🇳🇨 | Nouvelle-Calédonie | `https://raw.githubusercontent.com/globetvapp/epg/main/Newcaledonia/newcaledonia1.xml` |
-| 🇵🇰 | Pakistan | `https://raw.githubusercontent.com/globetvapp/epg/main/Pakistan/pakistan1.xml` |
-| 🇶🇦 | قطر Qatar | `https://raw.githubusercontent.com/globetvapp/epg/main/Qatar/qatar1.xml` |
-| 🏴󠁧󠁢󠁳󠁣󠁴󠁿 | Scotland | `https://raw.githubusercontent.com/globetvapp/epg/main/Scotland/scotland1.xml` |
-| 🇺🇿 | Oʻzbekiston | `https://raw.githubusercontent.com/globetvapp/epg/main/Uzbekistan/uzbekistan1.xml` |
-| 🇿🇲 | Zambia | `https://raw.githubusercontent.com/globetvapp/epg/main/Zambia/zambia1.xml` |
-</sub>
+
+<table border="0" cellspacing="0" cellpadding="6" width="100%">
+<tr>
+<td width="20%" align="left"><sub>🏝️ Caribbean</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Caribbean/caribbean1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇨🇳 中国 China</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/China/china1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇨🇮 Côte d'Ivoire</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Ivorycoast/ivorycoast1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇪🇪 Eesti Estonia</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Estonia/estonia1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇮🇪 Ireland / Éire</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Ireland/ireland1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇯🇲 Jamaica</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Jamaica/jamaica1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇰🇪 Kenya</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Kenya/kenya1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇱🇾 Libya / ليبيا</sub></td>
+<td width="80%" align="left"><sub><code>https://epg.pw/xmltv.html?lang=ar</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇲🇴 Macao / 澳門</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Macau/macau1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇲🇬 Madagasikara</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Madagascar/madagascar1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇲🇼 Malawi</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Malawi/malawi1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇲🇺 Mauritius</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Mauritius/mauritius1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇲🇳 Монгол Mongolia</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Mongolia/mongolia1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇲🇿 Moçambique</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Mozambique/mozambique1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇳🇦 Namibia</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Namibia/namibia1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇳🇨 Nouvelle-Calédonie</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Newcaledonia/newcaledonia1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇵🇰 Pakistan</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Pakistan/pakistan1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇶🇦 قطر Qatar</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Qatar/qatar1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Scotland/scotland1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇺🇿 Oʻzbekiston</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Uzbekistan/uzbekistan1.xml</code></sub></td>
+</tr>
+<tr>
+<td width="20%" align="left"><sub>🇿🇲 Zambia</sub></td>
+<td width="80%" align="left"><sub><code>https://raw.githubusercontent.com/globetvapp/epg/main/Zambia/zambia1.xml</code></sub></td>
+</tr>
+</table>
 ---
 ## License
 
