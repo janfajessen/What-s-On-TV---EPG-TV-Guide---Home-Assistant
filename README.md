@@ -162,13 +162,13 @@ action:
 > **Highly recommended companions:**
 > - 📺 [What's On TV — EPG Card](https://github.com/YOUR_GITHUB_USER/whatsontv-epg-card) — visual TV guide card for Lovelace
 
-<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/d4deaf321838ca168cf93711ef0f6c7fbcde8ea3/whatsontv_epg_card_configuration.png" alt="What's On TV - EPG Card configuration" width="100">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/d4deaf321838ca168cf93711ef0f6c7fbcde8ea3/whatsontv_epg_card_configuration.png" alt="What's On TV - EPG Card configuration" width="100">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card.png" alt="What's On TV - EPG Card" width="100">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card_programme.png" alt="What's On TV - EPG Card programme" width="100">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card_programacion.png" alt="What's On TV - EPG Card Programación" width="100">
+<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/d4deaf321838ca168cf93711ef0f6c7fbcde8ea3/whatsontv_epg_card_configuration.png" alt="What's On TV - EPG Card configuration" width="120">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/9ba9d7b60cbfdd7163d9335770745f593c9c0002/whatsontv_epg_card_light_card.png" alt="What's On TV - EPG light Card" width="120"> <br> <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card.png" alt="What's On TV - EPG Card" width="120">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card_programme.png" alt="What's On TV - EPG Card programme" width="120">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card_programacion.png" alt="What's On TV - EPG Card Programación" width="120">
 
 
 
 > - 🔔 [What's On TV — Notify Card](https://github.com/YOUR_GITHUB_USER/whatsontv-notify-card) — search programmes and set keyword alerts
 
-<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_search_and_notify_card.png" alt="What's On TV - Search and Notify Card" width="100"><img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_search_and_notify_card_saved_watches.png" alt="What's On TV - Search and Notify Card saved watches" width="100">
+<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_search_and_notify_card.png" alt="What's On TV - Search and Notify Card" width="130"><img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_search_and_notify_card_saved_watches.png" alt="What's On TV - Search and Notify Card saved watches" width="130">
 
 ---
 
@@ -369,7 +369,7 @@ action:
 The following countries require a custom URL. Go to **Settings → Devices & Services → What's On TV → Add Entry** and paste the URL in the *Custom URL* field.
 
 > Source: [globetvapp/epg](https://github.com/globetvapp/epg) — updated daily at 03:00 UTC
-
+<sub>
 | Flag | Country | URL |
 |---|---|---|
 | 🏝️ | Caribbean | `https://raw.githubusercontent.com/globetvapp/epg/main/Caribbean/caribbean1.xml` |
@@ -393,6 +393,7 @@ The following countries require a custom URL. Go to **Settings → Devices & Ser
 | 🏴󠁧󠁢󠁳󠁣󠁴󠁿 | Scotland | `https://raw.githubusercontent.com/globetvapp/epg/main/Scotland/scotland1.xml` |
 | 🇺🇿 | Oʻzbekiston | `https://raw.githubusercontent.com/globetvapp/epg/main/Uzbekistan/uzbekistan1.xml` |
 | 🇿🇲 | Zambia | `https://raw.githubusercontent.com/globetvapp/epg/main/Zambia/zambia1.xml` |
+</sub>
 ---
 ## License
 
