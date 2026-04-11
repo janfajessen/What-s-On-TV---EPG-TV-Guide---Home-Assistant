@@ -8,7 +8,7 @@
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow.svg?style=for-the-badge)](https://www.buymeacoffee.com/janfajessen)
 [![Patreon](https://img.shields.io/badge/Patreon-Support-red.svg?style=for-the-badge)](https://www.patreon.com/janfajessen)
 
-<sub> Wat is op televisie - ما هو على التلفزيون - Televiziyada nə var - Што па тэлевізары - Какво има по телевизията - Šta je na televiziji - Què hi ha a la televisió - Co je v televizi - Hvad er i fjernsynet - Was läuft im Fernsehen - Τι παίζει στην τηλεόραση - Kio estas en televido - Qué hay en la televisión - Zer dago telebistan - چه چیزی در تلویزیون است - Mitä televisiossa on - Quoi à la télévision - Que hai na televisión - מה יש בטלוויזיה - टेलीविजन पर क्या है - Što je na televiziji - Mi van a televízióban - Apa yang di televisi - Hvað er í sjónvarpinu - Cosa c'è in televisione - テレビでは何が - რა არის ტელევიზორში - Теледидарда не бар - 텔레비전에 무엇이 나오나요 - Ką per televizorių - Kas ir televīzijā - Wat is er op televisie - Hva er på fjernsynet - Qué i a a la television - Co w telewizji - O que há na televisão - Ce este la televizor - Что по телевизору - Čo je v televízii - Kaj je na televiziji - Çfarë është në televizion - Шта је на телевизији - Vad är på tv - อะไรอยู่ในโทรทัศน์ - Televizyonda ne var - Що по телевізору - Có gì trên truyền hình - 电视上有什么 </sub>
+<sub> Wat is op televisie - ما هو على التلفزيون - Televiziyada nə var - Што па тэлевізары - Какво има по телевизията - Šta je na televiziji - Què hi ha a la televisió - Co je v televizi - Hvad er i fjernsynet - Was läuft im Fernsehen - Τι παίζει στην τηλεόραση - Kio estas en televido - Qué hay en la televisión - Zer dago telebistan - چه چیزی در تلویزیون است - Mitä televisiossa on - Quoi à la télévision - Que hai na televisión - מה יש בטלוויזיה - टेलीविजन पर क्या है - Što je na televiziji - Mi van a televízióban - Apa yang di televisi - Hvað er í sjónvarpinu - Cosa c'è in televisione - テレビでは何が - რა არის ტელევიზორში - Теледидарда не бар - 텔레비전에 무엇이 나오나요 - Ką per televizorių - Kas ir televīzijā - Wat is er op televisie - Hva er på fjernsynet - Qu'i a a la television - Co w telewizji - O que há na televisão - Ce este la televizor - Что по телевизору - Čo je v televízii - Kaj je na televiziji - Çfarë është në televizion - Шта је на телевизији - Vad är på tv - อะไรอยู่ในโทรทัศน์ - Televizyonda ne var - Що по телевізору - Có gì trên truyền hình - 电视上有什么 </sub>
 
 
 A worldwide EPG (Electronic Programme Guide) integration for Home Assistant. Turns any XMLTV-compatible TV guide source into HA sensors — one sensor per channel, updated automatically.
@@ -154,9 +154,38 @@ action:
 | `es`, `mx`, `de`, `fr`, `it`, `pt` … | iptv-epg.org | 82 countries |
 
 | `custom` | Custom URL | Any XMLTV `.xml` or `.xml.gz` |
-<sub> Wat is op televisie - ما هو على التلفزيون - Televiziyada nə var - Што па тэлевізары - Какво има по телевизията - Šta je na televiziji - Què hi ha a la televisió - Co je v televizi - Hvad er i fjernsynet - Was läuft im Fernsehen - Τι παίζει στην τηλεόραση - Kio estas en televido - Qué hay en la televisión - Zer dago telebistan - چه چیزی در تلویزیون است - Mitä televisiossa on - Quoi à la télévision - Que hai na televisión - מה יש בטלוויזיה - टेलीविजन पर क्या है - Što je na televiziji - Mi van a televízióban - Apa yang di televisi - Hvað er í sjónvarpinu - Cosa c'è in televisione - テレビでは何が - რა არის ტელევიზორში - Теледидарда не бар - 텔레비전에 무엇이 나오나요 - Ką per televizorių - Kas ir televīzijā - Wat is er op televisie - Hva er på fjernsynet - Qué i a a la television - Co w telewizji - O que há na televisão - Ce este la televizor - Что по телевизору - Čo je v televízii - Kaj je na televiziji - Çfarë është në televizion - Шта је на телевизији - Vad är på tv - อะไรอยู่ในโทรทัศน์ - Televizyonda ne var - Що по телевізору - Có gì trên truyền hình - 电视上有什么 </sub>
+<sub> Wat is op televisie - ما هو على التلفزيون - Televiziyada nə var - Што па тэлевізары - Какво има по телевизията - Šta je na televiziji - Què hi ha a la televisió - Co je v televizi - Hvad er i fjernsynet - Was läuft im Fernsehen - Τι παίζει στην τηλεόραση - Kio estas en televido - Qué hay en la televisión - Zer dago telebistan - چه چیزی در تلویزیون است - Mitä televisiossa on - Quoi à la télévision - Que hai na televisión - מה יש בטלוויזיה - टेलीविजन पर क्या है - Što je na televiziji - Mi van a televízióban - Apa yang di televisi - Hvað er í sjónvarpinu - Cosa c'è in televisione - テレビでは何が - რა არის ტელევიზორში - Теледидарда не бар - 텔레비전에 무엇이 나오나요 - Ką per televizorių - Kas ir televīzijā - Wat is er op televisie - Hva er på fjernsynet - Qu'i a a la television - Co w telewizji - O que há na televisão - Ce este la televizor - Что по телевизору - Čo je v televízii - Kaj je na televiziji - Çfarë është në televizion - Шта је на телевизији - Vad är på tv - อะไรอยู่ในโทรทัศน์ - Televizyonda ne var - Що по телевізору - Có gì trên truyền hình - 电视上有什么 </sub>
 <sub>
-🇪🇸 España, 🇦🇩 Andorra, 🇦🇱 Shqipëria, 🇦🇷 Argentina, 🇦🇲 Հայաստան, 🇦🇺 Australia, 🇦🇹 Österreich, 🇧🇾 Беларусь, 🇧🇪 België / Belgique, 🇧🇴 Bolivia, 🇧🇦 Bosna i Hercegovina, 🇧🇷 Brasil, 🇧🇬 България, 🇨🇦 Canada, 🇨🇱 Chile, 🇨🇴 Colombia, 🇨🇷 Costa Rica, 🇭🇷 Hrvatska, 🇨🇿 Česká republika, 🇩🇰 Danmark, 🇩🇴 República Dominicana, 🇪🇨 Ecuador, 🇪🇬 مصر, 🇸🇻 El Salvador, 🇫🇮 Suomi, 🇫🇷 France, 🇬🇪 საქართველო, 🇩🇪 Deutschland, 🇬🇭 Ghana, 🇬🇷 Ελλάδα,🇬🇹 Guatemala, 🇭🇳 Honduras, 🇭🇰 Hong Kong 香港, 🇭🇺 Magyarország, 🇮🇸 Ísland, 🇮🇳 Bharat भारत, 🇮🇩 Bahasa Indonesia, 🇮🇱 יִשְׂרָאֵל,🇮🇹 Italia, 🇯🇵 日本, 🇱🇻 Latvija, 🇱🇧 لبنان,🇱🇹 Lietuva, 🇱🇺 Lëtzebuerg, 🇲🇰 Северна Македонија, 🇲🇾 Bahasa Melayu, 🇲🇹 Malta, 🇲🇽 México, 🇲🇪 Crna Gora, 🇲🇦 المغرب, 🇳🇱 Nederland, 🇳🇿 New Zealand, 🇳🇮 Nicaragua, 🇳🇬 Nigeria, 🇳🇴 Norge, 🇵🇦 Panamá, 🇵🇾 Paraguay, 🇵🇪 Perú, 🇵🇭 Pilipinas, 🇵🇱 Polska, 🇵🇹 Portugal, 🇵🇷 Puerto Rico, 🇷🇴 România, 🇷🇺 Россия, 🇷🇸 Српски, 🇸🇬 Singapore, 🇸🇰 Slovensko, 🇸🇮 Slovenija, 🇿🇦 South Africa, 🇰🇷 대한민국, 🇸🇪 Sverige, 🇨🇭 Schweiz / Suisse / Svizzera, 🇹🇼 Taiwan, 🇹🇭 Prathet Thai, 🇹🇷 Türkiye, 🇺🇦 Ukrayina, 🇦🇪 Al-Imarat, 🇬🇧 United Kingdom, 🇺🇸 United States, 🇺🇾 Uruguay, 🇻🇪 Venezuela, 🇻🇳 Việt Nam
+<sub>
+
+<table border="0" cellspacing="0" cellpadding="4">
+<tr>
+<td>🇪🇸 España</td><td>🇦🇩 Andorra</td><td>🇦🇱 Shqipëria</td><td>🇦🇷 Argentina</td><td>🇦🇲 Հայաստան</td><td>🇦🇺 Australia</td><td>🇦🇹 Österreich</td>
+</tr><tr>
+<td>🇧🇾 Беларусь</td><td>🇧🇪 België/Belgique</td><td>🇧🇴 Bolivia</td><td>🇧🇦 Bosna i Hercegovina</td><td>🇧🇷 Brasil</td><td>🇧🇬 България</td><td>🇨🇦 Canada</td>
+</tr><tr>
+<td>🇨🇱 Chile</td><td>🇨🇴 Colombia</td><td>🇨🇷 Costa Rica</td><td>🇭🇷 Hrvatska</td><td>🇨🇿 Česká republika</td><td>🇩🇰 Danmark</td><td>🇩🇴 Rep. Dominicana</td>
+</tr><tr>
+<td>🇪🇨 Ecuador</td><td>🇪🇬 مصر</td><td>🇸🇻 El Salvador</td><td>🇫🇮 Suomi</td><td>🇫🇷 France</td><td>🇬🇪 საქართველო</td><td>🇩🇪 Deutschland</td>
+</tr><tr>
+<td>🇬🇭 Ghana</td><td>🇬🇷 Ελλάδα</td><td>🇬🇹 Guatemala</td><td>🇭🇳 Honduras</td><td>🇭🇰 Hong Kong 香港</td><td>🇭🇺 Magyarország</td><td>🇮🇸 Ísland</td>
+</tr><tr>
+<td>🇮🇳 Bharat भारत</td><td>🇮🇩 Indonesia</td><td>🇮🇱 יִשְׂרָאֵל</td><td>🇮🇹 Italia</td><td>🇯🇵 日本</td><td>🇱🇻 Latvija</td><td>🇱🇧 لبنان</td>
+</tr><tr>
+<td>🇱🇹 Lietuva</td><td>🇱🇺 Lëtzebuerg</td><td>🇲🇰 Северна Македонија</td><td>🇲🇾 Bahasa Melayu</td><td>🇲🇹 Malta</td><td>🇲🇽 México</td><td>🇲🇪 Crna Gora</td>
+</tr><tr>
+<td>🇲🇦 المغرب</td><td>🇳🇱 Nederland</td><td>🇳🇿 New Zealand</td><td>🇳🇮 Nicaragua</td><td>🇳🇬 Nigeria</td><td>🇳🇴 Norge</td><td>🇵🇦 Panamá</td>
+</tr><tr>
+<td>🇵🇾 Paraguay</td><td>🇵🇪 Perú</td><td>🇵🇭 Pilipinas</td><td>🇵🇱 Polska</td><td>🇵🇹 Portugal</td><td>🇵🇷 Puerto Rico</td><td>🇷🇴 România</td>
+</tr><tr>
+<td>🇷🇺 Россия</td><td>🇷🇸 Српски</td><td>🇸🇬 Singapore</td><td>🇸🇰 Slovensko</td><td>🇸🇮 Slovenija</td><td>🇿🇦 South Africa</td><td>🇰🇷 대한민국</td>
+</tr><tr>
+<td>🇸🇪 Sverige</td><td>🇨🇭 Schweiz/Suisse/Svizzera</td><td>🇹🇼 Taiwan</td><td>🇹🇭 ประเทศไทย</td><td>🇹🇷 Türkiye</td><td>🇺🇦 Ukrayina</td><td>🇦🇪 Al-Imarat</td>
+</tr><tr>
+<td>🇬🇧 United Kingdom</td><td>🇺🇸 United States</td><td>🇺🇾 Uruguay</td><td>🇻🇪 Venezuela</td><td>🇻🇳 Việt Nam</td><td></td><td></td>
+</tr>
+</table>
+
 </sub>
 
 🌐 Custom URL (XMLTV .xml / .xml.gz)
