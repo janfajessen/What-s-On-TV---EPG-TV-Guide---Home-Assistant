@@ -10,6 +10,18 @@
 
 <sub> Wat is op televisie - ما هو على التلفزيون - Televiziyada nə var - Што па тэлевізары - Какво има по телевизията - Šta je na televiziji - Què hi ha a la televisió - Co je v televizi - Hvad er i fjernsynet - Was läuft im Fernsehen - Τι παίζει στην τηλεόραση - Kio estas en televido - Qué hay en la televisión - Zer dago telebistan - چه چیزی در تلویزیون است - Mitä televisiossa on - Quoi à la télévision - Que hai na televisión - מה יש בטלוויזיה - टेलीविजन पर क्या है - Što je na televiziji - Mi van a televízióban - Apa yang di televisi - Hvað er í sjónvarpinu - Cosa c'è in televisione - テレビでは何が - რა არის ტელევიზორში - Теледидарда не бар - 텔레비전에 무엇이 나오나요 - Ką per televizorių - Kas ir televīzijā - Wat is er op televisie - Hva er på fjernsynet - Qu'i a a la television - Co w telewizji - O que há na televisão - Ce este la televizor - Что по телевизору - Čo je v televízii - Kaj je na televiziji - Çfarë është në televizion - Шта је на телевизији - Vad är på tv - อะไรอยู่ในโทรทัศน์ - Televizyonda ne var - Що по телевізору - Có gì trên truyền hình - 电视上有什么 </sub>
 
+## 🔍 Never miss what you want to watch
+
+The keyword watch system lets you search across all configured EPG sources simultaneously. Some ideas:
+
+- ⚽ **Watched the match live but want to see the highlights?** Set a watch for `"Champions"` or `"Premier League"` — you'll get notified before the replay airs, without any spoilers in the notification
+- 🎬 **Looking for a classic you can never find?** Try `"Casablanca"`, `"Blade Runner"`, `"The Godfather"` or `"2001"` — old films rotate on cable channels more often than you'd think
+- 📺 **Never miss your favourite show:** Set `"Jeopardy"`, `"MasterChef"`, `"Survivor"` or `"Who Wants to Be a Millionaire"` and get alerted before it starts
+- 🎤 **Music fan?** Search `"Glastonbury"`, `"Eurovision"` or your favourite artist's name
+- 🌍 **Documentary hunter?** Try `"Planet Earth"`, `"Cosmos"` or `"Ken Burns"` — they rerun constantly on documentary channels
+- 🏎️ **Sports in general:** `"Formula 1"`, `"Tour de France"`, `"Wimbledon"` — works across all your configured countries simultaneously
+
+> The **Word** match mode finds `"Alone"` but not `"Malone"` or `"talones"`. The **Contains** mode is broader. Use **Exact** only for very specific titles.
 
 A worldwide EPG (Electronic Programme Guide) integration for Home Assistant. Turns any XMLTV-compatible TV guide source into HA sensors — one sensor per channel, updated automatically.
 
@@ -158,6 +170,7 @@ action:
 
 
 🌐 Custom URL (XMLTV .xml / .xml.gz)
+
 ---
 
 ## Requirements
@@ -335,6 +348,35 @@ action:
 
 <sub>* Channels available via regional EPG sources &nbsp;&nbsp; ** Requires manual URL configuration — see EPG Sources section &nbsp;&nbsp; *** Not all sources have been individually verified</sub>
 
+## 🌐 Manual EPG Sources (`**` countries)
+
+The following countries require a custom URL. Go to **Settings → Devices & Services → What's On TV → Add Entry** and paste the URL in the *Custom URL* field.
+
+> Source: [globetvapp/epg](https://github.com/globetvapp/epg) — updated daily at 03:00 UTC
+
+| Flag | Country | URL |
+|---|---|---|
+| 🏝️ | Caribbean | `https://raw.githubusercontent.com/globetvapp/epg/main/Caribbean/caribbean1.xml` |
+| 🇨🇳 | 中国 China | `https://raw.githubusercontent.com/globetvapp/epg/main/China/china1.xml` |
+| 🇨🇮 | Côte d'Ivoire | `https://raw.githubusercontent.com/globetvapp/epg/main/Ivorycoast/ivorycoast1.xml` |
+| 🇪🇪 | Eesti Estonia | `https://raw.githubusercontent.com/globetvapp/epg/main/Estonia/estonia1.xml` |
+| 🇮🇪 | Ireland / Éire | `https://raw.githubusercontent.com/globetvapp/epg/main/Ireland/ireland1.xml` |
+| 🇯🇲 | Jamaica | `https://raw.githubusercontent.com/globetvapp/epg/main/Jamaica/jamaica1.xml` |
+| 🇰🇪 | Kenya | `https://raw.githubusercontent.com/globetvapp/epg/main/Kenya/kenya1.xml` |
+| 🇱🇾 | Libya / ليبيا | `https://epg.pw/xmltv.html?lang=ar` |
+| 🇲🇴 | Macao / 澳門 | `https://raw.githubusercontent.com/globetvapp/epg/main/Macau/macau1.xml` |
+| 🇲🇬 | Madagasikara | `https://raw.githubusercontent.com/globetvapp/epg/main/Madagascar/madagascar1.xml` |
+| 🇲🇼 | Malawi | `https://raw.githubusercontent.com/globetvapp/epg/main/Malawi/malawi1.xml` |
+| 🇲🇺 | Mauritius | `https://raw.githubusercontent.com/globetvapp/epg/main/Mauritius/mauritius1.xml` |
+| 🇲🇳 | Монгол Mongolia | `https://raw.githubusercontent.com/globetvapp/epg/main/Mongolia/mongolia1.xml` |
+| 🇲🇿 | Moçambique | `https://raw.githubusercontent.com/globetvapp/epg/main/Mozambique/mozambique1.xml` |
+| 🇳🇦 | Namibia | `https://raw.githubusercontent.com/globetvapp/epg/main/Namibia/namibia1.xml` |
+| 🇳🇨 | Nouvelle-Calédonie | `https://raw.githubusercontent.com/globetvapp/epg/main/Newcaledonia/newcaledonia1.xml` |
+| 🇵🇰 | Pakistan | `https://raw.githubusercontent.com/globetvapp/epg/main/Pakistan/pakistan1.xml` |
+| 🇶🇦 | قطر Qatar | `https://raw.githubusercontent.com/globetvapp/epg/main/Qatar/qatar1.xml` |
+| 🏴󠁧󠁢󠁳󠁣󠁴󠁿 | Scotland | `https://raw.githubusercontent.com/globetvapp/epg/main/Scotland/scotland1.xml` |
+| 🇺🇿 | Oʻzbekiston | `https://raw.githubusercontent.com/globetvapp/epg/main/Uzbekistan/uzbekistan1.xml` |
+| 🇿🇲 | Zambia | `https://raw.githubusercontent.com/globetvapp/epg/main/Zambia/zambia1.xml` |
 ---
 ## License
 
