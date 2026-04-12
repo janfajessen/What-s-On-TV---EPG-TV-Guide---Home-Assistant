@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import gzip
 import logging
+import re as _re
 from datetime import datetime, timedelta, timezone
 from xml.etree import ElementTree as ET
 
@@ -16,14 +17,15 @@ from .const import DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
 
-REQUEST_TIMEOUT = 90
-WATCHES_STORAGE_KEY = f"{DOMAIN}_watches"
-WATCHES_STORAGE_VERSION = 1
+REQUEST_TIMEOUT      = 90
+WATCHES_STORAGE_KEY  = f"{DOMAIN}_watches"
+WATCHES_STORAGE_VER  = 1
 NOTIFIED_STORAGE_KEY = f"{DOMAIN}_notified"
+WATCHES_SHARED_KEY   = f"{DOMAIN}_watches_shared"   # clave en hass.data
 
 
 class EPGCoordinator(DataUpdateCoordinator):
-    """Descarga y parsea el EPG en formato XMLTV. Gestiona watches/alertas."""
+    """Descarga y parsea el EPG. Las watches se leen de hass.data (compartido)."""
 
     def __init__(self, hass: HomeAssistant, url: str, scan_interval_hours: int) -> None:
         super().__init__(
@@ -31,66 +33,73 @@ class EPGCoordinator(DataUpdateCoordinator):
             update_interval=timedelta(hours=scan_interval_hours),
         )
         self.url = url
-        self.channels: dict[str, dict] = {}
+        self.channels:   dict[str, dict]       = {}
         self.programmes: dict[str, list[dict]] = {}
-        self._watches_store  = Store(hass, WATCHES_STORAGE_VERSION, WATCHES_STORAGE_KEY)
-        self._notified_store = Store(hass, WATCHES_STORAGE_VERSION, NOTIFIED_STORAGE_KEY)
-        self._watches: list[dict]  = []   # [{id, keyword, notify_service, hours_before}]
-        self._notified: set[str]   = set() # claves "watch_id|channel_id|start_iso"
+        self._watches_store  = Store(hass, WATCHES_STORAGE_VER, WATCHES_STORAGE_KEY)
+        self._notified_store = Store(hass, WATCHES_STORAGE_VER, NOTIFIED_STORAGE_KEY)
+        self._notified: set[str] = set()
 
-    # ── Storage de watches ──────────────────────────────────────────────────
+    # ── Acceso a watches (siempre desde hass.data) ─────────────────────────
 
-    async def async_load_watches(self) -> None:
+    def _get_watches(self) -> list[dict]:
+        """Lee las watches del almacén compartido en hass.data."""
+        return list(self.hass.data.get(WATCHES_SHARED_KEY, []))
+
+    def get_watches(self) -> list[dict]:
+        """Interfaz pública para el sensor EPGWatchesSensor."""
+        return self._get_watches()
+
+    # ── Storage (solo el coordinator dueño escribe aquí) ───────────────────
+
+    async def load_watches_from_storage(self) -> None:
+        """Cargar watches del disco y publicar en hass.data.
+        Solo debe llamarse desde el coordinator dueño al arrancar."""
         data = await self._watches_store.async_load()
-        self._watches = data.get("watches", []) if data else []
+        watches = data.get("watches", []) if data else []
+        _LOGGER.debug("EPG WATCHES: cargadas %d watches del storage", len(watches))
+        # Solo escribir si tenemos datos o si hass.data aún no tiene nada
+        if watches or WATCHES_SHARED_KEY not in self.hass.data:
+            self.hass.data[WATCHES_SHARED_KEY] = watches
         notified = await self._notified_store.async_load()
         self._notified = set(notified.get("keys", [])) if notified else set()
 
-    async def _save_watches(self) -> None:
-        await self._watches_store.async_save({"watches": self._watches})
+    async def _save_watches(self, watches: list[dict]) -> None:
+        await self._watches_store.async_save({"watches": watches})
 
     async def _save_notified(self) -> None:
-        # Limpiar claves antiguas (más de 7 días) para no crecer indefinidamente
         now = datetime.now(tz=timezone.utc)
-        clean = set()
-        for key in self._notified:
-            parts = key.split("|")
-            if len(parts) >= 3:
-                try:
-                    dt = datetime.fromisoformat(parts[2])
-                    if dt.tzinfo is None:
-                        dt = dt.replace(tzinfo=timezone.utc)
-                    if (now - dt).days < 8:
-                        clean.add(key)
-                except ValueError:
-                    pass
-        self._notified = clean
+        self._notified = {
+            k for k in self._notified
+            if len(k.split("|")) >= 3 and (now - _parse_iso(k.split("|")[2])).days < 8
+        }
         await self._notified_store.async_save({"keys": list(self._notified)})
 
-    def get_watches(self) -> list[dict]:
-        return list(self._watches)
-
-    async def add_watch(self, keyword: str, notify_service: str, hours_before: int) -> dict:
+    async def add_watch(self, keyword: str, notify_service: str,
+                        hours_before: float, match: str = "word") -> dict:
         import uuid
         watch = {
             "id":             str(uuid.uuid4())[:8],
             "keyword":        keyword.strip(),
             "notify_service": notify_service,
-            "hours_before":   int(hours_before),
+            "hours_before":   float(hours_before),
+            "match":          match,
         }
-        self._watches.append(watch)
-        await self._save_watches()
+        watches = self._get_watches()
+        watches.append(watch)
+        self.hass.data[WATCHES_SHARED_KEY] = watches
+        await self._save_watches(watches)
         return watch
 
     async def remove_watch(self, watch_id: str) -> bool:
-        before = len(self._watches)
-        self._watches = [w for w in self._watches if w["id"] != watch_id]
-        if len(self._watches) < before:
-            await self._save_watches()
-            return True
-        return False
+        watches = self._get_watches()
+        new_watches = [w for w in watches if w["id"] != watch_id]
+        if len(new_watches) == len(watches):
+            return False
+        self.hass.data[WATCHES_SHARED_KEY] = new_watches
+        await self._save_watches(new_watches)
+        return True
 
-    # ── Update principal ────────────────────────────────────────────────────
+    # ── Update principal (descarga EPG) ────────────────────────────────────
 
     async def _async_update_data(self) -> dict:
         session = async_get_clientsession(self.hass)
@@ -109,60 +118,81 @@ class EPGCoordinator(DataUpdateCoordinator):
         except Exception as err:
             raise UpdateFailed(f"Error parseando EPG: {err}") from err
 
-        self.channels  = result["channels"]
+        self.channels   = result["channels"]
         self.programmes = result["programmes"]
 
-        _LOGGER.debug(
-            "EPG actualizado: %d canales, %d con programación",
-            len(self.channels),
-            sum(1 for p in self.programmes.values() if p),
-        )
+        _LOGGER.debug("EPG actualizado: %d canales", len(self.channels))
 
-        # Comprobar watches tras cada actualización
-        if self._watches:
-            await self._check_watches()
+        # Comprobar watches tras cada descarga
+        watches = self._get_watches()
+        if watches and self.programmes:
+            await self._check_watches(watches)
 
         return result
 
-    # ── Watches: comprobar y notificar ──────────────────────────────────────
+    # ── Watches: comprobar y notificar ─────────────────────────────────────
 
-    async def _check_watches(self) -> None:
+    async def check_watches_now(self) -> None:
+        """Llamado desde el timer global del __init__."""
+        watches = self._get_watches()
+        _LOGGER.warning("EPG WATCHES: tick — %d watches, %d canales en %s",
+                        len(watches), len(self.programmes), self.url[:30])
+        if watches and self.programmes:
+            await self._check_watches(watches)
+
+    async def _check_watches(self, watches: list[dict]) -> None:
         now = datetime.now(tz=timezone.utc)
         new_notified = False
 
-        for watch in self._watches:
+        for watch in watches:
             keyword  = watch["keyword"].lower()
             notify   = watch["notify_service"]
-            h_before = watch.get("hours_before", 24)
+            h_before = float(watch.get("hours_before", 24))
+            match    = watch.get("match", "word")
             window   = timedelta(hours=h_before)
 
             for ch_id, progs in self.programmes.items():
                 for prog in progs:
-                    start = prog["start"]
-                    if start <= now:
-                        continue  # ya empezó
+                    try:
+                        start = prog["start"]
+                        stop  = prog.get("stop", start)
+                        if stop <= now:
+                            continue
 
-                    title_lower = prog["title"].lower()
-                    if keyword not in title_lower:
-                        continue
+                        title_lower = prog.get("title", "").lower()
 
-                    # Solo notificar si faltan menos de h_before horas
-                    time_to_start = start - now
-                    if time_to_start > window:
+                        if match == "exact":
+                            matched = (title_lower == keyword)
+                        elif match == "word":
+                            esc = _re.escape(keyword)
+                            matched = bool(_re.search(
+                                r'(?:(?<=\s)|(?<=^)|(?<=[-/(]))' + esc +
+                                r'(?=\s|$|[-/.,!?)])',
+                                title_lower
+                            ))
+                        else:
+                            matched = keyword in title_lower
+
+                        if not matched:
+                            continue
+
+                        time_to_start = start - now
+                        if time_to_start.total_seconds() > window.total_seconds():
+                            continue
+
+                    except Exception as err:
+                        _LOGGER.debug("_check_watches error: %s", err)
                         continue
 
                     key = f"{watch['id']}|{ch_id}|{start.isoformat()}"
                     if key in self._notified:
-                        continue  # ya notificado
+                        continue
 
-                    # Mandar notificación
                     ch_name = self.channels.get(ch_id, {}).get("name", ch_id)
-                    hours_left = int(time_to_start.total_seconds() // 3600)
-                    mins_left  = int((time_to_start.total_seconds() % 3600) // 60)
-                    time_str   = f"{hours_left}h {mins_left}min" if hours_left else f"{mins_left} min"
-
-                    start_local = start.astimezone()
-                    start_fmt   = start_local.strftime("%A %d/%m a las %H:%M")
+                    secs    = max(0, int(time_to_start.total_seconds()))
+                    h, m    = divmod(secs // 60, 60)
+                    time_str = f"{h}h {m}min" if h else f"{m} min"
+                    start_fmt = start.astimezone().strftime("%A %d/%m a las %H:%M")
 
                     message = (
                         f"📺 {ch_name} — {prog['title']}\n"
@@ -171,15 +201,25 @@ class EPGCoordinator(DataUpdateCoordinator):
                     )
 
                     try:
-                        domain, service = notify.split(".", 1)
-                        await self.hass.services.async_call(
-                            domain, service,
-                            {"message": message, "title": f"📺 {prog['title']}"},
-                            blocking=False,
-                        )
-                        _LOGGER.info("Watch '%s' → notificación enviada: %s en %s", keyword, prog["title"], ch_name)
+                        svc_name = notify.split(".", 1)[1] if "." in notify else notify
+                        if self.hass.services.has_service("notify", svc_name):
+                            domain, service = notify.split(".", 1)
+                            await self.hass.services.async_call(
+                                domain, service,
+                                {"message": message, "title": f"📺 {prog['title']}"},
+                                blocking=False,
+                            )
+                        else:
+                            await self.hass.services.async_call(
+                                "notify", "send_message",
+                                {"message": message, "title": f"📺 {prog['title']}"},
+                                target={"entity_id": notify},
+                                blocking=False,
+                            )
+                        _LOGGER.warning("EPG WATCHES: notificación enviada → %s en %s",
+                                        prog["title"], ch_name)
                     except Exception as err:
-                        _LOGGER.warning("Error enviando notificación watch '%s': %s", keyword, err)
+                        _LOGGER.warning("Error enviando notificación: %s", err)
 
                     self._notified.add(key)
                     new_notified = True
@@ -187,23 +227,22 @@ class EPGCoordinator(DataUpdateCoordinator):
         if new_notified:
             await self._save_notified()
 
-    # ── Parseo XMLTV ────────────────────────────────────────────────────────
+    # ── Parseo XMLTV ───────────────────────────────────────────────────────
 
     def _parse_xmltv(self, raw: bytes) -> dict:
         if raw[:2] == b"\x1f\x8b":
             raw = gzip.decompress(raw)
-        content = raw.decode("utf-8", errors="replace")
-        root    = ET.fromstring(content)
+        root = ET.fromstring(raw.decode("utf-8", errors="replace"))
 
-        channels:  dict[str, dict]   = {}
-        programmes: dict[str, list]  = {}
+        channels: dict[str, dict]  = {}
+        programmes: dict[str, list] = {}
 
         for ch in root.findall("channel"):
             ch_id   = ch.get("id")
             name_el = ch.find("display-name")
             icon_el = ch.find("icon")
             if ch_id and name_el is not None and name_el.text:
-                channels[ch_id] = {
+                channels[ch_id]   = {
                     "name": name_el.text.strip(),
                     "icon": icon_el.get("src") if icon_el is not None else None,
                 }
@@ -223,8 +262,7 @@ class EPGCoordinator(DataUpdateCoordinator):
             if title_el is None or not title_el.text:
                 continue
             programmes[ch_id].append({
-                "start": start,
-                "stop":  stop,
+                "start": start, "stop": stop,
                 "title": title_el.text.strip(),
                 "desc":  (desc_el.text or "").strip() if desc_el is not None else "",
                 "icon":  icon_el.get("src") if icon_el is not None else None,
@@ -235,7 +273,7 @@ class EPGCoordinator(DataUpdateCoordinator):
 
         return {"channels": channels, "programmes": programmes}
 
-    # ── Helpers para sensores ───────────────────────────────────────────────
+    # ── Helpers ────────────────────────────────────────────────────────────
 
     def get_current_and_next(self, channel_id: str) -> tuple[dict | None, dict | None]:
         now   = datetime.now(tz=timezone.utc)
@@ -262,15 +300,24 @@ def _parse_xmltv_dt(time_str: str | None) -> datetime | None:
     if not time_str:
         return None
     try:
-        time_str = time_str.strip()
-        dt_part  = time_str[:14]
-        tz_part  = time_str[14:].strip() if len(time_str) > 14 else "+0000"
-        dt       = datetime.strptime(dt_part, "%Y%m%d%H%M%S")
-        sign     = 1 if tz_part.startswith("+") else -1
-        tz_part  = tz_part.lstrip("+-")
-        tz_h     = int(tz_part[:2]) if len(tz_part) >= 2 else 0
-        tz_m     = int(tz_part[2:4]) if len(tz_part) >= 4 else 0
-        offset   = timedelta(hours=tz_h, minutes=tz_m) * sign
+        s       = time_str.strip()
+        dt_part = s[:14]
+        tz_part = s[14:].strip() if len(s) > 14 else "+0000"
+        dt      = datetime.strptime(dt_part, "%Y%m%d%H%M%S")
+        sign    = 1 if tz_part.startswith("+") else -1
+        tz_part = tz_part.lstrip("+-")
+        tz_h    = int(tz_part[:2]) if len(tz_part) >= 2 else 0
+        tz_m    = int(tz_part[2:4]) if len(tz_part) >= 4 else 0
+        offset  = timedelta(hours=tz_h, minutes=tz_m) * sign
         return (dt - offset).replace(tzinfo=timezone.utc)
     except (ValueError, IndexError):
         return None
+
+
+def _parse_iso(s: str) -> datetime:
+    try:
+        dt = datetime.fromisoformat(s)
+        return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except ValueError:
+        return datetime.now(tz=timezone.utc)
+        

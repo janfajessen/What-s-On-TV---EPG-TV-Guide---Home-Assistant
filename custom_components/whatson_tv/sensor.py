@@ -88,11 +88,15 @@ class EPGChannelSensor(CoordinatorEntity, SensorEntity):
         def fmt(dt: datetime | None) -> str | None:
             return dt.isoformat() if dt else None
 
-        # Lista de programación futura (hasta MAX_SCHEDULE entradas)
+        # Lista de programación no terminada (hasta MAX_SCHEDULE entradas)
         progs_raw = self.coordinator.programmes.get(self._channel_id, [])
         programacion = []
-        for p in progs_raw[:MAX_SCHEDULE]:
+        for p in progs_raw:
+            if p["stop"] < now and (current is None or p["start"] != current["start"]):
+                continue  # saltar programas ya terminados excepto el actual
             en_curso = current is not None and p["start"] == current["start"]
+            if len(programacion) >= MAX_SCHEDULE:
+                break
             programacion.append({
                 "title":      p["title"],
                 "start":      fmt(p["start"]),
@@ -160,3 +164,4 @@ class EPGWatchesSensor(CoordinatorEntity, SensorEntity):
     @property
     def extra_state_attributes(self) -> dict:
         return {"watches": self.coordinator.get_watches()}
+        

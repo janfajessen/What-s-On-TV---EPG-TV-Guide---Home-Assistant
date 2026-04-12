@@ -1,0 +1,54 @@
+add_watch:
+  name: Add watch
+  description: Save a keyword watch to receive notifications when a matching programme appears in the EPG.
+  fields:
+    keyword:
+      name: Keyword
+      description: Word or phrase to search for in programme titles.
+      required: true
+      example: "Champions League"
+      selector:
+        text:
+    notify_service:
+      name: Notification service
+      description: Entity or service to send the notification (e.g. notify.telegram_jan).
+      required: true
+      example: "notify.telegram_jan"
+      selector:
+        text:
+    hours_before:
+      name: Hours before
+      description: How many hours before the programme starts to send the alert. Use 0.5 for 30 minutes.
+      required: false
+      default: 24
+      example: 2
+      selector:
+        number:
+          min: 0.25
+          max: 168
+          step: 0.25
+    match:
+      name: Match mode
+      description: "How to match the keyword: contains, word (whole word), or exact (full title)."
+      required: false
+      default: "word"
+      example: "word"
+      selector:
+        select:
+          options:
+            - contains
+            - word
+            - exact
+
+remove_watch:
+  name: Remove watch
+  description: Delete a saved keyword watch.
+  fields:
+    watch_id:
+      name: Watch ID
+      description: The ID of the watch to remove (visible in the EPG Watches sensor attributes).
+      required: true
+      example: "w1234567890"
+      selector:
+        text:
+            
