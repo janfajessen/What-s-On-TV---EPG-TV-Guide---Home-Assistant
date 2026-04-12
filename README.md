@@ -47,7 +47,7 @@
 
 The keyword watch system lets you search across all configured EPG sources simultaneously. Some ideas:
 
-- ⚽ **Lost the match live and want to see?** Set a watch for `"LaLiga"`, `"Champions"`, `"Libertadores"`, or `"Premier League"` — you'll get notified before the replay airs, without any spoilers in the notification
+- ⚽ **Missed the live match and want to catch the replay?** Set a watch for `"LaLiga"`, `"Champions"`, `"Libertadores"`, or `"Premier League"` — you'll get notified before the replay airs, without any spoilers in the notification
 - 🎬 **Looking for a classic you can never find?** Try `"Funny games"`, `"The Apartment"`, `Rope`, `"Casablanca"`, `"Blade Runner"`, `"The Godfather"` or `"2001"` — old films rotate on cable channels more often than you'd think
 - 📺 **Never miss your favourite show:** Set `"Jeopardy"`, `"MasterChef"`, `"Survivor"` or `"Who Wants to Be a Millionaire"` and get alerted before it starts
 - 🎤 **Music fan?** Search `"Eminem"`,`"Glastonbury"`, `"Eurovision"` or your favourite artist's name
