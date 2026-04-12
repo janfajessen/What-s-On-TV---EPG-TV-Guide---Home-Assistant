@@ -47,12 +47,12 @@
 
 The keyword watch system lets you search across all configured EPG sources simultaneously. Some ideas:
 
-- ⚽ **Lost the match live and want to see?** Set a watch for `"LaLiga"`,`"Champions"`,`"Libertadores"`, or `"Premier League"` — you'll get notified before the replay airs, without any spoilers in the notification
-- 🎬 **Looking for a classic you can never find?** Try `Funny games`, `"The Apartment"`,`Rope`, `"Casablanca"`, `"Blade Runner"`, `"The Godfather"` or `"2001"` — old films rotate on cable channels more often than you'd think
+- ⚽ **Lost the match live and want to see?** Set a watch for `"LaLiga"`, `"Champions"`, `"Libertadores"`, or `"Premier League"` — you'll get notified before the replay airs, without any spoilers in the notification
+- 🎬 **Looking for a classic you can never find?** Try `"Funny games"`, `"The Apartment"`, `Rope`, `"Casablanca"`, `"Blade Runner"`, `"The Godfather"` or `"2001"` — old films rotate on cable channels more often than you'd think
 - 📺 **Never miss your favourite show:** Set `"Jeopardy"`, `"MasterChef"`, `"Survivor"` or `"Who Wants to Be a Millionaire"` and get alerted before it starts
-- 🎤 **Music fan?** Search `Eminem`,`"Glastonbury"`, `"Eurovision"` or your favourite artist's name
+- 🎤 **Music fan?** Search `"Eminem"`,`"Glastonbury"`, `"Eurovision"` or your favourite artist's name
 - 🌍 **Documentary hunter?** Try `"Planet Earth"`, `"Cosmos"` or `"Ken Burns"` — they rerun constantly on documentary channels
-- 🏎️ **Sports in general:** `ATP1000`,`"Formula 1"`, `"La vuelta"`, `"NBA"` — works across all your configured countries simultaneously
+- 🏎️ **Sports in general:** `"ATP1000"`,`"Formula 1"`, `"La vuelta"`, `"NBA"` — works across all your configured countries simultaneously
 - 🦈 The ultimate channel surfing trap: Set `"Jaws"` — it's been airing every summer weekend since 1975 and somehow always catches you off guard
 - 🎄 Tired of missing the annual TV tradition? Set a watch for `"Home Alone"` — because it airs every Christmas on at least 12 channels simultaneously, and somehow you always miss it
 
