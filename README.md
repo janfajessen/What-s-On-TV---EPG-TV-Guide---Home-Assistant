@@ -428,6 +428,20 @@ The following countries require a custom URL. Go to **Settings → Devices & Ser
 
 ---
 
+<table border="0" cellspacing="0" cellpadding="10">
+<tr>
+<td valign="middle"><a href="https://www.home-assistant.io/"><img src="https://github.com/janfajessen/What-s-On-TV-Search-and-Notify-Card/blob/b3645cf0af684bdde893675cb4c80660424873ba/home_assistant_logo.png" alt="Home Assistant" width="60"></a></td>
+<td valign="middle"><b><a href="https://www.home-assistant.io/"></a></b></td>
+</tr>
+<tr>
+</a></td>
+<td valign="middle"><td valign="middle"><a href="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide"><img src="https://github.com/janfajessen/What-s-On-TV-Search-and-Notify-Card/blob/297b38ed5f117f3e127bd9932c1b2c2dc41d6b9f/What's%20On%20TV.png" alt="What's On TV" width="120"><a href="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide"></td>
+</tr>
+</table>
+
+---
+
+
 ## License
 
 MIT — see [LICENSE](LICENSE)
