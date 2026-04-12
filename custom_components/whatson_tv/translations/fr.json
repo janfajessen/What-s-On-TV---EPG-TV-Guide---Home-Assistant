@@ -1,39 +1,32 @@
 {
-  "title": "Qu'y a-t-il à la TV — Source EPG",
   "config": {
     "step": {
       "user": {
-        "title": "Qu'y a-t-il à la TV — Source EPG",
+        "title": "What's On TV Quoi à la télévision — Source EPG",
         "description": "Sélectionnez votre pays/région et l'intervalle de mise à jour.",
-        "data": {
-          "epg_source": "Source EPG",
-          "scan_interval": "Mettre à jour toutes les (heures)"
-        }
+        "data": { "epg_source": "Source EPG", "scan_interval": "Mettre à jour toutes les (heures)" }
       },
       "custom_url": {
-        "title": "Qu'y a-t-il à la TV — URL personnalisée",
+        "title": "What's On TV — URL personnalisée",
         "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Qu'y a-t-il à la TV — Sélectionner les chaînes",
-        "description": "{total} chaînes trouvées. Sélectionnez celles que vous voulez suivre.",
+        "title": "What's On TV — Sélection des chaînes",
+        "description": "{total} chaînes trouvées. Sélectionnez celles que vous souhaitez suivre.",
         "data": { "channels": "Chaînes" }
       },
       "reconfigure": {
-        "title": "Qu'y a-t-il à la TV — Reconfigurer",
-        "data": {
-          "epg_source": "Source EPG",
-          "scan_interval": "Mettre à jour toutes les (heures)"
-        }
+        "title": "What's On TV — Reconfigurer",
+        "data": { "epg_source": "Source EPG", "scan_interval": "Mettre à jour toutes les (heures)" }
       },
       "reconfigure_channels": {
-        "title": "Qu'y a-t-il à la TV — Mettre à jour les chaînes",
+        "title": "What's On TV — Mettre à jour les chaînes",
         "description": "Chaînes disponibles : {total}.",
         "data": { "channels": "Chaînes" }
       }
     },
     "error": {
-      "cannot_connect": "L'EPG n'a pas pu être téléchargé. Vérifiez l'URL et votre connexion.",
+      "cannot_connect": "Impossible de télécharger l'EPG. Vérifiez l'URL et votre connexion.",
       "no_channels": "Le fichier EPG ne contient aucune chaîne.",
       "no_channels_selected": "Sélectionnez au moins une chaîne.",
       "unknown": "Erreur inattendue lors du traitement de l'EPG."
@@ -46,16 +39,13 @@
   "options": {
     "step": {
       "init": {
-        "title": "Qu'y a-t-il à la TV — Gérer les chaînes",
+        "title": "What's On TV — Gérer les chaînes",
         "description": "Chaînes disponibles : {total}.",
-        "data": {
-          "channels": "Chaînes actives",
-          "scan_interval": "Mettre à jour toutes les (heures)"
-        }
+        "data": { "channels": "Chaînes actives", "scan_interval": "Mettre à jour toutes les (heures)" }
       }
     },
     "error": {
-      "cannot_connect": "Impossible de contacter la source EPG.",
+      "cannot_connect": "Impossible de joindre la source EPG.",
       "no_channels_selected": "Sélectionnez au moins une chaîne."
     }
   }

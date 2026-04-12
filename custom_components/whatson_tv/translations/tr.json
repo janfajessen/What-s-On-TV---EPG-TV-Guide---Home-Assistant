@@ -1,33 +1,26 @@
 {
-  "title": "TV'de Ne Var — EPG Kaynağı",
   "config": {
     "step": {
       "user": {
-        "title": "TV'de Ne Var — EPG Kaynağı",
+        "title": "What's On TV Televizyonda ne var — EPG Kaynağı",
         "description": "Ülkenizi/bölgenizi ve güncelleme aralığını seçin.",
-        "data": {
-          "epg_source": "EPG Kaynağı",
-          "scan_interval": "Her (saatte) bir güncelle"
-        }
+        "data": { "epg_source": "EPG Kaynağı", "scan_interval": "Her (saat) güncelle" }
       },
       "custom_url": {
-        "title": "TV'de Ne Var — Özel URL",
-        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+        "title": "What's On TV — Özel URL",
+        "data": { "epg_url": "EPG URL'si (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "TV'de Ne Var — Kanalları seç",
+        "title": "What's On TV — Kanal Seçimi",
         "description": "{total} kanal bulundu. Takip etmek istediklerinizi seçin.",
         "data": { "channels": "Kanallar" }
       },
       "reconfigure": {
-        "title": "TV'de Ne Var — Yeniden yapılandır",
-        "data": {
-          "epg_source": "EPG Kaynağı",
-          "scan_interval": "Her (saatte) bir güncelle"
-        }
+        "title": "What's On TV — Yeniden Yapılandır",
+        "data": { "epg_source": "EPG Kaynağı", "scan_interval": "Her (saat) güncelle" }
       },
       "reconfigure_channels": {
-        "title": "TV'de Ne Var — Kanalları güncelle",
+        "title": "What's On TV — Kanalları güncelle",
         "description": "Mevcut kanallar: {total}.",
         "data": { "channels": "Kanallar" }
       }
@@ -46,16 +39,13 @@
   "options": {
     "step": {
       "init": {
-        "title": "TV'de Ne Var — Kanalları yönet",
+        "title": "What's On TV — Kanalları yönet",
         "description": "Mevcut kanallar: {total}.",
-        "data": {
-          "channels": "Aktif kanallar",
-          "scan_interval": "Her (saatte) bir güncelle"
-        }
+        "data": { "channels": "Aktif kanallar", "scan_interval": "Her (saat) güncelle" }
       }
     },
     "error": {
-      "cannot_connect": "EPG kaynağına bağlanılamadı.",
+      "cannot_connect": "EPG kaynağına ulaşılamadı.",
       "no_channels_selected": "En az bir kanal seçin."
     }
   }

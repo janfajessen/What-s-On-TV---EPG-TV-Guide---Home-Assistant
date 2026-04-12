@@ -1,62 +1,52 @@
 {
-  "title": "电视节目 — EPG 来源",
   "config": {
     "step": {
       "user": {
-        "title": "电视节目 — EPG 来源",
+        "title": "What's On TV 电视上有什么 — EPG源",
         "description": "选择您的国家/地区和更新间隔。",
-        "data": {
-          "epg_source": "EPG 来源",
-          "scan_interval": "每 (小时) 更新一次"
-        }
+        "data": { "epg_source": "EPG源", "scan_interval": "每（小时）更新" }
       },
       "custom_url": {
-        "title": "电视节目 — 自定义 URL",
-        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+        "title": "What's On TV — 自定义URL",
+        "data": { "epg_url": "EPG URL（XMLTV .xml / .xml.gz）" }
       },
       "channels": {
-        "title": "电视节目 — 选择频道",
-        "description": "找到 {total} 个频道。选择您想关注的频道。",
+        "title": "What's On TV — 频道选择",
+        "description": "找到{total}个频道。选择您想要追踪的频道。",
         "data": { "channels": "频道" }
       },
       "reconfigure": {
-        "title": "电视节目 — 重新配置",
-        "data": {
-          "epg_source": "EPG 来源",
-          "scan_interval": "每 (小时) 更新一次"
-        }
+        "title": "What's On TV — 重新配置",
+        "data": { "epg_source": "EPG源", "scan_interval": "每（小时）更新" }
       },
       "reconfigure_channels": {
-        "title": "电视节目 — 更新频道",
+        "title": "What's On TV — 更新频道",
         "description": "可用频道：{total}。",
         "data": { "channels": "频道" }
       }
     },
     "error": {
-      "cannot_connect": "无法下载 EPG。请检查 URL 和您的连接。",
-      "no_channels": "EPG 文件不包含频道。",
-      "no_channels_selected": "请选择至少一个频道。",
-      "unknown": "处理 EPG 时发生意外错误。"
+      "cannot_connect": "无法下载EPG。请检查URL和您的连接。",
+      "no_channels": "EPG文件不包含任何频道。",
+      "no_channels_selected": "请至少选择一个频道。",
+      "unknown": "处理EPG时出现意外错误。"
     },
     "abort": {
-      "already_configured": "此 EPG 来源已配置。",
+      "already_configured": "此EPG源已配置。",
       "reconfigure_successful": "重新配置完成。"
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "电视节目 — 管理频道",
+        "title": "What's On TV — 管理频道",
         "description": "可用频道：{total}。",
-        "data": {
-          "channels": "活动频道",
-          "scan_interval": "每 (小时) 更新一次"
-        }
+        "data": { "channels": "活跃频道", "scan_interval": "每（小时）更新" }
       }
     },
     "error": {
-      "cannot_connect": "无法联系 EPG 来源。",
-      "no_channels_selected": "请选择至少一个频道。"
+      "cannot_connect": "无法访问EPG源。",
+      "no_channels_selected": "请至少选择一个频道。"
     }
   }
 }

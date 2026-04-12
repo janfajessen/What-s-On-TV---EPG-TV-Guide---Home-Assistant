@@ -1,42 +1,35 @@
 {
-  "title": "Wat is op TV — EPG-bron",
   "config": {
     "step": {
       "user": {
-        "title": "Wat is op TV — EPG-bron",
+        "title": "What's On TV — Wat is op televisie - EPG-bron",
         "description": "Kies jou land/streek en opdateringsinterval.",
-        "data": {
-          "epg_source": "EPG-bron",
-          "scan_interval": "Opdateer elke (ure)"
-        }
+        "data": { "epg_source": "EPG-bron", "scan_interval": "Opdateer elke (ure)" }
       },
       "custom_url": {
-        "title": "Wat is op TV — pasgemaakte URL",
-        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+        "title": "What's On TV — Pasgemaakte URL",
+        "data": { "epg_url": "EPG-URL (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Wat is op TV — Kies kanale",
-        "description": "{total} kanale gevind. Kies die wat jy wil volg.",
+        "title": "What's On TV — Kanaalkeuse",
+        "description": "{total} kanale gevind. Kies diegene wat jy wil volg.",
         "data": { "channels": "Kanale" }
       },
       "reconfigure": {
-        "title": "Wat is op TV — Herkonfigureer",
-        "data": {
-          "epg_source": "EPG-bron",
-          "scan_interval": "Opdateer elke (ure)"
-        }
+        "title": "What's On TV — Herkonfigureer",
+        "data": { "epg_source": "EPG-bron", "scan_interval": "Opdateer elke (ure)" }
       },
       "reconfigure_channels": {
-        "title": "Wat is op TV — Werk kanale by",
+        "title": "What's On TV — Opdateer kanale",
         "description": "Beskikbare kanale: {total}.",
         "data": { "channels": "Kanale" }
       }
     },
     "error": {
-      "cannot_connect": "Kon nie die EPG aflaai nie. Kontroleer die URL en jou verbinding.",
+      "cannot_connect": "Kon nie EPG aflaai nie. Gaan die URL en jou verbinding na.",
       "no_channels": "Die EPG-lêer bevat geen kanale nie.",
       "no_channels_selected": "Kies ten minste een kanaal.",
-      "unknown": "Onverwagte fout tydens verwerking van die EPG."
+      "unknown": "Onverwagte fout tydens verwerking van EPG."
     },
     "abort": {
       "already_configured": "Hierdie EPG-bron is reeds gekonfigureer.",
@@ -46,16 +39,13 @@
   "options": {
     "step": {
       "init": {
-        "title": "Wat is op TV — Bestuur kanale",
+        "title": "What's On TV — Bestuur kanale",
         "description": "Beskikbare kanale: {total}.",
-        "data": {
-          "channels": "Aktiewe kanale",
-          "scan_interval": "Opdateer elke (ure)"
-        }
+        "data": { "channels": "Aktiewe kanale", "scan_interval": "Opdateer elke (ure)" }
       }
     },
     "error": {
-      "cannot_connect": "Kon nie die EPG-bron kontak nie.",
+      "cannot_connect": "Kon nie die EPG-bron bereik nie.",
       "no_channels_selected": "Kies ten minste een kanaal."
     }
   }

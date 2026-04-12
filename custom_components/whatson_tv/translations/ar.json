@@ -1,61 +1,51 @@
 {
-  "title": "ما هو على التلفاز — مصدر EPG",
   "config": {
     "step": {
       "user": {
-        "title": "ما هو على التلفاز — مصدر EPG",
+        "title": "What's On TV ما هو على التلفزيون— مصدر EPG",
         "description": "اختر بلدك/منطقتك وفترة التحديث.",
-        "data": {
-          "epg_source": "مصدر EPG",
-          "scan_interval": "تحديث كل (ساعات)"
-        }
+        "data": { "epg_source": "مصدر EPG", "scan_interval": "تحديث كل (ساعات)" }
       },
       "custom_url": {
-        "title": "ما هو على التلفاز — رابط مخصص",
+        "title": "What's On TV — رابط مخصص",
         "data": { "epg_url": "رابط EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "ما هو على التلفاز — اختر القنوات",
-        "description": "تم العثور على {total} قناة. اختر تلك التي تريد متابعتها.",
+        "title": "What's On TV — اختيار القنوات",
+        "description": "تم العثور على {total} قناة. اختر القنوات التي تريد تتبعها.",
         "data": { "channels": "القنوات" }
       },
       "reconfigure": {
-        "title": "ما هو على التلفاز — إعادة التكوين",
-        "data": {
-          "epg_source": "مصدر EPG",
-          "scan_interval": "تحديث كل (ساعات)"
-        }
+        "title": "What's On TV — إعادة تهيئة",
+        "data": { "epg_source": "مصدر EPG", "scan_interval": "تحديث كل (ساعات)" }
       },
       "reconfigure_channels": {
-        "title": "ما هو على التلفاز — تحديث القنوات",
+        "title": "What's On TV — تحديث القنوات",
         "description": "القنوات المتاحة: {total}.",
         "data": { "channels": "القنوات" }
       }
     },
     "error": {
-      "cannot_connect": "تعذر تنزيل ملف EPG. تحقق من الرابط والاتصال.",
+      "cannot_connect": "تعذر تحميل EPG. تحقق من الرابط واتصالك.",
       "no_channels": "ملف EPG لا يحتوي على قنوات.",
       "no_channels_selected": "اختر قناة واحدة على الأقل.",
       "unknown": "خطأ غير متوقع أثناء معالجة EPG."
     },
     "abort": {
-      "already_configured": "مصدر EPG هذا مُكوَّن بالفعل.",
-      "reconfigure_successful": "اكتملت إعادة التكوين."
+      "already_configured": "مصدر EPG هذا مهيأ بالفعل.",
+      "reconfigure_successful": "تمت إعادة التهيئة بنجاح."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "ما هو على التلفاز — إدارة القنوات",
+        "title": "What's On TV — إدارة القنوات",
         "description": "القنوات المتاحة: {total}.",
-        "data": {
-          "channels": "القنوات النشطة",
-          "scan_interval": "تحديث كل (ساعات)"
-        }
+        "data": { "channels": "القنوات النشطة", "scan_interval": "تحديث كل (ساعات)" }
       }
     },
     "error": {
-      "cannot_connect": "تعذر الاتصال بمصدر EPG.",
+      "cannot_connect": "تعذر الوصول إلى مصدر EPG.",
       "no_channels_selected": "اختر قناة واحدة على الأقل."
     }
   }

@@ -1,61 +1,51 @@
 {
-  "title": "Čo je v TV — Zdroj EPG",
   "config": {
     "step": {
       "user": {
-        "title": "Čo je v TV — Zdroj EPG",
-        "description": "Vyberte krajinu/región a interval aktualizácie.",
-        "data": {
-          "epg_source": "Zdroj EPG",
-          "scan_interval": "Aktualizovať každých (hodín)"
-        }
+        "title": "What's On TV Čo je v televízii — Zdroj EPG",
+        "description": "Vyberte svoju krajinu/región a interval aktualizácie.",
+        "data": { "epg_source": "Zdroj EPG", "scan_interval": "Aktualizovať každých (hodín)" }
       },
       "custom_url": {
-        "title": "Čo je v TV — vlastná URL",
-        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+        "title": "What's On TV — Vlastná URL",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Čo je v TV — Vybrať kanály",
+        "title": "What's On TV — Výber kanálov",
         "description": "Nájdených {total} kanálov. Vyberte tie, ktoré chcete sledovať.",
         "data": { "channels": "Kanály" }
       },
       "reconfigure": {
-        "title": "Čo je v TV — Rekonfigurovať",
-        "data": {
-          "epg_source": "Zdroj EPG",
-          "scan_interval": "Aktualizovať každých (hodín)"
-        }
+        "title": "What's On TV — Prekonfigurovať",
+        "data": { "epg_source": "Zdroj EPG", "scan_interval": "Aktualizovať každých (hodín)" }
       },
       "reconfigure_channels": {
-        "title": "Čo je v TV — Aktualizovať kanály",
+        "title": "What's On TV — Aktualizovať kanály",
         "description": "Dostupné kanály: {total}.",
         "data": { "channels": "Kanály" }
       }
     },
     "error": {
-      "cannot_connect": "Nepodarilo sa stiahnuť EPG. Skontrolujte URL a pripojenie.",
-      "no_channels": "EPG súbor neobsahuje žiadne kanály.",
+      "cannot_connect": "Nepodarilo sa stiahnuť EPG. Skontrolujte URL a svoje pripojenie.",
+      "no_channels": "Súbor EPG neobsahuje žiadne kanály.",
       "no_channels_selected": "Vyberte aspoň jeden kanál.",
       "unknown": "Neočakávaná chyba pri spracovaní EPG."
     },
     "abort": {
       "already_configured": "Tento zdroj EPG je už nakonfigurovaný.",
-      "reconfigure_successful": "Rekonfigurácia dokončená."
+      "reconfigure_successful": "Prekonfigurovanie dokončené."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "Čo je v TV — Spravovať kanály",
+        "title": "What's On TV — Správa kanálov",
         "description": "Dostupné kanály: {total}.",
-        "data": {
-          "channels": "Aktívne kanály",
-          "scan_interval": "Aktualizovať každých (hodín)"
-        }
+        "data": { "channels": "Aktívne kanály", "scan_interval": "Aktualizovať každých (hodín)" }
       }
     },
     "error": {
-      "cannot_connect": "Nepodarilo sa kontaktovať zdroj EPG.",
+      "cannot_connect": "Nepodarilo sa dosiahnuť zdroj EPG.",
       "no_channels_selected": "Vyberte aspoň jeden kanál."
     }
   }

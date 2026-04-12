@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "What's On TV Televiziyada nə var — EPG Mənbəyi",
+        "description": "Ölkə/regionunuzu və yeniləmə intervalını seçin.",
+        "data": { "epg_source": "EPG Mənbəyi", "scan_interval": "Hər (saat) yenilə" }
+      },
+      "custom_url": {
+        "title": "What's On TV — Fərdi URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "What's On TV — Kanal Seçimi",
+        "description": "{total} kanal tapıldı. İzləmək istədiklərinizi seçin.",
+        "data": { "channels": "Kanallar" }
+      },
+      "reconfigure": {
+        "title": "What's On TV — Yenidən konfiqurasiya",
+        "data": { "epg_source": "EPG Mənbəyi", "scan_interval": "Hər (saat) yenilə" }
+      },
+      "reconfigure_channels": {
+        "title": "What's On TV — Kanalları yenilə",
+        "description": "Mövcud kanallar: {total}.",
+        "data": { "channels": "Kanallar" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG yüklənə bilmədi. URL və bağlantınızı yoxlayın.",
+      "no_channels": "EPG faylında kanal yoxdur.",
+      "no_channels_selected": "Ən azı bir kanal seçin.",
+      "unknown": "EPG emal edilərkən gözlənilməz xəta."
+    },
+    "abort": {
+      "already_configured": "Bu EPG mənbəyi artıq konfiqurasiya edilib.",
+      "reconfigure_successful": "Yenidən konfiqurasiya tamamlandı."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "What's On TV — Kanalları idarə et",
+        "description": "Mövcud kanallar: {total}.",
+        "data": { "channels": "Aktiv kanallar", "scan_interval": "Hər (saat) yenilə" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG mənbəyinə çatmaq mümkün olmadı.",
+      "no_channels_selected": "Ən azı bir kanal seçin."
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "What's On TV Што па тэлевізары — Крыніца EPG",
+        "description": "Абярыце краіну/рэгіён і інтэрвал абнаўлення.",
+        "data": { "epg_source": "Крыніца EPG", "scan_interval": "Абнаўляць кожныя (гадзіны)" }
+      },
+      "custom_url": {
+        "title": "What's On TV — Карыстальніцкі URL",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "What's On TV — Выбар каналаў",
+        "description": "Знойдзена {total} каналаў. Абярыце тыя, якія хочаце адсочваць.",
+        "data": { "channels": "Каналы" }
+      },
+      "reconfigure": {
+        "title": "What's On TV — Перанастройка",
+        "data": { "epg_source": "Крыніца EPG", "scan_interval": "Абнаўляць кожныя (гадзіны)" }
+      },
+      "reconfigure_channels": {
+        "title": "What's On TV — Абнавіць каналы",
+        "description": "Даступныя каналы: {total}.",
+        "data": { "channels": "Каналы" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не атрымалася спампаваць EPG. Праверце URL і злучэнне.",
+      "no_channels": "Файл EPG не змяшчае каналаў.",
+      "no_channels_selected": "Абярыце хаця б адзін канал.",
+      "unknown": "Нечаканая памылка пры апрацоўцы EPG."
+    },
+    "abort": {
+      "already_configured": "Гэтая крыніца EPG ужо наладжана.",
+      "reconfigure_successful": "Перанастройка завершана."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "What's On TV — Кіраванне каналамі",
+        "description": "Даступныя каналы: {total}.",
+        "data": { "channels": "Актыўныя каналы", "scan_interval": "Абнаўляць кожныя (гадзіны)" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не атрымалася падключыцца да крыніцы EPG.",
+      "no_channels_selected": "Абярыце хаця б адзін канал."
+    }
+  }
+}

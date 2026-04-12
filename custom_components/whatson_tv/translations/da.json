@@ -1,42 +1,35 @@
 {
-  "title": "Hvad er der i TV — EPG-kilde",
   "config": {
     "step": {
       "user": {
-        "title": "Hvad er der i TV — EPG-kilde",
-        "description": "Vælg land/region og opdateringsinterval.",
-        "data": {
-          "epg_source": "EPG-kilde",
-          "scan_interval": "Opdater hver (timer)"
-        }
+        "title": "What's On TV Hvad er i fjernsynet — EPG-kilde",
+        "description": "Vælg dit land/område og opdateringsinterval.",
+        "data": { "epg_source": "EPG-kilde", "scan_interval": "Opdater hver (time)" }
       },
       "custom_url": {
-        "title": "Hvad er der i TV — tilpasset URL",
-        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+        "title": "What's On TV — Brugerdefineret URL",
+        "data": { "epg_url": "EPG-URL (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Hvad er der i TV — Vælg kanaler",
-        "description": "{total} kanaler fundet. Vælg dem du vil følge.",
+        "title": "What's On TV — Kanalvalg",
+        "description": "Fandt {total} kanaler. Vælg dem, du vil spore.",
         "data": { "channels": "Kanaler" }
       },
       "reconfigure": {
-        "title": "Hvad er der i TV — Rekonfigurer",
-        "data": {
-          "epg_source": "EPG-kilde",
-          "scan_interval": "Opdater hver (timer)"
-        }
+        "title": "What's On TV — Rekonfigurer",
+        "data": { "epg_source": "EPG-kilde", "scan_interval": "Opdater hver (time)" }
       },
       "reconfigure_channels": {
-        "title": "Hvad er der i TV — Opdater kanaler",
+        "title": "What's On TV — Opdater kanaler",
         "description": "Tilgængelige kanaler: {total}.",
         "data": { "channels": "Kanaler" }
       }
     },
     "error": {
-      "cannot_connect": "Kunne ikke downloade EPG. Tjek URL og din forbindelse.",
+      "cannot_connect": "Kunne ikke downloade EPG. Tjek URL'en og din forbindelse.",
       "no_channels": "EPG-filen indeholder ingen kanaler.",
       "no_channels_selected": "Vælg mindst én kanal.",
-      "unknown": "Uventet fejl under behandling af EPG."
+      "unknown": "Uventet fejl ved behandling af EPG."
     },
     "abort": {
       "already_configured": "Denne EPG-kilde er allerede konfigureret.",
@@ -46,16 +39,13 @@
   "options": {
     "step": {
       "init": {
-        "title": "Hvad er der i TV — Administrer kanaler",
+        "title": "What's On TV — Administrer kanaler",
         "description": "Tilgængelige kanaler: {total}.",
-        "data": {
-          "channels": "Aktive kanaler",
-          "scan_interval": "Opdater hver (timer)"
-        }
+        "data": { "channels": "Aktive kanaler", "scan_interval": "Opdater hver (time)" }
       }
     },
     "error": {
-      "cannot_connect": "Kunne ikke kontakte EPG-kilden.",
+      "cannot_connect": "Kunne ikke nå EPG-kilden.",
       "no_channels_selected": "Vælg mindst én kanal."
     }
   }

@@ -1,61 +1,51 @@
 {
-  "title": "Kas ir TV — EPG avots",
   "config": {
     "step": {
       "user": {
-        "title": "Kas ir TV — EPG avots",
+        "title": "What's On TV Kas ir televīzijā — EPG avots",
         "description": "Izvēlieties savu valsti/reģionu un atjaunināšanas intervālu.",
-        "data": {
-          "epg_source": "EPG avots",
-          "scan_interval": "Atjaunināt ik pēc (stundām)"
-        }
+        "data": { "epg_source": "EPG avots", "scan_interval": "Atjaunināt ik (stundas)" }
       },
       "custom_url": {
-        "title": "Kas ir TV — pielāgota URL",
+        "title": "What's On TV — Pielāgots URL",
         "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Kas ir TV — Izvēlieties kanālus",
-        "description": "Atrasti {total} kanāli. Izvēlieties tos, kurus vēlaties sekot.",
+        "title": "What's On TV — Kanālu izvēle",
+        "description": "Atrasti {total} kanāli. Izvēlieties tos, kurus vēlaties izsekot.",
         "data": { "channels": "Kanāli" }
       },
       "reconfigure": {
-        "title": "Kas ir TV — Pārkonfigurēt",
-        "data": {
-          "epg_source": "EPG avots",
-          "scan_interval": "Atjaunināt ik pēc (stundām)"
-        }
+        "title": "What's On TV — Pārkonfigurēt",
+        "data": { "epg_source": "EPG avots", "scan_interval": "Atjaunināt ik (stundas)" }
       },
       "reconfigure_channels": {
-        "title": "Kas ir TV — Atjaunināt kanālus",
+        "title": "What's On TV — Atjaunināt kanālus",
         "description": "Pieejamie kanāli: {total}.",
         "data": { "channels": "Kanāli" }
       }
     },
     "error": {
-      "cannot_connect": "Neizdevās lejupielādēt EPG. Pārbaudiet URL un savienojumu.",
+      "cannot_connect": "Nevarēja lejupielādēt EPG. Pārbaudiet URL un savienojumu.",
       "no_channels": "EPG fails nesatur kanālus.",
       "no_channels_selected": "Izvēlieties vismaz vienu kanālu.",
-      "unknown": "Negaidīta kļūda apstrādājot EPG."
+      "unknown": "Negaidīta kļūda, apstrādājot EPG."
     },
     "abort": {
       "already_configured": "Šis EPG avots jau ir konfigurēts.",
-      "reconfigure_successful": "Pārkonfigurācija pabeigta."
+      "reconfigure_successful": "Pārkonfigurēšana pabeigta."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "Kas ir TV — Pārvaldīt kanālus",
+        "title": "What's On TV — Pārvaldīt kanālus",
         "description": "Pieejamie kanāli: {total}.",
-        "data": {
-          "channels": "Aktīvie kanāli",
-          "scan_interval": "Atjaunināt ik pēc (stundām)"
-        }
+        "data": { "channels": "Aktīvie kanāli", "scan_interval": "Atjaunināt ik (stundas)" }
       }
     },
     "error": {
-      "cannot_connect": "Neizdevās sazināties ar EPG avotu.",
+      "cannot_connect": "Nevarēja sasniegt EPG avotu.",
       "no_channels_selected": "Izvēlieties vismaz vienu kanālu."
     }
   }

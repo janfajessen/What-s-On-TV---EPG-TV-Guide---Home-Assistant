@@ -1,39 +1,32 @@
 {
-  "title": "Что по телевизору — Источник EPG",
   "config": {
     "step": {
       "user": {
-        "title": "Что по телевизору — Источник EPG",
-        "description": "Выберите страну/регион и интервал обновления.",
-        "data": {
-          "epg_source": "Источник EPG",
-          "scan_interval": "Обновлять каждые (часов)"
-        }
+        "title": "What's On TV Что по телевизору — Источник EPG",
+        "description": "Выберите свою страну/регион и интервал обновления.",
+        "data": { "epg_source": "Источник EPG", "scan_interval": "Обновлять каждые (часы)" }
       },
       "custom_url": {
-        "title": "Что по телевизору — Пользовательский URL",
+        "title": "What's On TV — Пользовательский URL",
         "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Что по телевизору — Выбрать каналы",
+        "title": "What's On TV — Выбор каналов",
         "description": "Найдено {total} каналов. Выберите те, которые хотите отслеживать.",
         "data": { "channels": "Каналы" }
       },
       "reconfigure": {
-        "title": "Что по телевизору — Перенастроить",
-        "data": {
-          "epg_source": "Источник EPG",
-          "scan_interval": "Обновлять каждые (часов)"
-        }
+        "title": "What's On TV — Перенастройка",
+        "data": { "epg_source": "Источник EPG", "scan_interval": "Обновлять каждые (часы)" }
       },
       "reconfigure_channels": {
-        "title": "Что по телевизору — Обновить каналы",
+        "title": "What's On TV — Обновить каналы",
         "description": "Доступные каналы: {total}.",
         "data": { "channels": "Каналы" }
       }
     },
     "error": {
-      "cannot_connect": "Не удалось скачать EPG. Проверьте URL и подключение.",
+      "cannot_connect": "Не удалось загрузить EPG. Проверьте URL и ваше соединение.",
       "no_channels": "Файл EPG не содержит каналов.",
       "no_channels_selected": "Выберите хотя бы один канал.",
       "unknown": "Неожиданная ошибка при обработке EPG."
@@ -46,16 +39,13 @@
   "options": {
     "step": {
       "init": {
-        "title": "Что по телевизору — Управление каналами",
+        "title": "What's On TV — Управление каналами",
         "description": "Доступные каналы: {total}.",
-        "data": {
-          "channels": "Активные каналы",
-          "scan_interval": "Обновлять каждые (часов)"
-        }
+        "data": { "channels": "Активные каналы", "scan_interval": "Обновлять каждые (часы)" }
       }
     },
     "error": {
-      "cannot_connect": "Не удалось связаться с источником EPG.",
+      "cannot_connect": "Не удалось подключиться к источнику EPG.",
       "no_channels_selected": "Выберите хотя бы один канал."
     }
   }

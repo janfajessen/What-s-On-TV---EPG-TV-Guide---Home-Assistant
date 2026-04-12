@@ -1,62 +1,52 @@
 {
-  "title": "Mitä TV:ssä on — EPG-lähde",
   "config": {
     "step": {
       "user": {
-        "title": "Mitä TV:ssä on — EPG-lähde",
-        "description": "Valitse maa/alue ja päivitysväli.",
-        "data": {
-          "epg_source": "EPG-lähde",
-          "scan_interval": "Päivitä joka (tunti)"
-        }
+        "title": "What's On TV Mitä televisiossa on — EPG-lähde",
+        "description": "Valitse maasi/alueesi ja päivitysväli.",
+        "data": { "epg_source": "EPG-lähde", "scan_interval": "Päivitä joka (tunti)" }
       },
       "custom_url": {
-        "title": "Mitä TV:ssä on — mukautettu URL",
+        "title": "What's On TV — Mukautettu URL",
         "data": { "epg_url": "EPG-URL (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Mitä TV:ssä on — Valitse kanavat",
+        "title": "What's On TV — Kanavavalinta",
         "description": "Löytyi {total} kanavaa. Valitse ne, joita haluat seurata.",
         "data": { "channels": "Kanavat" }
       },
       "reconfigure": {
-        "title": "Mitä TV:ssä on — Uudelleenkonfiguroi",
-        "data": {
-          "epg_source": "EPG-lähde",
-          "scan_interval": "Päivitä joka (tunti)"
-        }
+        "title": "What's On TV — Määritä uudelleen",
+        "data": { "epg_source": "EPG-lähde", "scan_interval": "Päivitä joka (tunti)" }
       },
       "reconfigure_channels": {
-        "title": "Mitä TV:ssä on — Päivitä kanavat",
+        "title": "What's On TV — Päivitä kanavat",
         "description": "Saatavilla olevat kanavat: {total}.",
         "data": { "channels": "Kanavat" }
       }
     },
     "error": {
-      "cannot_connect": "EPG:tä ei voitu ladata. Tarkista URL ja yhteytesi.",
+      "cannot_connect": "EPG:n lataaminen epäonnistui. Tarkista URL ja yhteys.",
       "no_channels": "EPG-tiedosto ei sisällä kanavia.",
-      "no_channels_selected": "Valitse ainakin yksi kanava.",
-      "unknown": "Odottamaton virhe käsiteltäessä EPG:tä."
+      "no_channels_selected": "Valitse vähintään yksi kanava.",
+      "unknown": "Odottamaton virhe EPG:tä käsiteltäessä."
     },
     "abort": {
       "already_configured": "Tämä EPG-lähde on jo määritetty.",
-      "reconfigure_successful": "Uudelleenkonfigurointi valmis."
+      "reconfigure_successful": "Uudelleenmääritys valmis."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "Mitä TV:ssä on — Hallitse kanavia",
+        "title": "What's On TV — Hallinnoi kanavia",
         "description": "Saatavilla olevat kanavat: {total}.",
-        "data": {
-          "channels": "Aktiiviset kanavat",
-          "scan_interval": "Päivitä joka (tunti)"
-        }
+        "data": { "channels": "Aktiiviset kanavat", "scan_interval": "Päivitä joka (tunti)" }
       }
     },
     "error": {
-      "cannot_connect": "EPG-lähdettä ei voitu tavoittaa.",
-      "no_channels_selected": "Valitse ainakin yksi kanava."
+      "cannot_connect": "EPG-lähteeseen ei saatu yhteyttä.",
+      "no_channels_selected": "Valitse vähintään yksi kanava."
     }
   }
 }

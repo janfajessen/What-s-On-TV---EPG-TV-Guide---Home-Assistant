@@ -1,61 +1,51 @@
 {
-  "title": "Çfarë është në TV — Burimi EPG",
   "config": {
     "step": {
       "user": {
-        "title": "Çfarë është në TV — Burimi EPG",
-        "description": "Zgjidhni vendin/rajonin dhe intervalin e përditësimit.",
-        "data": {
-          "epg_source": "Burimi EPG",
-          "scan_interval": "Përditëso çdo (orë)"
-        }
+        "title": "What's On TV Çfarë është në televizion — Burimi EPG",
+        "description": "Zgjidh vendin/rajonin dhe intervalin e përditësimit.",
+        "data": { "epg_source": "Burimi EPG", "scan_interval": "Përditëso çdo (orë)" }
       },
       "custom_url": {
-        "title": "Çfarë është në TV — URL e personalizuar",
+        "title": "What's On TV — URL e personalizuar",
         "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Çfarë është në TV — Zgjidh kanalet",
+        "title": "What's On TV — Përzgjedhja e kanaleve",
         "description": "U gjetën {total} kanale. Zgjidh ato që dëshiron të ndjekësh.",
         "data": { "channels": "Kanalet" }
       },
       "reconfigure": {
-        "title": "Çfarë është në TV — Rikonfiguro",
-        "data": {
-          "epg_source": "Burimi EPG",
-          "scan_interval": "Përditëso çdo (orë)"
-        }
+        "title": "What's On TV — Rikonfiguro",
+        "data": { "epg_source": "Burimi EPG", "scan_interval": "Përditëso çdo (orë)" }
       },
       "reconfigure_channels": {
-        "title": "Çfarë është në TV — Përditëso kanalet",
+        "title": "What's On TV — Përditëso kanalet",
         "description": "Kanalet e disponueshme: {total}.",
         "data": { "channels": "Kanalet" }
       }
     },
     "error": {
-      "cannot_connect": "Nuk u mund të shkarkohej EPG. Kontrollo URL-në dhe lidhjen.",
+      "cannot_connect": "Nuk mund të shkarkohej EPG. Kontrollo URL-në dhe lidhjen tënde.",
       "no_channels": "Skedari EPG nuk përmban kanale.",
       "no_channels_selected": "Zgjidh të paktën një kanal.",
       "unknown": "Gabim i papritur gjatë përpunimit të EPG."
     },
     "abort": {
-      "already_configured": "Ky burim EPG është tashmë i konfiguruar.",
-      "reconfigure_successful": "Rikonfigurimi u kompletua."
+      "already_configured": "Ky burim EPG tashmë është konfiguruar.",
+      "reconfigure_successful": "Rikonfigurimi u krye."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "Çfarë është në TV — Menaxho kanalet",
+        "title": "What's On TV — Menaxho kanalet",
         "description": "Kanalet e disponueshme: {total}.",
-        "data": {
-          "channels": "Kanalet aktive",
-          "scan_interval": "Përditëso çdo (orë)"
-        }
+        "data": { "channels": "Kanalet aktive", "scan_interval": "Përditëso çdo (orë)" }
       }
     },
     "error": {
-      "cannot_connect": "Nuk u mund të kontaktohej burimi EPG.",
+      "cannot_connect": "Nuk mund të arrihej burimi EPG.",
       "no_channels_selected": "Zgjidh të paktën një kanal."
     }
   }

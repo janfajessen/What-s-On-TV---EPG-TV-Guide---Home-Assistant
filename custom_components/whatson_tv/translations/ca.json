@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "What's On TV — Font EPG",
+        "title": "What's On TV Què hi ha a la televisió — Font EPG",
         "description": "Selecciona el teu país/regió i l'interval d'actualització.",
         "data": { "epg_source": "Font EPG", "scan_interval": "Actualitzar cada (hores)" }
       },

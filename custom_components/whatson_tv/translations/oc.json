@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "What's On TV Qu'i a a la television ( — Font EPG",
+        "description": "Seleccionatz vòstre país/region e l’interval de mesa a jorn.",
+        "data": { "epg_source": "Font EPG", "scan_interval": "Metre a jorn cada (oras)" }
+      },
+      "custom_url": {
+        "title": "What's On TV — URL personalizada",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "What's On TV — Seleccion de canals",
+        "description": "{total} canals trobats. Seleccionatz los que volètz seguir.",
+        "data": { "channels": "Canals" }
+      },
+      "reconfigure": {
+        "title": "What's On TV — Reconfigurar",
+        "data": { "epg_source": "Font EPG", "scan_interval": "Metre a jorn cada (oras)" }
+      },
+      "reconfigure_channels": {
+        "title": "What's On TV — Metre a jorn los canals",
+        "description": "Canals disponibles : {total}.",
+        "data": { "channels": "Canals" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de telecargar l’EPG. Verificatz l’URL e vòstra connexion.",
+      "no_channels": "Lo fichièr EPG conten pas cap de canal.",
+      "no_channels_selected": "Seleccionatz almens un canal.",
+      "unknown": "Error imprevista durant lo tractament de l’EPG."
+    },
+    "abort": {
+      "already_configured": "Aquesta font EPG es ja configurada.",
+      "reconfigure_successful": "Reconfiguracion acabada."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "What's On TV — Gerir los canals",
+        "description": "Canals disponibles : {total}.",
+        "data": { "channels": "Canals actius", "scan_interval": "Metre a jorn cada (oras)" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible d’aténher la font EPG.",
+      "no_channels_selected": "Seleccionatz almens un canal."
+    }
+  }
+}

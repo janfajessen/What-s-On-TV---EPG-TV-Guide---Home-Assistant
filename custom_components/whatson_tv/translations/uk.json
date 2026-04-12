@@ -1,42 +1,35 @@
 {
-  "title": "Що по телевізору — Джерело EPG",
   "config": {
     "step": {
       "user": {
-        "title": "Що по телевізору — Джерело EPG",
-        "description": "Оберіть країну/регіон та інтервал оновлення.",
-        "data": {
-          "epg_source": "Джерело EPG",
-          "scan_interval": "Оновлювати кожні (годин)"
-        }
+        "title": "What's On TV Що по телевізору — Джерело EPG",
+        "description": "Виберіть свою країну/регіон та інтервал оновлення.",
+        "data": { "epg_source": "Джерело EPG", "scan_interval": "Оновлювати кожні (години)" }
       },
       "custom_url": {
-        "title": "Що по телевізору — власний URL",
+        "title": "What's On TV — Користувацький URL",
         "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Що по телевізору — Обрати канали",
-        "description": "Знайдено {total} каналів. Оберіть ті, за якими хочете стежити.",
+        "title": "What's On TV — Вибір каналів",
+        "description": "Знайдено {total} каналів. Виберіть ті, які хочете відстежувати.",
         "data": { "channels": "Канали" }
       },
       "reconfigure": {
-        "title": "Що по телевізору — Переналаштувати",
-        "data": {
-          "epg_source": "Джерело EPG",
-          "scan_interval": "Оновлювати кожні (годин)"
-        }
+        "title": "What's On TV — Переналаштування",
+        "data": { "epg_source": "Джерело EPG", "scan_interval": "Оновлювати кожні (години)" }
       },
       "reconfigure_channels": {
-        "title": "Що по телевізору — Оновити канали",
+        "title": "What's On TV — Оновити канали",
         "description": "Доступні канали: {total}.",
         "data": { "channels": "Канали" }
       }
     },
     "error": {
-      "cannot_connect": "Не вдалося завантажити EPG. Перевірте URL та з’єднання.",
+      "cannot_connect": "Не вдалося завантажити EPG. Перевірте URL та ваше з'єднання.",
       "no_channels": "Файл EPG не містить каналів.",
-      "no_channels_selected": "Оберіть хоча б один канал.",
-      "unknown": "Неочікувана помилка під час обробки EPG."
+      "no_channels_selected": "Виберіть принаймні один канал.",
+      "unknown": "Неочікувана помилка при обробці EPG."
     },
     "abort": {
       "already_configured": "Це джерело EPG вже налаштовано.",
@@ -46,17 +39,14 @@
   "options": {
     "step": {
       "init": {
-        "title": "Що по телевізору — Керування каналами",
+        "title": "What's On TV — Керування каналами",
         "description": "Доступні канали: {total}.",
-        "data": {
-          "channels": "Активні канали",
-          "scan_interval": "Оновлювати кожні (годин)"
-        }
+        "data": { "channels": "Активні канали", "scan_interval": "Оновлювати кожні (години)" }
       }
     },
     "error": {
-      "cannot_connect": "Не вдалося зв’язатися з джерелом EPG.",
-      "no_channels_selected": "Оберіть хоча б один канал."
+      "cannot_connect": "Не вдалося підключитися до джерела EPG.",
+      "no_channels_selected": "Виберіть принаймні один канал."
     }
   }
 }

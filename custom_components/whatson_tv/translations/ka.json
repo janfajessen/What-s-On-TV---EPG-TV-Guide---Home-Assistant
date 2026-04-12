@@ -1,41 +1,34 @@
 {
-  "title": "რა არის ტელევიზორში — EPG წყარო",
   "config": {
     "step": {
       "user": {
-        "title": "რა არის ტელევიზორში — EPG წყარო",
+        "title": "What's On TV რა არის ტელევიზორში — EPG წყარო",
         "description": "აირჩიეთ თქვენი ქვეყანა/რეგიონი და განახლების ინტერვალი.",
-        "data": {
-          "epg_source": "EPG წყარო",
-          "scan_interval": "განახლება ყოველ (საათში)"
-        }
+        "data": { "epg_source": "EPG წყარო", "scan_interval": "განახლება ყოველ (საათში)" }
       },
       "custom_url": {
-        "title": "რა არის ტელევიზორში — მორგებული URL",
+        "title": "What's On TV — მორგებული URL",
         "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "რა არის ტელევიზორში — აირჩიეთ არხები",
-        "description": "ნაპოვნია {total} არხი. აირჩიეთ ისინი, რომელთა თვალყურის დევნებაც გსურთ.",
+        "title": "What's On TV — არხების შერჩევა",
+        "description": "ნაპოვნია {total} არხი. აირჩიეთ ის, რომელთა თვალყურის დევინაც გსურთ.",
         "data": { "channels": "არხები" }
       },
       "reconfigure": {
-        "title": "რა არის ტელევიზორში — ხელახლა კონფიგურაცია",
-        "data": {
-          "epg_source": "EPG წყარო",
-          "scan_interval": "განახლება ყოველ (საათში)"
-        }
+        "title": "What's On TV — ხელახალი კონფიგურაცია",
+        "data": { "epg_source": "EPG წყარო", "scan_interval": "განახლება ყოველ (საათში)" }
       },
       "reconfigure_channels": {
-        "title": "რა არის ტელევიზორში — არხების განახლება",
+        "title": "What's On TV — არხების განახლება",
         "description": "ხელმისაწვდომი არხები: {total}.",
         "data": { "channels": "არხები" }
       }
     },
     "error": {
-      "cannot_connect": "EPG-ის ჩამოტვირთვა ვერ მოხერხდა. შეამოწმეთ URL და კავშირი.",
+      "cannot_connect": "EPG-ის ჩამოტვირთვა ვერ მოხერხდა. შეამოწმეთ URL და თქვენი კავშირი.",
       "no_channels": "EPG ფაილი არ შეიცავს არხებს.",
-      "no_channels_selected": "აირჩიეთ სულ მცირე ერთი არხი.",
+      "no_channels_selected": "აირჩიეთ მინიმუმ ერთი არხი.",
       "unknown": "მოულოდნელი შეცდომა EPG-ის დამუშავებისას."
     },
     "abort": {
@@ -46,17 +39,14 @@
   "options": {
     "step": {
       "init": {
-        "title": "რა არის ტელევიზორში — არხების მართვა",
+        "title": "What's On TV — არხების მართვა",
         "description": "ხელმისაწვდომი არხები: {total}.",
-        "data": {
-          "channels": "აქტიური არხები",
-          "scan_interval": "განახლება ყოველ (საათში)"
-        }
+        "data": { "channels": "აქტიური არხები", "scan_interval": "განახლება ყოველ (საათში)" }
       }
     },
     "error": {
-      "cannot_connect": "EPG წყაროსთან დაკავშირება ვერ მოხერხდა.",
-      "no_channels_selected": "აირჩიეთ სულ მცირე ერთი არხი."
+      "cannot_connect": "EPG წყარომდე მისვლა ვერ მოხერხდა.",
+      "no_channels_selected": "აირჩიეთ მინიმუმ ერთი არხი."
     }
   }
 }

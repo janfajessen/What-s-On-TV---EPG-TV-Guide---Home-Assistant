@@ -1,39 +1,32 @@
 {
-  "title": "Cosa c'è in TV — Fonte EPG",
   "config": {
     "step": {
       "user": {
-        "title": "Cosa c'è in TV — Fonte EPG",
+        "title": "What's On TV Cosa c'è in televisione — Fonte EPG",
         "description": "Seleziona il tuo paese/regione e l'intervallo di aggiornamento.",
-        "data": {
-          "epg_source": "Fonte EPG",
-          "scan_interval": "Aggiorna ogni (ore)"
-        }
+        "data": { "epg_source": "Fonte EPG", "scan_interval": "Aggiorna ogni (ore)" }
       },
       "custom_url": {
-        "title": "Cosa c'è in TV — URL personalizzato",
+        "title": "What's On TV — URL personalizzato",
         "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Cosa c'è in TV — Seleziona canali",
-        "description": "Trovati {total} canali. Seleziona quelli che vuoi seguire.",
+        "title": "What's On TV — Selezione canali",
+        "description": "Trovati {total} canali. Seleziona quelli che vuoi tracciare.",
         "data": { "channels": "Canali" }
       },
       "reconfigure": {
-        "title": "Cosa c'è in TV — Riconfigura",
-        "data": {
-          "epg_source": "Fonte EPG",
-          "scan_interval": "Aggiorna ogni (ore)"
-        }
+        "title": "What's On TV — Riconfigura",
+        "data": { "epg_source": "Fonte EPG", "scan_interval": "Aggiorna ogni (ore)" }
       },
       "reconfigure_channels": {
-        "title": "Cosa c'è in TV — Aggiorna canali",
+        "title": "What's On TV — Aggiorna canali",
         "description": "Canali disponibili: {total}.",
         "data": { "channels": "Canali" }
       }
     },
     "error": {
-      "cannot_connect": "Non è stato possibile scaricare l'EPG. Verifica l'URL e la tua connessione.",
+      "cannot_connect": "Impossibile scaricare l'EPG. Controlla l'URL e la tua connessione.",
       "no_channels": "Il file EPG non contiene canali.",
       "no_channels_selected": "Seleziona almeno un canale.",
       "unknown": "Errore imprevisto durante l'elaborazione dell'EPG."
@@ -46,16 +39,13 @@
   "options": {
     "step": {
       "init": {
-        "title": "Cosa c'è in TV — Gestisci canali",
+        "title": "What's On TV — Gestisci canali",
         "description": "Canali disponibili: {total}.",
-        "data": {
-          "channels": "Canali attivi",
-          "scan_interval": "Aggiorna ogni (ore)"
-        }
+        "data": { "channels": "Canali attivi", "scan_interval": "Aggiorna ogni (ore)" }
       }
     },
     "error": {
-      "cannot_connect": "Impossibile contattare la fonte EPG.",
+      "cannot_connect": "Impossibile raggiungere la fonte EPG.",
       "no_channels_selected": "Seleziona almeno un canale."
     }
   }

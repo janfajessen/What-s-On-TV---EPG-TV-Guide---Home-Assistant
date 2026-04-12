@@ -1,39 +1,32 @@
 {
-  "title": "Kas rodoma per TV — EPG šaltinis",
   "config": {
     "step": {
       "user": {
-        "title": "Kas rodoma per TV — EPG šaltinis",
+        "title": "What's On TV Ką per televizorių — EPG šaltinis",
         "description": "Pasirinkite savo šalį/regioną ir atnaujinimo intervalą.",
-        "data": {
-          "epg_source": "EPG šaltinis",
-          "scan_interval": "Atnaujinti kas (valandas)"
-        }
+        "data": { "epg_source": "EPG šaltinis", "scan_interval": "Atnaujinti kas (valandas)" }
       },
       "custom_url": {
-        "title": "Kas rodoma per TV — tinkintas URL",
+        "title": "What's On TV — Tinkintas URL",
         "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Kas rodoma per TV — Pasirinkite kanalus",
+        "title": "What's On TV — Kanalu pasirinkimas",
         "description": "Rasta {total} kanalų. Pasirinkite tuos, kuriuos norite sekti.",
-        "data": { "channels": "Kanalai" }
+        "data": { "channels": "Kanālai" }
       },
       "reconfigure": {
-        "title": "Kas rodoma per TV — Perkonfigūruoti",
-        "data": {
-          "epg_source": "EPG šaltinis",
-          "scan_interval": "Atnaujinti kas (valandas)"
-        }
+        "title": "What's On TV — Perkonfigūruoti",
+        "data": { "epg_source": "EPG šaltinis", "scan_interval": "Atnaujinti kas (valandas)" }
       },
       "reconfigure_channels": {
-        "title": "Kas rodoma per TV — Atnaujinti kanalus",
+        "title": "What's On TV — Atnaujinti kanalus",
         "description": "Galimi kanalai: {total}.",
-        "data": { "channels": "Kanalai" }
+        "data": { "channels": "Kanālai" }
       }
     },
     "error": {
-      "cannot_connect": "Nepavyko atsisiųsti EPG. Patikrinkite URL ir ryšį.",
+      "cannot_connect": "Nepavyko atsisiųsti EPG. Patikrinkite URL ir savo ryšį.",
       "no_channels": "EPG faile nėra kanalų.",
       "no_channels_selected": "Pasirinkite bent vieną kanalą.",
       "unknown": "Netikėta klaida apdorojant EPG."
@@ -46,16 +39,13 @@
   "options": {
     "step": {
       "init": {
-        "title": "Kas rodoma per TV — Valdyti kanalus",
+        "title": "What's On TV — Tvarkyti kanalus",
         "description": "Galimi kanalai: {total}.",
-        "data": {
-          "channels": "Aktyvūs kanalai",
-          "scan_interval": "Atnaujinti kas (valandas)"
-        }
+        "data": { "channels": "Aktyvūs kanalai", "scan_interval": "Atnaujinti kas (valandas)" }
       }
     },
     "error": {
-      "cannot_connect": "Nepavyko susisiekti su EPG šaltiniu.",
+      "cannot_connect": "Nepavyko pasiekti EPG šaltinio.",
       "no_channels_selected": "Pasirinkite bent vieną kanalą."
     }
   }

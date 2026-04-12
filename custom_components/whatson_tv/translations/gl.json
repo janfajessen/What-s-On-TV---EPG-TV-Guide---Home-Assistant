@@ -1,39 +1,32 @@
 {
-  "title": "Que hai na TV — Fonte EPG",
   "config": {
     "step": {
       "user": {
-        "title": "Que hai na TV — Fonte EPG",
-        "description": "Selecciona o teu país/rexión e intervalo de actualización.",
-        "data": {
-          "epg_source": "Fonte EPG",
-          "scan_interval": "Actualizar cada (horas)"
-        }
+        "title": "What's On TV Que hai na televisión — Fonte EPG",
+        "description": "Selecciona o teu país/rea e o intervalo de actualización.",
+        "data": { "epg_source": "Fonte EPG", "scan_interval": "Actualizar cada (horas)" }
       },
       "custom_url": {
-        "title": "Que hai na TV — URL personalizada",
+        "title": "What's On TV — URL personalizada",
         "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Que hai na TV — Seleccionar canles",
-        "description": "Atopáronse {total} canles. Selecciona as que queres seguir.",
+        "title": "What's On TV — Selección de canles",
+        "description": "Atopáronse {total} canles. Selecciona as que queiras seguir.",
         "data": { "channels": "Canles" }
       },
       "reconfigure": {
-        "title": "Que hai na TV — Reconfigurar",
-        "data": {
-          "epg_source": "Fonte EPG",
-          "scan_interval": "Actualizar cada (horas)"
-        }
+        "title": "What's On TV — Reconfigurar",
+        "data": { "epg_source": "Fonte EPG", "scan_interval": "Actualizar cada (horas)" }
       },
       "reconfigure_channels": {
-        "title": "Que hai na TV — Actualizar canles",
+        "title": "What's On TV — Actualizar canles",
         "description": "Canles dispoñibles: {total}.",
         "data": { "channels": "Canles" }
       }
     },
     "error": {
-      "cannot_connect": "Non se puido descargar o EPG. Verifica o URL e a túa conexión.",
+      "cannot_connect": "Non se puido descargar o EPG. Comproba a URL e a túa conexión.",
       "no_channels": "O ficheiro EPG non contén canles.",
       "no_channels_selected": "Selecciona polo menos unha canle.",
       "unknown": "Erro inesperado ao procesar o EPG."
@@ -46,16 +39,13 @@
   "options": {
     "step": {
       "init": {
-        "title": "Que hai na TV — Xestionar canles",
+        "title": "What's On TV — Xestionar canles",
         "description": "Canles dispoñibles: {total}.",
-        "data": {
-          "channels": "Canles activas",
-          "scan_interval": "Actualizar cada (horas)"
-        }
+        "data": { "channels": "Canles activas", "scan_interval": "Actualizar cada (horas)" }
       }
     },
     "error": {
-      "cannot_connect": "Non se puido contactar coa fonte EPG.",
+      "cannot_connect": "Non se puido acceder á fonte EPG.",
       "no_channels_selected": "Selecciona polo menos unha canle."
     }
   }

@@ -1,41 +1,34 @@
 {
-  "title": "Mi van a TV-ben — EPG forrás",
   "config": {
     "step": {
       "user": {
-        "title": "Mi van a TV-ben — EPG forrás",
-        "description": "Válassza ki az országot/régiót és a frissítési időközöt.",
-        "data": {
-          "epg_source": "EPG forrás",
-          "scan_interval": "Frissítés minden (óra)"
-        }
+        "title": "What's On TV Mi van a televízióban — EPG forrás",
+        "description": "Válaszd ki az országod/régiód és a frissítési intervallumot.",
+        "data": { "epg_source": "EPG forrás", "scan_interval": "Frissítés minden (óra)" }
       },
       "custom_url": {
-        "title": "Mi van a TV-ben — egyéni URL",
+        "title": "What's On TV — Egyéni URL",
         "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Mi van a TV-ben — Csatornák kiválasztása",
-        "description": "{total} csatorna található. Válassza ki azokat, amelyeket követni szeretne.",
+        "title": "What's On TV — Csatornaválasztás",
+        "description": "{total} csatorna található. Válaszd ki, melyeket szeretnéd követni.",
         "data": { "channels": "Csatornák" }
       },
       "reconfigure": {
-        "title": "Mi van a TV-ben — Újrakonfigurálás",
-        "data": {
-          "epg_source": "EPG forrás",
-          "scan_interval": "Frissítés minden (óra)"
-        }
+        "title": "What's On TV — Újrakonfigurálás",
+        "data": { "epg_source": "EPG forrás", "scan_interval": "Frissítés minden (óra)" }
       },
       "reconfigure_channels": {
-        "title": "Mi van a TV-ben — Csatornák frissítése",
+        "title": "What's On TV — Csatornák frissítése",
         "description": "Elérhető csatornák: {total}.",
         "data": { "channels": "Csatornák" }
       }
     },
     "error": {
-      "cannot_connect": "Nem sikerült letölteni az EPG-t. Ellenőrizze az URL-t és a kapcsolatot.",
+      "cannot_connect": "Nem sikerült letölteni az EPG-t. Ellenőrizd az URL-t és a kapcsolatod.",
       "no_channels": "Az EPG fájl nem tartalmaz csatornákat.",
-      "no_channels_selected": "Válasszon legalább egy csatornát.",
+      "no_channels_selected": "Válassz ki legalább egy csatornát.",
       "unknown": "Váratlan hiba az EPG feldolgozása során."
     },
     "abort": {
@@ -46,17 +39,14 @@
   "options": {
     "step": {
       "init": {
-        "title": "Mi van a TV-ben — Csatornák kezelése",
+        "title": "What's On TV — Csatornák kezelése",
         "description": "Elérhető csatornák: {total}.",
-        "data": {
-          "channels": "Aktív csatornák",
-          "scan_interval": "Frissítés minden (óra)"
-        }
+        "data": { "channels": "Aktív csatornák", "scan_interval": "Frissítés minden (óra)" }
       }
     },
     "error": {
-      "cannot_connect": "Nem sikerült kapcsolatba lépni az EPG forrással.",
-      "no_channels_selected": "Válasszon legalább egy csatornát."
+      "cannot_connect": "Nem sikerült elérni az EPG forrást.",
+      "no_channels_selected": "Válassz ki legalább egy csatornát."
     }
   }
 }

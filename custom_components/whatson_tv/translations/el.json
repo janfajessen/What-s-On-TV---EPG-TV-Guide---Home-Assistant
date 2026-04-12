@@ -1,61 +1,51 @@
 {
-  "title": "Τι παίζει στην TV — Πηγή EPG",
   "config": {
     "step": {
       "user": {
-        "title": "Τι παίζει στην TV — Πηγή EPG",
-        "description": "Επιλέξτε χώρα/περιοχή και διάστημα ενημέρωσης.",
-        "data": {
-          "epg_source": "Πηγή EPG",
-          "scan_interval": "Ενημέρωση κάθε (ώρες)"
-        }
+        "title": "What's On TV Τι παίζει στην τηλεόραση — Πηγή EPG",
+        "description": "Επιλέξτε τη χώρα/περιοχή σας και το διάστημα ενημέρωσης.",
+        "data": { "epg_source": "Πηγή EPG", "scan_interval": "Ενημέρωση κάθε (ώρες)" }
       },
       "custom_url": {
-        "title": "Τι παίζει στην TV — Προσαρμοσμένο URL",
+        "title": "What's On TV — Προσαρμοσμένο URL",
         "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Τι παίζει στην TV — Επιλογή καναλιών",
+        "title": "What's On TV — Επιλογή καναλιών",
         "description": "Βρέθηκαν {total} κανάλια. Επιλέξτε αυτά που θέλετε να παρακολουθείτε.",
         "data": { "channels": "Κανάλια" }
       },
       "reconfigure": {
-        "title": "Τι παίζει στην TV — Αναδιαμόρφωση",
-        "data": {
-          "epg_source": "Πηγή EPG",
-          "scan_interval": "Ενημέρωση κάθε (ώρες)"
-        }
+        "title": "What's On TV — Νέα διαμόρφωση",
+        "data": { "epg_source": "Πηγή EPG", "scan_interval": "Ενημέρωση κάθε (ώρες)" }
       },
       "reconfigure_channels": {
-        "title": "Τι παίζει στην TV — Ενημέρωση καναλιών",
+        "title": "What's On TV — Ενημέρωση καναλιών",
         "description": "Διαθέσιμα κανάλια: {total}.",
         "data": { "channels": "Κανάλια" }
       }
     },
     "error": {
-      "cannot_connect": "Δεν ήταν δυνατή η λήψη του EPG. Ελέγξτε το URL και τη σύνδεσή σας.",
+      "cannot_connect": "Αδυναμία λήψης EPG. Ελέγξτε τη διεύθυνση URL και τη σύνδεσή σας.",
       "no_channels": "Το αρχείο EPG δεν περιέχει κανάλια.",
       "no_channels_selected": "Επιλέξτε τουλάχιστον ένα κανάλι.",
-      "unknown": "Απροσδόκητο σφάλμα κατά την επεξεργασία του EPG."
+      "unknown": "Απρόσμενο σφάλμα κατά την επεξεργασία του EPG."
     },
     "abort": {
-      "already_configured": "Αυτή η πηγή EPG είναι ήδη ρυθμισμένη.",
-      "reconfigure_successful": "Η αναδιαμόρφωση ολοκληρώθηκε."
+      "already_configured": "Αυτή η πηγή EPG έχει ήδη διαμορφωθεί.",
+      "reconfigure_successful": "Η νέα διαμόρφωση ολοκληρώθηκε."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "Τι παίζει στην TV — Διαχείριση καναλιών",
+        "title": "What's On TV — Διαχείριση καναλιών",
         "description": "Διαθέσιμα κανάλια: {total}.",
-        "data": {
-          "channels": "Ενεργά κανάλια",
-          "scan_interval": "Ενημέρωση κάθε (ώρες)"
-        }
+        "data": { "channels": "Ενεργά κανάλια", "scan_interval": "Ενημέρωση κάθε (ώρες)" }
       }
     },
     "error": {
-      "cannot_connect": "Δεν ήταν δυνατή η επικοινωνία με την πηγή EPG.",
+      "cannot_connect": "Αδυναμία πρόσβασης στην πηγή EPG.",
       "no_channels_selected": "Επιλέξτε τουλάχιστον ένα κανάλι."
     }
   }

@@ -1,41 +1,34 @@
 {
-  "title": "Шта је на ТВ-у — EPG извор",
   "config": {
     "step": {
       "user": {
-        "title": "Шта је на ТВ-у — EPG извор",
-        "description": "Изаберите земљу/регион и интервал ажурирања.",
-        "data": {
-          "epg_source": "EPG извор",
-          "scan_interval": "Ажурирај сваких (сати)"
-        }
+        "title": "What's On TV Шта је на телевизији — EPG извор",
+        "description": "Изаберите своју земљу/регион и интервал ажурирања.",
+        "data": { "epg_source": "EPG извор", "scan_interval": "Ажурирај сваких (сати)" }
       },
       "custom_url": {
-        "title": "Шта је на ТВ-у — прилагођени URL",
+        "title": "What's On TV — Прилагођени URL",
         "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Шта је на ТВ-у — Изабери канале",
+        "title": "What's On TV — Избор канала",
         "description": "Пронађено {total} канала. Изаберите оне које желите да пратите.",
         "data": { "channels": "Канали" }
       },
       "reconfigure": {
-        "title": "Шта је на ТВ-у — Реконфигурација",
-        "data": {
-          "epg_source": "EPG извор",
-          "scan_interval": "Ажурирај сваких (сати)"
-        }
+        "title": "What's On TV — Реконфигурација",
+        "data": { "epg_source": "EPG извор", "scan_interval": "Ажурирај сваких (сати)" }
       },
       "reconfigure_channels": {
-        "title": "Шта је на ТВ-у — Ажурирај канале",
+        "title": "What's On TV — Ажурирај канале",
         "description": "Доступни канали: {total}.",
         "data": { "channels": "Канали" }
       }
     },
     "error": {
-      "cannot_connect": "EPG није могао бити преузет. Проверите URL и везу.",
-      "no_channels": "EPG датотека не садржи канале.",
-      "no_channels_selected": "Изаберите бар један канал.",
+      "cannot_connect": "Није могуће преузети EPG. Проверите URL и своју везу.",
+      "no_channels": "EPG фајл не садржи канале.",
+      "no_channels_selected": "Изаберите барем један канал.",
       "unknown": "Неочекивана грешка при обради EPG-а."
     },
     "abort": {
@@ -46,17 +39,14 @@
   "options": {
     "step": {
       "init": {
-        "title": "Шта је на ТВ-у — Управљање каналима",
+        "title": "What's On TV — Управљање каналима",
         "description": "Доступни канали: {total}.",
-        "data": {
-          "channels": "Активни канали",
-          "scan_interval": "Ажурирај сваких (сати)"
-        }
+        "data": { "channels": "Активни канали", "scan_interval": "Ажурирај сваких (сати)" }
       }
     },
     "error": {
-      "cannot_connect": "Није могуће контактирати EPG извор.",
-      "no_channels_selected": "Изаберите бар један канал."
+      "cannot_connect": "Није могуће доћи до EPG извора.",
+      "no_channels_selected": "Изаберите барем један канал."
     }
   }
 }

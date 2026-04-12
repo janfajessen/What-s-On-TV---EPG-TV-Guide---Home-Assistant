@@ -1,33 +1,26 @@
 {
-  "title": "Ce este la TV — Sursă EPG",
   "config": {
     "step": {
       "user": {
-        "title": "Ce este la TV — Sursă EPG",
-        "description": "Selectați țara/regiunea și intervalul de actualizare.",
-        "data": {
-          "epg_source": "Sursă EPG",
-          "scan_interval": "Actualizează la fiecare (ore)"
-        }
+        "title": "What's On TV Ce este la televizor — Sursă EPG",
+        "description": "Selectează țara/regiunea și intervalul de actualizare.",
+        "data": { "epg_source": "Sursă EPG", "scan_interval": "Actualizează la fiecare (ore)" }
       },
       "custom_url": {
-        "title": "Ce este la TV — URL personalizat",
+        "title": "What's On TV — URL personalizat",
         "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Ce este la TV — Selectează canale",
-        "description": "{total} canale găsite. Selectează-le pe cele pe care vrei să le urmărești.",
+        "title": "What's On TV — Selecție canale",
+        "description": "S-au găsit {total} canale. Selectează-le pe cele pe care dorești să le urmărești.",
         "data": { "channels": "Canale" }
       },
       "reconfigure": {
-        "title": "Ce este la TV — Reconfigurare",
-        "data": {
-          "epg_source": "Sursă EPG",
-          "scan_interval": "Actualizează la fiecare (ore)"
-        }
+        "title": "What's On TV — Reconfigurează",
+        "data": { "epg_source": "Sursă EPG", "scan_interval": "Actualizează la fiecare (ore)" }
       },
       "reconfigure_channels": {
-        "title": "Ce este la TV — Actualizează canalele",
+        "title": "What's On TV — Actualizează canalele",
         "description": "Canale disponibile: {total}.",
         "data": { "channels": "Canale" }
       }
@@ -40,22 +33,19 @@
     },
     "abort": {
       "already_configured": "Această sursă EPG este deja configurată.",
-      "reconfigure_successful": "Reconfigurarea s-a finalizat."
+      "reconfigure_successful": "Reconfigurare completă."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "Ce este la TV — Gestionează canalele",
+        "title": "What's On TV — Gestionare canale",
         "description": "Canale disponibile: {total}.",
-        "data": {
-          "channels": "Canale active",
-          "scan_interval": "Actualizează la fiecare (ore)"
-        }
+        "data": { "channels": "Canale active", "scan_interval": "Actualizează la fiecare (ore)" }
       }
     },
     "error": {
-      "cannot_connect": "Nu s-a putut contacta sursa EPG.",
+      "cannot_connect": "Nu s-a putut ajunge la sursa EPG.",
       "no_channels_selected": "Selectează cel puțin un canal."
     }
   }

@@ -1,61 +1,51 @@
 {
-  "title": "Kio estas en la TV — EPG-fonto",
   "config": {
     "step": {
       "user": {
-        "title": "Kio estas en la TV — EPG-fonto",
+        "title": "What's On TV Kio estas en televido — Fonto EPG",
         "description": "Elektu vian landon/regionon kaj ĝisdatigan intervalon.",
-        "data": {
-          "epg_source": "EPG-fonto",
-          "scan_interval": "Ĝisdatigi ĉiun (horojn)"
-        }
+        "data": { "epg_source": "Fonto EPG", "scan_interval": "Ĝisdatigi ĉiu (horoj)" }
       },
       "custom_url": {
-        "title": "Kio estas en la TV — propra URL",
-        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+        "title": "What's On TV — Propra URL",
+        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Kio estas en la TV — Elektu kanalojn",
-        "description": "{total} kanaloj trovitaj. Elektu tiujn, kiujn vi volas sekvi.",
+        "title": "What's On TV — Elekto de kanaloj",
+        "description": "Trovitaj {total} kanaloj. Elektu tiujn, kiujn vi volas spuri.",
         "data": { "channels": "Kanaloj" }
       },
       "reconfigure": {
-        "title": "Kio estas en la TV — Rekonfiguri",
-        "data": {
-          "epg_source": "EPG-fonto",
-          "scan_interval": "Ĝisdatigi ĉiun (horojn)"
-        }
+        "title": "What's On TV — Reagordi",
+        "data": { "epg_source": "Fonto EPG", "scan_interval": "Ĝisdatigi ĉiu (horoj)" }
       },
       "reconfigure_channels": {
-        "title": "Kio estas en la TV — Ĝisdatigi kanalojn",
-        "description": "Disponeblaj kanaloj: {total}.",
+        "title": "What's On TV — Ĝisdatigi kanalojn",
+        "description": "Haveblaj kanaloj: {total}.",
         "data": { "channels": "Kanaloj" }
       }
     },
     "error": {
-      "cannot_connect": "Ne eblis elŝuti la EPG. Kontrolu la URL kaj vian konekton.",
-      "no_channels": "La EPG-dosiero ne enhavas kanalojn.",
+      "cannot_connect": "Ne eblis elŝuti EPG. Kontrolu la URL-on kaj vian konekton.",
+      "no_channels": "La EPG-dosiero enhavas neniujn kanalojn.",
       "no_channels_selected": "Elektu almenaŭ unu kanalon.",
-      "unknown": "Neatendita eraro dum prilaborado de la EPG."
+      "unknown": "Neatendita eraro dum prilaborado de EPG."
     },
     "abort": {
       "already_configured": "Ĉi tiu EPG-fonto jam estas agordita.",
-      "reconfigure_successful": "Rekonfigurado finita."
+      "reconfigure_successful": "Reagordo kompleta."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "Kio estas en la TV — Administri kanalojn",
-        "description": "Disponeblaj kanaloj: {total}.",
-        "data": {
-          "channels": "Aktivaj kanaloj",
-          "scan_interval": "Ĝisdatigi ĉiun (horojn)"
-        }
+        "title": "What's On TV — Administri kanalojn",
+        "description": "Haveblaj kanaloj: {total}.",
+        "data": { "channels": "Aktivaj kanaloj", "scan_interval": "Ĝisdatigi ĉiu (horoj)" }
       }
     },
     "error": {
-      "cannot_connect": "Ne eblis kontakti la EPG-fonton.",
+      "cannot_connect": "Ne eblis atingi la EPG-fonton.",
       "no_channels_selected": "Elektu almenaŭ unu kanalon."
     }
   }

@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "What's On TV Теледидарда не бар — EPG көзі",
+        "description": "Еліңізді/аймағыңызды және жаңарту аралығын таңдаңыз.",
+        "data": { "epg_source": "EPG көзі", "scan_interval": "Әр (сағат) сайын жаңарту" }
+      },
+      "custom_url": {
+        "title": "What's On TV — Арнайы URL",
+        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+      },
+      "channels": {
+        "title": "What's On TV — Арна таңдау",
+        "description": "{total} арна табылды. Бақылағыңыз келетіндерді таңдаңыз.",
+        "data": { "channels": "Арналар" }
+      },
+      "reconfigure": {
+        "title": "What's On TV — Қайта конфигурациялау",
+        "data": { "epg_source": "EPG көзі", "scan_interval": "Әр (сағат) сайын жаңарту" }
+      },
+      "reconfigure_channels": {
+        "title": "What's On TV — Арналарды жаңарту",
+        "description": "Қолжетімді арналар: {total}.",
+        "data": { "channels": "Арналар" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG жүктеу мүмкін болмады. URL және қосылымыңызды тексеріңіз.",
+      "no_channels": "EPG файлында арналар жоқ.",
+      "no_channels_selected": "Кемінде бір арнаны таңдаңыз.",
+      "unknown": "EPG өңдеу кезінде күтпеген қате."
+    },
+    "abort": {
+      "already_configured": "Бұл EPG көзі қазірдің өзінде конфигурацияланған.",
+      "reconfigure_successful": "Қайта конфигурациялау аяқталды."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "What's On TV — Арналарды басқару",
+        "description": "Қолжетімді арналар: {total}.",
+        "data": { "channels": "Белсенді арналар", "scan_interval": "Әр (сағат) сайын жаңарту" }
+      }
+    },
+    "error": {
+      "cannot_connect": "EPG көзіне жете алмады.",
+      "no_channels_selected": "Кемінде бір арнаны таңдаңыз."
+    }
+  }
+}

@@ -1,61 +1,51 @@
 {
-  "title": "Kaj je na TV — Vir EPG",
   "config": {
     "step": {
       "user": {
-        "title": "Kaj je na TV — Vir EPG",
-        "description": "Izberite državo/regijo in interval posodobitve.",
-        "data": {
-          "epg_source": "Vir EPG",
-          "scan_interval": "Posodobi vsakih (ur)"
-        }
+        "title": "What's On TV Kaj je na televiziji — Vir EPG",
+        "description": "Izberite svojo državo/regijo in interval posodabljanja.",
+        "data": { "epg_source": "Vir EPG", "scan_interval": "Posodobi vsakih (ur)" }
       },
       "custom_url": {
-        "title": "Kaj je na TV — URL po meri",
+        "title": "What's On TV — Po meri URL",
         "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Kaj je na TV — Izberi kanale",
-        "description": "Najdenih {total} kanalov. Izberite tiste, ki jih želite spremljati.",
+        "title": "What's On TV — Izbira kanalov",
+        "description": "Najdenih {total} kanalov. Izberite tiste, ki jih želite slediti.",
         "data": { "channels": "Kanali" }
       },
       "reconfigure": {
-        "title": "Kaj je na TV — Ponovno konfiguriraj",
-        "data": {
-          "epg_source": "Vir EPG",
-          "scan_interval": "Posodobi vsakih (ur)"
-        }
+        "title": "What's On TV — Ponovna konfiguracija",
+        "data": { "epg_source": "Vir EPG", "scan_interval": "Posodobi vsakih (ur)" }
       },
       "reconfigure_channels": {
-        "title": "Kaj je na TV — Posodobi kanale",
+        "title": "What's On TV — Posodobi kanale",
         "description": "Razpoložljivi kanali: {total}.",
         "data": { "channels": "Kanali" }
       }
     },
     "error": {
-      "cannot_connect": "EPG ni bilo mogoče prenesti. Preverite URL in povezavo.",
+      "cannot_connect": "EPG ni bilo mogoče prenesti. Preverite URL in svojo povezavo.",
       "no_channels": "Datoteka EPG ne vsebuje kanalov.",
       "no_channels_selected": "Izberite vsaj en kanal.",
       "unknown": "Nepričakovana napaka pri obdelavi EPG."
     },
     "abort": {
       "already_configured": "Ta vir EPG je že konfiguriran.",
-      "reconfigure_successful": "Ponovna konfiguracija zaključena."
+      "reconfigure_successful": "Ponovna konfiguracija končana."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "Kaj je na TV — Upravljaj kanale",
+        "title": "What's On TV — Upravljanje kanalov",
         "description": "Razpoložljivi kanali: {total}.",
-        "data": {
-          "channels": "Aktivni kanali",
-          "scan_interval": "Posodobi vsakih (ur)"
-        }
+        "data": { "channels": "Aktivni kanali", "scan_interval": "Posodobi vsakih (ur)" }
       }
     },
     "error": {
-      "cannot_connect": "Ni mogoče vzpostaviti stika z virom EPG.",
+      "cannot_connect": "Vira EPG ni bilo mogoče doseči.",
       "no_channels_selected": "Izberite vsaj en kanal."
     }
   }

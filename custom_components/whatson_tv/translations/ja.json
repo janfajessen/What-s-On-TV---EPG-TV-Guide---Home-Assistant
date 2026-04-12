@@ -1,62 +1,52 @@
 {
-  "title": "テレビ番組 — EPG ソース",
   "config": {
     "step": {
       "user": {
-        "title": "テレビ番組 — EPG ソース",
+        "title": "What's On TV テレビで何をやっている — EPGソース",
         "description": "国/地域と更新間隔を選択してください。",
-        "data": {
-          "epg_source": "EPG ソース",
-          "scan_interval": "毎 (時間) 更新"
-        }
+        "data": { "epg_source": "EPGソース", "scan_interval": "更新間隔（時間）" }
       },
       "custom_url": {
-        "title": "テレビ番組 — カスタム URL",
-        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+        "title": "What's On TV — カスタムURL",
+        "data": { "epg_url": "EPG URL（XMLTV .xml / .xml.gz）" }
       },
       "channels": {
-        "title": "テレビ番組 — チャンネルを選択",
-        "description": "{total} 個のチャンネルが見つかりました。フォローしたいものを選択してください。",
+        "title": "What's On TV — チャンネル選択",
+        "description": "{total}チャンネルが見つかりました。追跡するチャンネルを選択してください。",
         "data": { "channels": "チャンネル" }
       },
       "reconfigure": {
-        "title": "テレビ番組 — 再設定",
-        "data": {
-          "epg_source": "EPG ソース",
-          "scan_interval": "毎 (時間) 更新"
-        }
+        "title": "What's On TV — 再設定",
+        "data": { "epg_source": "EPGソース", "scan_interval": "更新間隔（時間）" }
       },
       "reconfigure_channels": {
-        "title": "テレビ番組 — チャンネルを更新",
+        "title": "What's On TV — チャンネルを更新",
         "description": "利用可能なチャンネル: {total}。",
         "data": { "channels": "チャンネル" }
       }
     },
     "error": {
-      "cannot_connect": "EPG をダウンロードできませんでした。URL と接続を確認してください。",
-      "no_channels": "EPG ファイルにチャンネルが含まれていません。",
-      "no_channels_selected": "少なくとも 1 つのチャンネルを選択してください。",
-      "unknown": "EPG 処理中に予期しないエラーが発生しました。"
+      "cannot_connect": "EPGをダウンロードできませんでした。URLと接続を確認してください。",
+      "no_channels": "EPGファイルにチャンネルが含まれていません。",
+      "no_channels_selected": "少なくとも1つのチャンネルを選択してください。",
+      "unknown": "EPG処理中に予期しないエラーが発生しました。"
     },
     "abort": {
-      "already_configured": "この EPG ソースは既に設定されています。",
+      "already_configured": "このEPGソースは既に設定されています。",
       "reconfigure_successful": "再設定が完了しました。"
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "テレビ番組 — チャンネルを管理",
+        "title": "What's On TV — チャンネル管理",
         "description": "利用可能なチャンネル: {total}。",
-        "data": {
-          "channels": "アクティブなチャンネル",
-          "scan_interval": "毎 (時間) 更新"
-        }
+        "data": { "channels": "アクティブなチャンネル", "scan_interval": "更新間隔（時間）" }
       }
     },
     "error": {
-      "cannot_connect": "EPG ソースに接続できませんでした。",
-      "no_channels_selected": "少なくとも 1 つのチャンネルを選択してください。"
+      "cannot_connect": "EPGソースに到達できませんでした。",
+      "no_channels_selected": "少なくとも1つのチャンネルを選択してください。"
     }
   }
 }

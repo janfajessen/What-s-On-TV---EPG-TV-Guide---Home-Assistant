@@ -1,61 +1,51 @@
 {
-  "title": "מה בטלוויזיה — מקור EPG",
   "config": {
     "step": {
       "user": {
-        "title": "מה בטלוויזיה — מקור EPG",
-        "description": "בחר את המדינה/אזור ואת מרווח העדכון.",
-        "data": {
-          "epg_source": "מקור EPG",
-          "scan_interval": "עדכן כל (שעות)"
-        }
+        "title": "What's On TV — מקור EPG מה יש בטלוויזיה",
+        "description": "בחר את המדינה/אזור שלך ואת מרווח העדכון.",
+        "data": { "epg_source": "מקור EPG", "scan_interval": "עדכן כל (שעות)" }
       },
       "custom_url": {
-        "title": "מה בטלוויזיה — URL מותאם אישית",
-        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+        "title": "What's On TV — כתובת מותאמת אישית",
+        "data": { "epg_url": "כתובת EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "מה בטלוויזיה — בחר ערוצים",
-        "description": "נמצאו {total} ערוצים. בחר את אלה שברצונך לעקוב אחריהם.",
+        "title": "What's On TV — בחירת ערוצים",
+        "description": "נמצאו {total} ערוצים. בחר את אלו שברצונך לעקוב אחריהם.",
         "data": { "channels": "ערוצים" }
       },
       "reconfigure": {
-        "title": "מה בטלוויזיה — הגדרה מחדש",
-        "data": {
-          "epg_source": "מקור EPG",
-          "scan_interval": "עדכן כל (שעות)"
-        }
+        "title": "What's On TV — הגדרה מחדש",
+        "data": { "epg_source": "מקור EPG", "scan_interval": "עדכן כל (שעות)" }
       },
       "reconfigure_channels": {
-        "title": "מה בטלוויזיה — עדכן ערוצים",
+        "title": "What's On TV — עדכן ערוצים",
         "description": "ערוצים זמינים: {total}.",
         "data": { "channels": "ערוצים" }
       }
     },
     "error": {
-      "cannot_connect": "לא ניתן היה להוריד את ה-EPG. בדוק את ה-URL ואת החיבור.",
-      "no_channels": "קובץ ה-EPG אינו מכיל ערוצים.",
+      "cannot_connect": "לא ניתן להוריד EPG. בדוק את הכתובת ואת החיבור שלך.",
+      "no_channels": "קובץ EPG אינו מכיל ערוצים.",
       "no_channels_selected": "בחר לפחות ערוץ אחד.",
-      "unknown": "שגיאה בלתי צפויה בעיבוד ה-EPG."
+      "unknown": "שגיאה לא צפויה בעיבוד ה-EPG."
     },
     "abort": {
       "already_configured": "מקור EPG זה כבר מוגדר.",
-      "reconfigure_successful": "ההגדרה מחדש הושלמה."
+      "reconfigure_successful": "הגדרה מחדש הושלמה."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "מה בטלוויזיה — ניהול ערוצים",
+        "title": "What's On TV — ניהול ערוצים",
         "description": "ערוצים זמינים: {total}.",
-        "data": {
-          "channels": "ערוצים פעילים",
-          "scan_interval": "עדכן כל (שעות)"
-        }
+        "data": { "channels": "ערוצים פעילים", "scan_interval": "עדכן כל (שעות)" }
       }
     },
     "error": {
-      "cannot_connect": "לא ניתן היה ליצור קשר עם מקור ה-EPG.",
+      "cannot_connect": "לא ניתן להגיע למקור EPG.",
       "no_channels_selected": "בחר לפחות ערוץ אחד."
     }
   }

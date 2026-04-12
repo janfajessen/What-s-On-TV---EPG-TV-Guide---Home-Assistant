@@ -1,42 +1,41 @@
 {
-  "title": "Qué hay en la TV — Fuente EPG",
   "config": {
     "step": {
       "user": {
-        "title": "Qué hay en la TV — Fuente EPG",
-        "description": "Selecciona tu país/región e intervalo de actualización.",
+        "title": "What's On TV Qué hay en televisión — Fuente EPG",
+        "description": "Selecciona tu país/región y el intervalo de actualización.",
         "data": {
           "epg_source": "Fuente EPG",
           "scan_interval": "Actualizar cada (horas)"
         }
       },
       "custom_url": {
-        "title": "Qué hay en la TV — URL personalizada",
-        "data": { "epg_url": "URL EPG (XMLTV .xml / .xml.gz)" }
+        "title": "What's On TV — URL personalizada",
+        "data": { "epg_url": "URL del EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "Qué hay en la TV — Seleccionar canales",
-        "description": "Se encontraron {total} canales. Selecciona los que quieres seguir.",
+        "title": "What's On TV — Selección de canales",
+        "description": "Se han encontrado {total} canales. Selecciona los que quieres seguir.",
         "data": { "channels": "Canales" }
       },
       "reconfigure": {
-        "title": "Qué hay en la TV — Reconfigurar",
+        "title": "What's On TV — Reconfigurar",
         "data": {
           "epg_source": "Fuente EPG",
           "scan_interval": "Actualizar cada (horas)"
         }
       },
       "reconfigure_channels": {
-        "title": "Qué hay en la TV — Actualizar canales",
+        "title": "What's On TV — Actualizar canales",
         "description": "Canales disponibles: {total}.",
         "data": { "channels": "Canales" }
       }
     },
     "error": {
       "cannot_connect": "No se pudo descargar el EPG. Verifica la URL y tu conexión.",
-      "no_channels": "El archivo EPG no contiene canales.",
+      "no_channels": "El fichero EPG no contiene canales.",
       "no_channels_selected": "Selecciona al menos un canal.",
-      "unknown": "Error inesperado procesando el EPG."
+      "unknown": "Error inesperado al procesar el EPG."
     },
     "abort": {
       "already_configured": "Esta fuente EPG ya está configurada.",
@@ -46,7 +45,7 @@
   "options": {
     "step": {
       "init": {
-        "title": "Qué hay en la TV — Gestionar canales",
+        "title": "What's On TV — Gestionar canales",
         "description": "Canales disponibles: {total}.",
         "data": {
           "channels": "Canales activos",

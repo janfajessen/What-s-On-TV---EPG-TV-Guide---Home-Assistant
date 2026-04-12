@@ -1,34 +1,27 @@
 {
-  "title": "TV 방송 — EPG 소스",
   "config": {
     "step": {
       "user": {
-        "title": "TV 방송 — EPG 소스",
+        "title": "What's On TV 텔레비전에 무엇이 나오나요 — EPG 소스",
         "description": "국가/지역과 업데이트 간격을 선택하세요.",
-        "data": {
-          "epg_source": "EPG 소스",
-          "scan_interval": "매 (시간) 업데이트"
-        }
+        "data": { "epg_source": "EPG 소스", "scan_interval": "업데이트 간격 (시간)" }
       },
       "custom_url": {
-        "title": "TV 방송 — 사용자 정의 URL",
+        "title": "What's On TV — 사용자 정의 URL",
         "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "TV 방송 — 채널 선택",
-        "description": "{total} 개의 채널을 찾았습니다. 팔로우할 채널을 선택하세요.",
+        "title": "What's On TV — 채널 선택",
+        "description": "{total}개 채널을 찾았습니다. 추적하려는 채널을 선택하세요.",
         "data": { "channels": "채널" }
       },
       "reconfigure": {
-        "title": "TV 방송 — 재설정",
-        "data": {
-          "epg_source": "EPG 소스",
-          "scan_interval": "매 (시간) 업데이트"
-        }
+        "title": "What's On TV — 재구성",
+        "data": { "epg_source": "EPG 소스", "scan_interval": "업데이트 간격 (시간)" }
       },
       "reconfigure_channels": {
-        "title": "TV 방송 — 채널 업데이트",
-        "description": "사용 가능한 채널: {total}。",
+        "title": "What's On TV — 채널 업데이트",
+        "description": "사용 가능한 채널: {total}.",
         "data": { "channels": "채널" }
       }
     },
@@ -39,19 +32,16 @@
       "unknown": "EPG 처리 중 예기치 않은 오류가 발생했습니다."
     },
     "abort": {
-      "already_configured": "이 EPG 소스는 이미 구성되었습니다.",
-      "reconfigure_successful": "재설정이 완료되었습니다."
+      "already_configured": "이 EPG 소스는 이미 구성되어 있습니다.",
+      "reconfigure_successful": "재구성이 완료되었습니다."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "TV 방송 — 채널 관리",
-        "description": "사용 가능한 채널: {total}。",
-        "data": {
-          "channels": "활성 채널",
-          "scan_interval": "매 (시간) 업데이트"
-        }
+        "title": "What's On TV — 채널 관리",
+        "description": "사용 가능한 채널: {total}.",
+        "data": { "channels": "활성 채널", "scan_interval": "업데이트 간격 (시간)" }
       }
     },
     "error": {
