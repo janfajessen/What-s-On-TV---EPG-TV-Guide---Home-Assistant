@@ -41,7 +41,7 @@ The keyword watch system lets you search across all configured EPG sources simul
 A worldwide EPG (Electronic Programme Guide) integration for Home Assistant. Turns any XMLTV-compatible TV guide source into HA sensors — one sensor per channel, updated automatically.
 
 > **Highly recommended companions:**
-> - 📺 [What's On TV — EPG Card](https://github.com/YOUR_GITHUB_USER/whatsontv-epg-card) — visual TV guide card for Lovelace
+> - 📺 [What's On TV — EPG Card](https://github.com/janfajessen/What-s-On-TV-EPG-TV-Guide-Card) — visual TV guide card for Lovelace
 > - 🔔 [What's On TV — Notify Card](https://github.com/janfajessen/What-s-On-TV-Search-and-Notify-Card/) — search programmes and set keyword alerts
 
 ---
@@ -106,7 +106,7 @@ Each channel sensor (`sensor.epg_<channel_name>`) exposes:
 
 
 > **Highly recommended companions:**
-> - 📺 [What's On TV — EPG Card](https://github.com/janfajessen/whatsontv-epg-card) — visual TV guide card for Lovelace
+> - 📺 [What's On TV — EPG Card](https://github.com/janfajessen/What-s-On-TV-EPG-TV-Guide-Card) — visual TV guide card for Lovelace
 
 <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/d4deaf321838ca168cf93711ef0f6c7fbcde8ea3/whatsontv_epg_card_configuration.png" alt="What's On TV - EPG Card configuration" width="120">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/9ba9d7b60cbfdd7163d9335770745f593c9c0002/whatsontv_epg_card_light_card.png" alt="What's On TV - EPG light Card" width="120"> <br> <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card.png" alt="What's On TV - EPG Card" width="120">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card_programme.png" alt="What's On TV - EPG Card programme" width="120">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card_programacion.png" alt="What's On TV - EPG Card Programación" width="120">
 
