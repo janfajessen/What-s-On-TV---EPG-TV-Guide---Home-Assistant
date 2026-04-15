@@ -2,8 +2,7 @@
 
 # What's On TV — <br> EPG TV Guide <br> Home Assistant Integration
 
-<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/82eeef144435d0eea84c5fd1ebdc7cb73f91689b/whatson_tv_icon.png" alt="What's On TV - EPG Guide" width="300">
-
+<img src="brands/icon@2x.png" width="450"/>
 
 ![Version](https://img.shields.io/badge/version-1.5.24-blue?style=for-the-badge)
 ![HA](https://img.shields.io/badge/Home%20Assistant-2024.1+-orange?style=for-the-badge&logo=home-assistant)
