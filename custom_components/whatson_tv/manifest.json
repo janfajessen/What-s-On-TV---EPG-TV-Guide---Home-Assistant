@@ -1,6 +1,6 @@
 {
   "domain": "whatson_tv",
-  "name": "What's On TV — World EPG Guide",
+  "name": "What's On TV — World EPG TV Guide",
   "version": "1.0.0",
   "config_flow": true,
   "documentation": "https://github.com/janfajessen/whatson-tv",
