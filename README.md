@@ -419,6 +419,16 @@ The following countries require a custom URL. Go to **Settings → Devices & Ser
 ---
 
 
+*If this integration is useful to you, consider giving it a ⭐ on GitHub.*
+Or consider supporting development!
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow?style=for-the-badge&logo=buymeacoffee)
+](https://www.buymeacoffee.com/janfajessen) 
+[![Patreon](https://img.shields.io/badge/Patreon-Support-red?style=for-the-badge&logo=patreon)](https://www.patreon.com/janfajessen)
+</div>
+
+
+
 ## License
 
 MIT — see [LICENSE](LICENSE)
