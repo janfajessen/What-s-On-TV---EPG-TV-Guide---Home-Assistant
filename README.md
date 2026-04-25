@@ -432,3 +432,5 @@ Or consider supporting development!
 ## License
 
 MIT — see [LICENSE](LICENSE)
+
+© [@janfajessen](https://github.com/janfajessen)
