@@ -2,7 +2,7 @@
 
 # What's On TV 
 ## EPG TV Guide <br> Home Assistant Integration
-..........   <img src="custom_components/whatson_tv/brand/logo@2x.png" width="550"/>
+..........   <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant/blob/5f76e7b65fa74505a341f6c8f7191971898637f9/brand/logo%402x.png" width="550"/>
 
 ![Version](https://img.shields.io/badge/version-1.5.24-blue?style=for-the-badge)
 ![HA](https://img.shields.io/badge/Home%20Assistant-2024.1+-orange?style=for-the-badge&logo=home-assistant)
@@ -65,6 +65,9 @@ A worldwide EPG (Electronic Programme Guide) integration for Home Assistant. Tur
 3. Search for **What's On TV** and install
 4. Restart Home Assistant
 
+<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant/blob/5f76e7b65fa74505a341f6c8f7191971898637f9/brand/icon%402x.png" width="100"/>
+
+
 ### Manual
 
 Copy the `custom_components/whatson_tv/` folder to your HA `config/custom_components/` directory and restart.
@@ -109,13 +112,13 @@ Each channel sensor (`sensor.epg_<channel_name>`) exposes:
 
 <div align="center">
   
-<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/d4deaf321838ca168cf93711ef0f6c7fbcde8ea3/whatsontv_epg_card_configuration.png" alt="What's On TV - EPG Card configuration" width="120">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/9ba9d7b60cbfdd7163d9335770745f593c9c0002/whatsontv_epg_card_light_card.png" alt="What's On TV - EPG light Card" width="120"> <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card.png" alt="What's On TV - EPG Card" width="120">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card_programme.png" alt="What's On TV - EPG Card programme" width="120">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_epg_card_programacion.png" alt="What's On TV - EPG Card Programación" width="120">
+<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant/blob/5f76e7b65fa74505a341f6c8f7191971898637f9/screenshots/whatsontv_epg_card_configuration.png" alt="What's On TV - EPG Card configuration" width="17%">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant/blob/5f76e7b65fa74505a341f6c8f7191971898637f9/screenshots/whatsontv_epg_card_light_card.png" alt="What's On TV - EPG light Card" width="17%"> <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant/blob/5f76e7b65fa74505a341f6c8f7191971898637f9/screenshots/whatsontv_epg_card.png" alt="What's On TV - EPG Card" width="17%">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant/blob/5f76e7b65fa74505a341f6c8f7191971898637f9/screenshots/whatsontv_epg_card_programme.png" alt="What's On TV - EPG Card programme" width="17%">  <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant/blob/5f76e7b65fa74505a341f6c8f7191971898637f9/screenshots/whatsontv_epg_card_programacion.png" alt="What's On TV - EPG Card Programación" width="17%">
 
 </div>
 
 > - 🔔 [What's On TV — Notify Card](https://github.com/janfajessen/What-s-On-TV-Search-and-Notify-Card/) — search programmes and set keyword alerts
 <div align="center">
-<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_search_and_notify_card.png" alt="What's On TV - Search and Notify Card" width="130"><img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/blob/c182f8324b4c54bc2a82bcd817de789b43c2208d/whatsontv_search_and_notify_card_saved_watches.png" alt="What's On TV - Search and Notify Card saved watches" width="130">
+<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant/blob/5f76e7b65fa74505a341f6c8f7191971898637f9/screenshots/whatsontv_search_and_notify_card.png" alt="What's On TV - Search and Notify Card" width="35%"><img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant/blob/5f76e7b65fa74505a341f6c8f7191971898637f9/screenshots/whatsontv_search_and_notify_card_saved_watches.png" width="35%">
 </div>
 ---
 
@@ -147,7 +150,7 @@ Each channel sensor (`sensor.epg_<channel_name>`) exposes:
 ---
 
 
-<img src="https://github.com/janfajessen/What-s-On-TV-Search-and-Notify-Card/blob/297b38ed5f117f3e127bd9932c1b2c2dc41d6b9f/What's%20On%20TV.png" alt="What's On TV" width="120">
+<img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant/blob/5f76e7b65fa74505a341f6c8f7191971898637f9/brand/logo%402x.png" width="120"/>
 
 
 <table border="0" cellspacing="0" cellpadding="6" width="100%">
