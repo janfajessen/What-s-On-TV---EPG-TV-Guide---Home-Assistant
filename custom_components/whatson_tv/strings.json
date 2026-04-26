@@ -2,51 +2,60 @@
   "config": {
     "step": {
       "user": {
-        "title": "What's On TV — EPG Source",
-        "description": "Select your country/region and update interval.",
-        "data": { "epg_source": "EPG Source", "scan_interval": "Update every (hours)" }
+        "title": "What's On TV — Fuente EPG",
+        "description": "Selecciona tu país/región y el intervalo de actualización.",
+        "data": {
+          "epg_source": "Fuente EPG",
+          "scan_interval": "Actualizar cada (horas)"
+        }
       },
       "custom_url": {
-        "title": "What's On TV — Custom URL",
-        "data": { "epg_url": "EPG URL (XMLTV .xml / .xml.gz)" }
+        "title": "What's On TV — URL personalizada",
+        "data": { "epg_url": "URL del EPG (XMLTV .xml / .xml.gz)" }
       },
       "channels": {
-        "title": "What's On TV — Channel Selection",
-        "description": "Found {total} channels. Select the ones you want to track.",
-        "data": { "channels": "Channels" }
+        "title": "What's On TV — Selección de canales",
+        "description": "Se han encontrado {total} canales. Selecciona los que quieres seguir.",
+        "data": { "channels": "Canales" }
       },
       "reconfigure": {
-        "title": "What's On TV — Reconfigure",
-        "data": { "epg_source": "EPG Source", "scan_interval": "Update every (hours)" }
+        "title": "What's On TV — Reconfigurar",
+        "data": {
+          "epg_source": "Fuente EPG",
+          "scan_interval": "Actualizar cada (horas)"
+        }
       },
       "reconfigure_channels": {
-        "title": "What's On TV — Update channels",
-        "description": "Available channels: {total}.",
-        "data": { "channels": "Channels" }
+        "title": "What's On TV — Actualizar canales",
+        "description": "Canales disponibles: {total}.",
+        "data": { "channels": "Canales" }
       }
     },
     "error": {
-      "cannot_connect": "Could not download EPG. Check the URL and your connection.",
-      "no_channels": "The EPG file contains no channels.",
-      "no_channels_selected": "Select at least one channel.",
-      "unknown": "Unexpected error processing the EPG."
+      "cannot_connect": "No se pudo descargar el EPG. Verifica la URL y tu conexión.",
+      "no_channels": "El fichero EPG no contiene canales.",
+      "no_channels_selected": "Selecciona al menos un canal.",
+      "unknown": "Error inesperado al procesar el EPG."
     },
     "abort": {
-      "already_configured": "This EPG source is already configured.",
-      "reconfigure_successful": "Reconfiguration complete."
+      "already_configured": "Esta fuente EPG ya está configurada.",
+      "reconfigure_successful": "Reconfiguración completada."
     }
   },
   "options": {
     "step": {
       "init": {
-        "title": "What's On TV — Manage channels",
-        "description": "Available channels: {total}.",
-        "data": { "channels": "Active channels", "scan_interval": "Update every (hours)" }
+        "title": "What's On TV — Gestionar canales",
+        "description": "Canales disponibles: {total}.",
+        "data": {
+          "channels": "Canales activos",
+          "scan_interval": "Actualizar cada (horas)"
+        }
       }
     },
     "error": {
-      "cannot_connect": "Could not reach the EPG source.",
-      "no_channels_selected": "Select at least one channel."
+      "cannot_connect": "No se pudo contactar con la fuente EPG.",
+      "no_channels_selected": "Selecciona al menos un canal."
     }
   }
 }
