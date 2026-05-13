@@ -143,6 +143,9 @@ class EPGCoordinator(DataUpdateCoordinator):
     async def _check_watches(self, watches: list[dict]) -> None:
         now = datetime.now(tz=timezone.utc)
         new_notified = False
+        # Sincronizar _notified con el set compartido entre todos los coordinators
+        shared = self.hass.data.get(f"{DOMAIN}_notified_shared", set())
+        self._notified = self._notified | shared
 
         for watch in watches:
             keyword  = watch["keyword"].lower()
@@ -201,8 +204,33 @@ class EPGCoordinator(DataUpdateCoordinator):
                     )
 
                     try:
+                        ch_icon = self.channels.get(ch_id, {}).get("icon") or None
                         svc_name = notify.split(".", 1)[1] if "." in notify else notify
-                        if self.hass.services.has_service("notify", svc_name):
+                        is_telegram = "telegram" in notify.lower()
+                        is_legacy = self.hass.services.has_service("notify", svc_name)
+
+                        if is_telegram and ch_icon:
+                            await self.hass.services.async_call(
+                                "telegram_bot", "send_photo",
+                                {
+                                    "url": ch_icon,
+                                    "caption": message,
+                                },
+                                target={"entity_id": notify},
+                                blocking=False,
+                            )
+                        elif is_legacy and ch_icon:
+                            domain, service = notify.split(".", 1)
+                            await self.hass.services.async_call(
+                                domain, service,
+                                {
+                                    "message": message,
+                                    "title": f"📺 {prog['title']}",
+                                    "data": {"image": ch_icon},
+                                },
+                                blocking=False,
+                            )
+                        elif is_legacy:
                             domain, service = notify.split(".", 1)
                             await self.hass.services.async_call(
                                 domain, service,
@@ -220,8 +248,11 @@ class EPGCoordinator(DataUpdateCoordinator):
                                         prog["title"], ch_name)
                     except Exception as err:
                         _LOGGER.warning("Error enviando notificación: %s", err)
+                        continue
 
+                    # Marcar como notificado en set local Y en hass.data compartido
                     self._notified.add(key)
+                    self.hass.data.setdefault(f"{DOMAIN}_notified_shared", set()).add(key)
                     new_notified = True
 
         if new_notified:
