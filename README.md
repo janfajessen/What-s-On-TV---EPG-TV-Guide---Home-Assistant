@@ -4,7 +4,7 @@
 ## EPG TV Guide <br> Home Assistant Integration
 ..........   <img src="https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant/blob/5f76e7b65fa74505a341f6c8f7191971898637f9/brand/logo%402x.png" width="550"/>
 
-![Version](https://img.shields.io/badge/version-1.5.27-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.5.28-blue?style=for-the-badge)
 ![HA](https://img.shields.io/badge/Home%20Assistant-2024.1+-orange?style=for-the-badge&logo=home-assistant)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python)
@@ -61,7 +61,7 @@ A worldwide EPG (Electronic Programme Guide) integration for Home Assistant. Tur
 ### Via HACS (recommended)
 
 1. Open HACS → **Integrations** → ⋮ → **Custom repositories**
-2. Add `https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide/` — category **Integration**
+2. Add `https://github.com/janfajessen/What-s-On-TV---EPG-TV-Guide---Home-Assistant` — category **Integration**
 3. Search for **What's On TV** and install
 4. Restart Home Assistant
 
